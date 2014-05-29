@@ -1,0 +1,65 @@
+//
+// Table Customization
+// --------------------------------------------------
+.table-inverse {
+  &.table {
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > th,
+        > td {
+          border-color: lighten(@brand-inverse, 5%);
+        }
+      }
+    }
+    > thead > tr > th {
+      border-color: lighten(@brand-inverse, 5%);
+      color: lighten(@brand-inverse, 40%);
+    }
+    // Account for multiple tbody instances
+    > tbody + tbody {
+      border-color: lighten(@brand-inverse, 5%);
+    }
+
+    // Nesting
+    .table {
+      background-color: @body-bg;
+    }
+  }
+  &.table-bordered {
+    border-color: lighten(@brand-inverse, 5%);
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > th,
+        > td {
+          border-color: lighten(@brand-inverse, 5%);
+        }
+      }
+    }
+    > thead > tr {
+      > th,
+      > td {
+        border-bottom-width: 2px;
+      }
+    }
+  }
+  &.table-hover {
+    > tbody > tr:hover {
+      > td,
+      > th {
+        background-color: darken(@brand-inverse, 10%);
+      }
+    }
+  }
+  .table-striped {
+    > tbody > tr:nth-child(odd) {
+      > td,
+      > th {
+        background-color: darken(@brand-inverse, 2%);
+      }
+    }
+  }
+}

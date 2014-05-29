@@ -1,0 +1,39 @@
+.navbar-inline {
+  .navbar-brand,
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+  .navbar-nav {
+    float: none;
+  }
+}
+
+.nav-header {
+  text-transform: uppercase;
+  padding: @nav-link-padding;
+  font-size: 0.75em;
+}
+
+// Nav Inverse
+// -------------------------
+.nav-inverse {
+  > li {
+    > a {
+      color: lighten(@brand-inverse, 50%);
+      &:hover,
+      &:focus {
+        background-color: lighten(@brand-inverse, 5%);
+      }
+    }
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: darken(@brand-inverse, 2%);
+      }
+    }
+  }
+}

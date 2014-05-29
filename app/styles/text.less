@@ -1,0 +1,138 @@
+//
+// Text
+// --------------------------------------------------
+
+.text-xs,
+.text-sm,
+.text-md,
+.text-lg {
+	text-rendering: optimizeLegibility;
+}
+.text-micro {
+	font-size: 10px;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+.text-xs {
+	font-size: 50%;
+}
+.text-sm {
+	font-size: 70%;
+}
+.text-md {
+	font-size: 80%;
+}
+.text-lg {
+	font-size: 110%;
+}
+.text-xl {
+	font-size: 120%;
+}
+.text-xxl {
+	font-size: 130%;
+}
+.text-30 {
+	font-size: 30px;
+}
+.text-super {
+	font-size: 60px;
+}
+.text-truncate {
+	display: block;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.text-date {
+	.text-muted;
+	.text-sm;
+	.pull-right;
+}
+.text-label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+/* Colors */
+.text-muted {
+  &:hover {
+    text-decoration: none;
+  }
+}
+.text-success-light {
+  color: @brand-success-light;
+}
+.text-success-dark {
+  color: @brand-success-dark;
+}
+.text-info-light {
+  color: @brand-info-light;
+}
+.text-info-dark {
+  color: @brand-info-dark;
+}
+.text-primary {
+  color: @brand-primary;
+}
+.text-primary-light {
+  color: @brand-primary-light;
+}
+.text-primary-dark {
+  color: @brand-primary-dark;
+}
+.text-warning-light {
+  color: @brand-warning-light;
+}
+.text-warning-dark {
+  color: @brand-warning-dark;
+}
+.text-danger-light {
+  color: #F26C63;
+}
+.text-danger-dark {
+  color: @brand-danger-dark;
+}
+.text-inverse {
+  color: @brand-inverse;
+}
+.text-inverse-inverse {
+  color: @brand-inverse-light;
+}
+.text-inverse-inverse {
+  color: @brand-inverse-dark;
+}
+.text-acqua {
+	color: #1293CE;
+}
+
+/* HR */
+.hr-success {
+  border-top-color: darken(@brand-success, 10%);
+}
+.hr-info {
+  border-top-color: darken(@brand-info, 10%);
+}
+.hr-primary {
+  border-top-color: darken(@brand-primary, 10%);
+}
+.hr-warning {
+  border-top-color: darken(@brand-warning, 10%);
+}
+.hr-danger {
+  border-top-color: darken(@brand-danger, 10%);
+}
+.hr-inverse {
+  border-top-color: darken(@brand-inverse, 10%);
+}
+
+// Visisble but inline
+.visible-xs-inline {
+  @media (min-width: @screen-sm-min) {
+    display: none;
+  }
+}
+.hidden-xs-inline {
+  @media (max-width: @screen-xs-max) {
+    display: none;
+  }
+}

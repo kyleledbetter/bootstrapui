@@ -1,0 +1,72 @@
+//
+// Button Customization
+// --------------------------------------------------
+.btn {
+  text-transform: uppercase;
+}
+.btn-inverse {
+  .button-variant(@btn-inverse-color; @btn-inverse-bg; @btn-inverse-border);
+}
+.btn-outline {
+  background: transparent;
+  .box-shadow (none);
+  border-radius: 8px;
+
+  &.btn-danger {
+    color: @brand-danger-light;
+    border-color: @brand-danger-light;
+  }
+  &.active,
+  &:hover {
+    color: #fff;
+    .box-shadow (none);
+    background: rgba(0, 0, 0, 0.15);
+  }
+}
+.btn-group {
+  & > .btn-outline:not(:first-of-type) {
+    border-left-width: 0;
+  }
+}
+
+// Wide Buttons
+// --------------------------------------------------
+.btn-wide-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(@padding-large-vertical; @padding-large-horizontal * 2.5; @font-size-large; @line-height-large; @border-radius-large);
+}
+.btn-wide-sm {
+  // line-height: ensure proper height of button next to small input
+  .button-size(@padding-small-vertical; @padding-small-horizontal * 2.5; @font-size-small; @line-height-small; @border-radius-small);
+}
+.btn-wide-xs {
+  .button-size(@padding-xs-vertical; @padding-xs-horizontal * 2.5; @font-size-small; @line-height-small; @border-radius-small);
+}
+
+// Round Buttons
+// --------------------------------------------------
+.btn-round {
+  border-radius: 40px;
+}
+.btn-round-wide-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(@padding-large-vertical; @padding-large-horizontal * 2.75; @font-size-large; @line-height-large; @border-radius-large * 10);
+}
+.btn-round-wide-sm {
+  // line-height: ensure proper height of button next to small input
+  .button-size(@padding-small-vertical; @padding-small-horizontal * 2.75; @font-size-small; @line-height-small; @border-radius-small * 10);
+}
+.btn-round-wide-xs {
+  .button-size(@padding-xs-vertical; @padding-xs-horizontal * 2.75; @font-size-small; @line-height-small; @border-radius-small * 10);
+}
+.btn-round-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large * 10);
+}
+.btn-round-sm {
+  // line-height: ensure proper height of button next to small input
+  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small * 10);
+}
+.btn-round-xs {
+  .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @border-radius-small * 10);
+}

@@ -1,0 +1,119 @@
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+}
+body,
+.flex-columns {
+  .flex-display;
+}
+
+.flex-rows {
+  .flex (1 0 0px);
+  .flex-order (2);
+
+  .flex-display;
+  min-height: 100vh;
+  .flex-direction (column);
+}
+
+.main {
+  & > .content {
+    padding: @main-body-padding;
+  }
+}
+
+.sidebar {
+  background: gold;
+  .flex (none);
+  background: #eee;
+  width: 200px;
+  .flex-order (1);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  & > .content {
+    padding: @sidebar-body-padding;
+  }
+  *[class*="ion"] {
+    font-size: 16px;
+    width: 16px;
+    text-align: center;
+    margin-right: 10px;
+  }
+}
+
+.aside {
+  background: hotpink;
+  .flex (none);
+  .flex-order (3);
+  background: black;
+  width: 220px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  & > .content {
+    padding: @aside-body-padding;
+  }
+}
+
+.header,
+.footer {
+
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+
+    .navbar-form {
+      max-width: 300px;
+    }
+  }
+}
+.content {
+  .flex (1);
+  overflow: auto;
+}
+
+//== Theme
+//
+//##
+.body-inverse {
+  background-color: @body-inverse-bg;
+  &,
+  a {
+    color: @body-inverse-text;
+  }
+}
+.sidebar-inverse {
+  background-color: @sidebar-inverse-bg;
+  color: @sidebar-inverse-text;
+  border-right: 1px solid @sidebar-inverse-border;
+}
+.aside-inverse {
+  background-color: @aside-inverse-bg;
+  color: @aside-inverse-text;
+  border-left: 1px solid @aside-inverse-border;
+}
+.main-inverse {
+  background-color: @main-inverse-bg;
+  color: @main-inverse-text;
+}
+
+
+//== Responsive
+//
+//##
+
+@media all and (min-width: @screen-sm-min) {
+  //.aside { flex: 1 auto; }
+}
+
+@media all and (min-width: @screen-md-min) {
+  /*
+  .main    { flex: 2 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+  */
+}
+
