@@ -3395,8 +3395,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #333333;
 }
 .navbar-inverse {
-  background-color: #222222;
-  border-color: #080808;
+  background-color: #1d1e21;
+  border-color: #1d1e21;
 }
 .navbar-inverse .navbar-brand {
   color: #999999;
@@ -3407,7 +3407,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-inverse .navbar-text {
-  color: #999999;
+  color: #9ea1a9;
 }
 .navbar-inverse .navbar-nav > li > a {
   color: #999999;
@@ -3421,7 +3421,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #080808;
+  background-color: #050506;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -3441,20 +3441,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-  border-color: #101010;
+  border-color: #0c0d0e;
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #080808;
+  background-color: #050506;
   color: #ffffff;
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: #080808;
+    border-color: #1d1e21;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-    background-color: #080808;
+    background-color: #1d1e21;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #999999;
@@ -3468,7 +3468,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: #080808;
+    background-color: #050506;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -5260,17 +5260,17 @@ body,
   color: #ffffff;
 }
 .sidebar-inverse {
-  background-color: #292a2e;
-  color: #a6a9b0;
+  background-color: #242529;
+  color: #a1a4ab;
   border-right: 1px solid #222326;
 }
 .aside-inverse {
-  background-color: #292a2e;
-  color: #a6a9b0;
+  background-color: #242529;
+  color: #a1a4ab;
   border-left: 1px solid #222326;
 }
 .main-inverse {
-  background-color: #1b1c1e;
+  background-color: #161719;
   color: #ffffff;
 }
 @media all and (min-width: 992px) {
@@ -5789,4 +5789,118 @@ fieldset[disabled] .btn-inverse.active {
 .input-group-round .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
+}
+.pull {
+  margin: -20px;
+}
+.pull-xxl {
+  margin: -40px;
+}
+.pull-xl {
+  margin: -30px;
+}
+.pull-lg {
+  margin: -20px;
+}
+.pull-md {
+  margin: -15px;
+}
+.pull-sm {
+  margin: -10px;
+}
+.pull-xs {
+  margin: -5px;
+}
+.pull-none {
+  margin: 0px;
+}
+.pull-top {
+  margin-top: -20px;
+}
+.pull-top-xxl {
+  margin-top: -40px;
+}
+.pull-top-xl {
+  margin-top: -30px;
+}
+.pull-top-lg {
+  margin-top: -20px;
+}
+.pull-top-md {
+  margin-top: -15px;
+}
+.pull-top-sm {
+  margin-top: -10px;
+}
+.pull-top-xs {
+  margin-top: -5px;
+}
+.pull-top-none {
+  margin-top: 0px;
+}
+.pull-right-xxl {
+  margin-right: -40px;
+}
+.pull-right-xl {
+  margin-right: -30px;
+}
+.pull-right-lg {
+  margin-right: -20px;
+}
+.pull-right-md {
+  margin-right: -15px;
+}
+.pull-right-sm {
+  margin-right: -10px;
+}
+.pull-right-xs {
+  margin-right: -5px;
+}
+.pull-right-none {
+  margin-right: 0px;
+}
+.pull-bottom {
+  margin-bottom: -20px;
+}
+.pull-bottom-xxl {
+  margin-bottom: -40px;
+}
+.pull-bottom-xl {
+  margin-bottom: -30px;
+}
+.pull-bottom-lg {
+  margin-bottom: -20px;
+}
+.pull-bottom-md {
+  margin-bottom: -15px;
+}
+.pull-bottom-sm {
+  margin-bottom: -10px;
+}
+.pull-bottom-xs {
+  margin-bottom: -5px;
+}
+.pull-bottom-none {
+  margin-bottom: 0px;
+}
+.pull-left-xxl {
+  margin-left: -40px;
+}
+.pull-left-xl {
+  margin-left: -30px;
+}
+.pull-left-lg {
+  margin-left: -20px;
+}
+.pull-left-md {
+  margin-left: -15px;
+}
+.pull-left-sm {
+  margin-left: -10px;
+}
+.pull-left-xs {
+  margin-left: -5px;
+}
+.pull-left-none {
+  margin-left: 0px;
 }
