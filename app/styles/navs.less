@@ -37,3 +37,41 @@
     }
   }
 }
+
+// Nav Underline
+// -------------------------
+// Give the tabs something to sit on
+.nav-underline {
+  border-bottom: 1px solid transparent;
+  > li {
+    float: left;
+    // Make the list-items overlay the bottom border
+    margin-bottom: -1px;
+
+    // Actual tabs (as links)
+    > a {
+      margin-right: 2px;
+      line-height: @line-height-base;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        border-color: @brand-primary;
+      }
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @nav-tabs-active-link-hover-color;
+        border-bottom-color: @brand-success;
+        cursor: default;
+      }
+    }
+  }
+  // pulling this in mainly for less shorthand
+  &.nav-justified {
+    .nav-justified();
+    .nav-tabs-justified();
+  }
+}
