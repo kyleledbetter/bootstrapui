@@ -6138,6 +6138,22 @@ fieldset[disabled] .btn-inverse.active {
 .pull-left-none {
   margin-left: 0px;
 }
+.panel-inverse {
+  border-color: #222326;
+  background-color: #3a3c41;
+  color: #fff;
+}
+.panel-inverse > .panel-heading {
+  color: #ffffff;
+  background-color: #222326;
+  border-color: #222326;
+}
+.panel-inverse > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #222326;
+}
+.panel-inverse > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #222326;
+}
 .form-group {
   /* We need relative positioning for the parent */
   position: relative;
