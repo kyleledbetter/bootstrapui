@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "dependencies": {
     "jquery": "2.1.1",
-    "ionicons-less": "1.4.1",
+    "ionicons": "latest",
     "bootstrap": "3.1.1"
   }
 }
