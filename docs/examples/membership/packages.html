@@ -25,9 +25,9 @@
         <header class="header">
           <nav class="navbar navbar-default" role="navigation">
             <div class="container-fluid">
-              <a class="btn btn-default navbar-btn pull-left" data-toggle="sidebar"><span aria-hidden="true" class="ion-android-sort"></span></a>
-              <a href="../admin/" class="btn btn-default navbar-btn pull-right"><span aria-hidden="true" class="ion-share"></span> Admin</a>
-              <form class="navbar-form navbar-left" role="search">
+              <a class="btn btn-none navbar-btn pull-left push-right" data-toggle="sidebar"><span aria-hidden="true" class="ion-android-sort"></span></a>
+              <a class="navbar-brand" href="index.html"><span aria-hidden="true" class="ion-card"></span> Members</a>
+              <form class="navbar-form navbar-right" role="search">
                 <div class="input-group input-group-sm input-group-round">
                   <input type="text" class="form-control" placeholder="Search">
                   <span class="input-group-btn">
@@ -39,7 +39,26 @@
           </nav>
         </header>
         <section class="content content-default">
+          <div class="carousel pull-top-md pull-left-md pull-right-md">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="http://lorempixel.com/1200/300/people/" width="100%">
+                <div class="carousel-caption" style="left:30px;right:30px;bottom:0;">
+                  <div class="media">
+                    <div class="media-body">
+                      <h1 class="media-heading">Media heading</h1>
+                      <p>Art party fap cred</p>
+                      <div class="btn-toolbar push-top">
+                        <a href="#" class="btn btn-round-wide-lg btn-success">Subscribe Today!</a> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="pad-xxl">
+            <!-- Embed start -->
             <div class="panel panel-default">
               <div class="panel-body">
                 <div class="media">
@@ -50,7 +69,7 @@
                     <div class="text-30">
                       $10
                     </div>
-                    <a href="checkout.html" class="btn btn-inverse btn-lg">Buy Now</a>
+                    <a href="checkout.html" class="btn btn-round btn-success">Buy Now</a>
                   </div>
                   <div class="media-body">
                     <h2 class="media-heading"><a href="package-detail.html">Package Title</a></h2>
@@ -70,12 +89,12 @@
                     <div class="text-30">
                       $25
                     </div>
-                    <a href="checkout.html" class="btn btn-inverse btn-lg">Buy Now</a>
+                    <a href="checkout.html" class="btn btn-round btn-success">Buy Now</a>
                   </div>
                   <div class="media-body">
                     <h2 class="media-heading"><a href="package-detail.html">Package Title</a></h2>
-                    <p>Messenger bag Pinterest Blue Bottle polaroid viral leggings. Truffaut slow-carb shabby chic, semiotics pour-over tattooed Helvetica. </p>
-                    <small class="text-muted">Cosby sweater butcher freegan art party, scenester asymmetrical.</small>
+                    <p>Brooklyn Pitchfork hella Etsy Bushwick, Echo Park vegan salvia Shoreditch. Pitchfork mumblecore locavore, selfies quinoa irony banjo twee swag. </p>
+                    <small class="text-muted">Messenger bag fap keffiyeh, Pinterest fanny pack before they sold out.</small>
                   </div>
                 </div>
               </div>
@@ -90,16 +109,17 @@
                     <div class="text-30">
                       $50
                     </div>
-                    <a href="checkout.html" class="btn btn-inverse btn-lg">Buy Now</a>
+                    <a href="checkout.html" class="btn btn-round btn-success">Buy Now</a>
                   </div>
                   <div class="media-body">
                     <h2 class="media-heading"><a href="package-detail.html">Package Title</a></h2>
-                    <p>Messenger bag Pinterest Blue Bottle polaroid viral leggings. Truffaut slow-carb shabby chic, semiotics pour-over tattooed Helvetica. </p>
-                    <small class="text-muted">Cosby sweater butcher freegan art party, scenester asymmetrical.</small>
+                    <p>Gentrify Odd Future Truffaut, put a bird on it fingerstache mumblecore fap. Asymmetrical wayfarers bitters wolf, flannel readymade ugh iPhone. </p>
+                    <small class="text-muted">Neutra XOXO keffiyeh Thundercats forage.</small>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- Embed end -->
           </div>
         </section>
         <footer class="footer">
@@ -115,17 +135,17 @@
           </nav>
         </footer> 
       </article>
-      <aside class="sidebar sidebar-default flex-rows">
+      <aside class="sidebar sidebar-inverse flex-rows" style="display:none">
         <header class="header">
-          <nav class="navbar navbar-default navbar-inline text-center" role="navigation">
-            <a class="navbar-brand" href="#"><span aria-hidden="true" class="ion-card"></span> Members</a>
+          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
+            <a class="navbar-brand push-left-xs" href="#"><span aria-hidden="true" class="ion-android-sort"></span> Menu</a>
           </nav>
         </header>
-        <section class="content content-default">
-          <ul class="nav nav-stacked nav-default">
+        <section class="content content-inverse">
+          <ul class="nav nav-stacked nav-inverse">
             <li class="nav-header">Membership</li>
-            <li class="active"><a href="index.html"><span aria-hidden="true" class="ion-locked"></span> Login</a></li>
-            <li><a href="packages.html"><span aria-hidden="true" class="ion-cube"></span> Packages</a></li>
+            <li><a href="index.html"><span aria-hidden="true" class="ion-locked"></span> Login</a></li>
+            <li class="active"><a href="packages.html"><span aria-hidden="true" class="ion-cube"></span> Packages</a></li>
             <li><a href="package-detail.html"><span aria-hidden="true" class="ion-briefcase"></span> Package Detail</a></li>
             <li><a href="checkout.html"><span aria-hidden="true" class="ion-card"></span> Checkout</a></li>
             <li><a href="receipt.html"><span aria-hidden="true" class="ion-document-text"></span> Receipt</a></li>
@@ -137,19 +157,6 @@
             <li><a href="profile-edit.html"><span aria-hidden="true" class="ion-compose"></span> Edit Profile</a></li>
           </ul>
         </section>
-        <footer class="footer">
-          <nav class="navbar navbar-default navbar-inline text-right" role="navigation">
-            <div class="container-fluid dropdown dropup">
-              <a href="#" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="ion-ios7-plus-empty"></span></a>
-              <ul class="dropdown-menu dropdown-menu-right text-left">
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Settings</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Sign Out</a></li>
-              </ul>
-            </div>
-          </nav>
-        </footer> 
       </aside>
       
     </div>
