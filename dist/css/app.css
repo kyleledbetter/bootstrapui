@@ -5218,6 +5218,7 @@ body,
   width: 16px;
   text-align: center;
   margin-right: 10px;
+  display: inline-block;
 }
 .aside {
   -webkit-flex: none;
@@ -5845,6 +5846,126 @@ fieldset[disabled] .btn-inverse.active {
 .push-left-none {
   margin-left: 0px;
 }
+.pad {
+  padding: 20px;
+}
+.pad-xxl {
+  padding: 60px;
+}
+.pad-xl {
+  padding: 50px;
+}
+.pad-lg {
+  padding: 40px;
+}
+.pad-md {
+  padding: 30px;
+}
+.pad-sm {
+  padding: 10px;
+}
+.pad-xs {
+  padding: 5px;
+}
+.pad-none {
+  padding: 0px;
+}
+.pad-top {
+  padding-top: 20px;
+}
+.pad-top-xxl {
+  padding-top: 60px;
+}
+.pad-top-xl {
+  padding-top: 50px;
+}
+.pad-top-lg {
+  padding-top: 40px;
+}
+.pad-top-md {
+  padding-top: 30px;
+}
+.pad-top-sm {
+  padding-top: 10px;
+}
+.pad-top-xs {
+  padding-top: 5px;
+}
+.pad-top-none {
+  padding-top: 0px;
+}
+.pad-right {
+  padding-right: 20px;
+}
+.pad-right-xxl {
+  padding-right: 60px;
+}
+.pad-right-xl {
+  padding-right: 50px;
+}
+.pad-right-lg {
+  padding-right: 40px;
+}
+.pad-right-md {
+  padding-right: 30px;
+}
+.pad-right-sm {
+  padding-right: 10px;
+}
+.pad-right-xs {
+  padding-right: 5px;
+}
+.pad-right-none {
+  padding-right: 0px;
+}
+.pad-bottom {
+  padding-bottom: 20px;
+}
+.pad-bottom-xxl {
+  padding-bottom: 60px;
+}
+.pad-bottom-xl {
+  padding-bottom: 50px;
+}
+.pad-bottom-lg {
+  padding-bottom: 40px;
+}
+.pad-bottom-md {
+  padding-bottom: 30px;
+}
+.pad-bottom-sm {
+  padding-bottom: 10px;
+}
+.pad-bottom-xs {
+  padding-bottom: 5px;
+}
+.pad-bottom-none {
+  padding-bottom: 0px;
+}
+.pad-left {
+  padding-left: 20px;
+}
+.pad-left-xxl {
+  padding-left: 60px;
+}
+.pad-left-xl {
+  padding-left: 50px;
+}
+.pad-left-lg {
+  padding-left: 40px;
+}
+.pad-left-md {
+  padding-left: 30px;
+}
+.pad-left-sm {
+  padding-left: 10px;
+}
+.pad-left-xs {
+  padding-left: 5px;
+}
+.pad-left-none {
+  padding-left: 0px;
+}
 .carousel-inner > .item > img {
   -webkit-filter: brightness(50%);
   -moz-filter: brightness(50%);
@@ -5984,4 +6105,40 @@ fieldset[disabled] .btn-inverse.active {
 }
 .pull-left-none {
   margin-left: 0px;
+}
+.form-group {
+  /* We need relative positioning for the parent */
+  position: relative;
+}
+.float-label {
+  /* Import Screen-reader only */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000000;
+  border-radius: 4px;
+}
+input:focus + .float-label,
+textarea:focus + .float-label {
+  width: auto;
+  height: auto;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  clip: auto;
+  right: 100%;
+  top: 5px;
 }
