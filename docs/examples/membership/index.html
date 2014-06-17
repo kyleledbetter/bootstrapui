@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Membership App UI for Bootstrap</title>
+
+    <!-- Bootstrapapp CSS -->
+    <link href="../../../dist/css/app.css" rel="stylesheet">
+
+    <!-- Ionicons CSS -->
+    <link href="../../../bower_components/ionicons/css/ionicons.min.css" rel="stylesheet">
+  </head>
+
+  <body class="body-default">
+    
+    <div class="wrapper flex-columns">
+      
+      <article class="main main-default flex-rows">
+        <header class="header">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+              <a class="btn btn-default navbar-btn pull-left" data-toggle="sidebar"><span aria-hidden="true" class="ion-android-sort"></span></a>
+              <a href="../admin/" class="btn btn-default navbar-btn pull-right"><span aria-hidden="true" class="ion-share"></span> Admin</a>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="input-group input-group-sm input-group-round">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="ion-ios7-search-strong"></span></button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </nav>
+        </header>
+        <section class="content content-default">
+          <div class="text-center">
+            <div class="row push-top-xxl">
+              <div class="col-sm-6 col-sm-offset-3">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <h3 class="push-bottom-md">Login</h3>
+                    <form role="form">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="username" placeholder="Username">
+                        <label for="username" class="float-label">Username</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <label for="password" class="float-label">Password</label>
+                      </div>
+                      <button type="submit" class="btn btn-inverse btn-lg btn-block">Login</button>
+                      <div class="row push-top">
+                        <div class="col-sm-6">
+                          <button role="button" class="btn btn-default btn-block">Forgot User</button>
+                        </div>
+                        <div class="col-sm-6">
+                          <button role="button" class="btn btn-default btn-block">Forgot Pass</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <nav class="navbar navbar-default navbar-inline text-center" role="navigation">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer> 
+      </article>
+      <aside class="sidebar sidebar-default flex-rows">
+        <header class="header">
+          <nav class="navbar navbar-default navbar-inline text-center" role="navigation">
+            <a class="navbar-brand" href="#"><span aria-hidden="true" class="ion-card"></span> Members</a>
+          </nav>
+        </header>
+        <section class="content content-default">
+          <ul class="nav nav-stacked nav-default">
+            <li class="nav-header">Membership</li>
+            <li class="active"><a href="index.html"><span aria-hidden="true" class="ion-locked"></span> Login</a></li>
+            <li><a href="packages.html"><span aria-hidden="true" class="ion-cube"></span> Packages</a></li>
+            <li><a href="package-detail.html"><span aria-hidden="true" class="ion-briefcase"></span> Package Detail</a></li>
+            <li><a href="checkout.html"><span aria-hidden="true" class="ion-card"></span> Checkout</a></li>
+            <li><a href="receipt.html"><span aria-hidden="true" class="ion-document-text"></span> Receipt</a></li>
+            <li><a href="downloads.html"><span aria-hidden="true" class="ion-android-storage"></span> Downloads</a></li>
+            <li><a href="download-detail.html"><span aria-hidden="true" class="ion-document"></span> Download Detail</a></li>
+            <li><a href="groups.html"><span aria-hidden="true" class="ion-person-stalker"></span> Groups</a></li>
+            <li><a href="members.html"><span aria-hidden="true" class="ion-person-stalker"></span> Members</a></li>
+            <li><a href="profile.html"><span aria-hidden="true" class="ion-person"></span> Profile</a></li>
+            <li><a href="profile-edit.html"><span aria-hidden="true" class="ion-compose"></span> Edit Profile</a></li>
+          </ul>
+        </section>
+        <footer class="footer">
+          <nav class="navbar navbar-default navbar-inline text-right" role="navigation">
+            <div class="container-fluid dropdown dropup">
+              <a href="#" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="ion-ios7-plus-empty"></span></a>
+              <ul class="dropdown-menu dropdown-menu-right text-left">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer> 
+      </aside>
+      
+    </div>
+    
+
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrapapp JS -->
+    <script src="../../../dist/js/app.js"></script>
+  </body>
+</html>
