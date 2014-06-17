@@ -5,4 +5,5 @@ $(document).ready(function () {
   $('[data-toggle="aside"]').click(function () {
     $('.aside').toggle('slow');
   });
+  $('[data-toggle="popover"]').popover({ trigger: "hover" });
 });
