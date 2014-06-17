@@ -1,0 +1,20 @@
+.form-group {
+  /* We need relative positioning for the parent */
+  position: relative;
+}
+.float-label {
+  /* Import Screen-reader only */
+  .sr-only;
+  .opacity (0);
+  .transition (all 1s ease-in);
+  .tooltip-inner;
+}
+input:focus + .float-label,
+textarea:focus + .float-label {
+  width: auto;
+  height: auto;
+  .opacity (1);
+  clip: auto;
+  right: 100%;
+  top: 5px;
+}
