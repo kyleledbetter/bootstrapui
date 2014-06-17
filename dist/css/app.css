@@ -5306,6 +5306,10 @@ body,
 .navbar-inline .navbar-nav {
   float: none;
 }
+.nav-inline > li {
+  float: none;
+  display: inline-block;
+}
 .nav-header {
   text-transform: uppercase;
   padding: 10px 15px;
