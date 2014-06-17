@@ -5213,12 +5213,12 @@ body,
 .sidebar > .content {
   padding: 0px;
 }
-.sidebar .nav-stacked *[class*="ion"] {
+.sidebar .nav-stacked *[class*="fa-"] {
   font-size: 16px;
   width: 16px;
-  text-align: center;
   margin-right: 10px;
   display: inline-block;
+  text-align: center;
 }
 .aside {
   -webkit-flex: none;
