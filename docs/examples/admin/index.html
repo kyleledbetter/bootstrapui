@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Admin App GUI for Bootstrap</title>
+
+    <!-- Bootstrapapp CSS -->
+    <link href="../../../dist/css/app.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="../../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+  </head>
+
+  <body class="body-default body-gradient" style="background-size: cover;">
+    
+    <div class="wrapper flex-columns">
+      
+      <article class="main flex-rows">
+        <section class="content">
+          <div class="pad-xxl">
+            <!-- Embed start -->
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <div class="panel panel-inverse">
+                  <div class="panel-body">
+                    <h3 class="push-bottom-md text-center">Login</h3>
+                    <form role="form" action="dashboard.html">
+                      <div class="collapse collapse-email in">
+                        <div class="form-group">
+                          <a class="btn btn-block btn-social btn-facebook">
+                            <span aria-hidden="true" class="fa fa-facebook"></span> Sign in with Facebook
+                          </a>
+                        </div>
+                        <div class="form-group">
+                          <a class="btn btn-block btn-social btn-twitter">
+                            <span aria-hidden="true" class="fa fa-twitter"></span> Sign in with Twitter
+                          </a>
+                        </div>
+                        <div class="form-group">
+                          <a class="btn btn-block btn-social btn-google-plus">
+                            <span aria-hidden="true" class="fa fa-google"></span> Sign in with Google
+                          </a>
+                        </div>
+                        <div class="form-group-last">
+                          <a href=".collapse-email" data-toggle="collapse" class="btn btn-block btn-social btn-default">
+                            <span aria-hidden="true" class="fa fa-envelope-o"></span> Sign in with Email
+                          </a>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-email">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="username" placeholder="Username">
+                          <label for="username" class="float-label">Username</label>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control" id="password" placeholder="Password">
+                          <label for="password" class="float-label">Password</label>
+                        </div>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-default btn-lg btn-block">Login</button>
+                        </div>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <button role="button" class="btn btn-inverse btn-block">Forgot User</button>
+                            </div>
+                            <div class="col-sm-6">
+                              <button role="button" class="btn btn-inverse btn-block">Forgot Pass</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group-last">
+                          <a href=".collapse-email" data-toggle="collapse" class="btn btn-block btn-social btn-inverse">
+                            <span aria-hidden="true" class="fa fa-ellipsis-h"></span> Sign in with Social Network
+                          </a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Embed end -->
+          </div>
+        </section>
+      </article>
+      
+    </div>
+    
+
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrapapp JS -->
+    <script src="../../../dist/js/app.js"></script>
+  </body>
+</html>
