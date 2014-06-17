@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Membership App UI for Bootstrap</title>
+
+    <!-- Bootstrapapp CSS -->
+    <link href="../../../dist/css/app.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="../../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+  </head>
+
+  <body class="body-default">
+    
+    <div class="wrapper flex-columns">
+      
+      <article class="main main-default flex-rows">
+        <header class="header">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+              <a class="btn btn-none navbar-btn pull-left push-right" data-toggle="sidebar"><span aria-hidden="true" class="fa fa-bars"></span></a>
+              <a class="navbar-brand" href="index.html"><span aria-hidden="true" class="fa fa-credit-card"></span> Members</a>
+              <form class="navbar-form navbar-right" role="search">
+                <div class="input-group input-group-sm input-group-round">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </nav>
+        </header>
+        <section class="content content-default">
+          <div class="carousel pull-top-md pull-left-md pull-right-md">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="http://lorempixel.com/1200/300/people/" width="100%">
+                <div class="carousel-caption" style="left:30px;right:30px;bottom:0;">
+                  <div class="media">
+                    <div class="media-body">
+                      <h1 class="media-heading">Media heading</h1>
+                      <p>Art party fap cred</p>
+                      <div class="btn-toolbar push-top">
+                        <a href="#" class="btn btn-round-wide-lg btn-success">Subscribe Today!</a> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pad-xxl">
+            <!-- Embed start -->
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <a href="profile.html" class="btn btn-xs btn-success pull-right">Save</a>
+                <form role="form">
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <div class="media">
+                        <a class="pull-left btn btn-circle btn-default" href="#" data-toggle="tooltip" data-placement="bottom" title="Upload Avatar">
+                          <span aria-hidden="true" class="fa fa-cloud-upload"></span>
+                        </a>
+                        <div class="media-body push-right-sm">
+                          <input type="text" class="form-control input-lg" value="Firstname Lastname">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer">
+                      <div class="media">
+                        <span class="pull-left fa fa-quote-left fa-2x text-muted"></span>
+                        <span class="pull-right fa fa-quote-right fa-2x text-muted"></span>
+                        <div class="media-body">
+                          <textarea class="form-control">Echo Park Godard locavore hella church-key sriracha bitters Neutra Etsy artisan.</textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <div class="form-group push-bottom-none">
+                            <input type="text" class="form-control" id="facebook-username" placeholder="Facebook Username">
+                            <label for="facebook-username" class="float-label">Facebook</label>
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <div class="form-group push-bottom-none">
+                            <input type="text" class="form-control" id="twitter-username" placeholder="Twitter Username">
+                            <label for="twitter-username" class="float-label">Twitter</label>
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <div class="form-group push-bottom-none">
+                            <input type="text" class="form-control" id="google-username" placeholder="Google Username">
+                            <label for="google-username" class="float-label">Google</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- Embed end -->
+          </div>
+        </section>
+        <footer class="footer">
+          <nav class="navbar navbar-default navbar-inline text-center" role="navigation">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer> 
+      </article>
+      <aside class="sidebar sidebar-inverse flex-rows" style="display:none">
+        <header class="header">
+          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
+            <a class="navbar-brand push-left-xs" href="#">Menu</a>
+          </nav>
+        </header>
+        <section class="content content-inverse">
+          <ul class="nav nav-stacked nav-inverse">
+            <li class="nav-header">Membership</li>
+            <li><a href="index.html"><span aria-hidden="true" class="fa fa-lock"></span> Login</a></li>
+            <li><a href="packages.html"><span aria-hidden="true" class="fa fa-cubes"></span> Packages</a></li>
+            <li><a href="package-detail.html"><span aria-hidden="true" class="fa fa-cube"></span> Package Detail</a></li>
+            <li><a href="checkout.html"><span aria-hidden="true" class="fa fa-shopping-cart"></span> Checkout</a></li>
+            <li><a href="receipt.html"><span aria-hidden="true" class="fa fa-file-text-o"></span> Receipt</a></li>
+            <li><a href="downloads.html"><span aria-hidden="true" class="fa fa-download"></span> Downloads</a></li>
+            <li><a href="download-detail.html"><span aria-hidden="true" class="fa fa-file"></span> Download Detail</a></li>
+            <li><a href="groups.html"><span aria-hidden="true" class="fa fa-users"></span> Groups</a></li>
+            <li><a href="members.html"><span aria-hidden="true" class="fa fa-user"></span> Members</a></li>
+            <li class="active"><a href="profile.html"><span aria-hidden="true" class="fa fa-file-image-o"></span> Profile</a></li>
+            <li><a href="profile-edit.html"><span aria-hidden="true" class="fa fa-pencil-square-o"></span> Edit Profile</a></li>
+          </ul>
+        </section>
+      </aside>
+      
+    </div>
+    
+
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrapapp JS -->
+    <script src="../../../dist/js/app.js"></script>
+  </body>
+</html>
