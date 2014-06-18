@@ -9,7 +9,6 @@ $(document).ready(function () {
   $('[data-toggle="popover"]').popover({ trigger: "hover" });
 });
 
-
 var colors = new Array(
   [62,35,255],
   [60,255,60],

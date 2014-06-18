@@ -18,209 +18,341 @@
     <link href="../../../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
   </head>
 
-  <body class="body-default">
+  <body class="body-default with-transitions">
     
     <div class="wrapper flex-columns">
       
       <article class="main main-default flex-rows">
         <header class="header">
-          <nav class="navbar navbar-default" role="navigation">
+          <nav class="navbar navbar-info" role="navigation">
             <div class="container-fluid">
               <a class="btn btn-none navbar-btn pull-left push-right" data-toggle="sidebar"><span aria-hidden="true" class="fa fa-bars"></span></a>
+              <a class="btn btn-none navbar-btn pull-right" data-toggle="aside"><span aria-hidden="true" class="fa fa-align-right"></span></a>
+              <span class="dropdown pull-right">
+                <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
+                  <span class="badge badge-info-light">2</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Nils George has an open order</a></li>
+                  <li><a href="#">Lorenzo Silva's order was declined</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">View all</a></li>
+                </ul>
+              </span>
+              <span class="dropdown pull-right">
+                <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
+                  <img src="http://lorempixel.com/18/18/people/" class="img-circle push-right-xs"> username <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Sign Out</a></li>
+                </ul>
+              </span>
               <form class="navbar-form navbar-left" role="search">
                 <div class="input-group input-group-sm input-group-round">
                   <input type="text" class="form-control" placeholder="Search">
                   <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+                    <button class="btn btn-info" type="button"><span class="fa fa-search"></span></button>
                   </span>
                 </div>
               </form>
             </div>
           </nav>
         </header>
-        <section class="content content-default">
-          <div class="pad-sm">
+        <section class="content content-default bg-muted-light">
+          <div class="panel panel-info pull-top-md pull-right-md pull-left-md radius-none push-bottom-none">
+            <div class="chart-line-bar pad">
+              <svg style="height: 400px;"></svg>
+              <ul class="nav nav-round nav-inline text-center text-sm" data-spy="affix" data-offset-top="10">
+                <li class="active"><a href="#">Subscriptions</a></li>
+                <li><a href="#">Revenue</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Members</a></li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="pad-top">
             <!-- Embed start -->
-            <div class="carousel">
-              <div class="carousel-inner">
-                <div class="item active">
-                  <img src="http://lorempixel.com/1200/400/nightlife/" width="100%">
-                  <div class="carousel-caption" style="left:30px;right:30px;bottom:0;">
-                    <div class="media text-left">
-                      <a class="pull-left" href="#">
-                        <img src="http://lorempixel.com/128/128/nightlife/9" class="media-object img-circle">
-                      </a>
-                      <div class="media-body">
-                        <p class="text-muted">Art party fap cred</p>
-                        <h1 class="media-heading">Media heading</h1>
-                        <div class="btn-toolbar push-top">
-                          <a href="#" class="btn btn-round-wide-sm btn-success"><span aria-hidden="true" class="ion-ios7-play"></span> Play</a> 
-                          <a href="#" class="btn btn-round-wide-sm btn-default btn-outline">Follow</a> 
-                          <a href="#" class="btn btn-round-sm btn-default btn-outline"><span class="ion-ios7-more"></span></a>
+            <div class="row">
+              <div class="col-xs-6 col-md-3">
+                <div class="panel panel-info radius-none text-center">
+                    <div class="h1"><span class="text-sm">$</span> 525<span class="text-sm">.00</span></div>
+                    <div class="h6 pull-bottom">Revenue Today</div>
+                    <div class="chart-line-1"><svg style="height: 50px;"></svg></div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <div class="panel panel-success radius-none text-center">
+                  <div class="h1">15 <span class="fa fa-caret-up text-sm"></span></div>
+                  <div class="h6 pull-bottom">Subscriptions Today</div>
+                  <div class="chart-line-2"><svg style="height: 50px;"></svg></div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <div class="panel panel-warning radius-none text-center">
+                  <div class="h1">9,238</div>
+                  <div class="h6 pull-bottom">Total Members</div>
+                  <div class="chart-line-3"><svg style="height: 50px;"></svg></div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <div class="panel panel-danger radius-none text-center">
+                  <div class="h1">10 <span class="fa fa-caret-down text-sm"></span></div>
+                  <div class="h6 pull-bottom">Expirations Today</div>
+                  <div class="chart-line-4"><svg style="height: 50px;"></svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="panel panel-default radius-none">
+                  <div class="panel-body">
+                    <h3 class="page-header push-top-none">Recent Orders</h3>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-round nav-inline text-md push-left-sm">
+                      <li class="active"><a href="#all" data-toggle="tab">All</a></li>
+                      <li><a href="#processed" data-toggle="tab">Processed</a></li>
+                      <li><a href="#open" data-toggle="tab">Open</a></li>
+                      <li><a href="#declined" data-toggle="tab">Declined</a></li>
+                      <li><a href="#cancelled" data-toggle="tab">Cancelled</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content push-top">
+                      <div class="tab-pane active" id="all">
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <td><span class="badge badge-warning badge-block">Open</span></td>
+                              <td><a href="#">Order #97</a> by <a href="#">Nills George</a></td>
+                              <td><span class="date">06/18/2014, 3:30PM</span></td>
+                              <td class="text-right"><span class="h4">$100.00</span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="badge badge-info badge-block">Processed</span></td>
+                              <td><a href="#">Order #96</a> by <a href="#">Amy Murphy</a></td>
+                              <td><span class="date">06/18/2014, 2:13PM</span></td>
+                              <td class="text-right"><span class="h4">$25.00</span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="badge badge-success badge-block">Complete</span></td>
+                              <td><a href="#">Order #95</a> by <a href="#">Adam Julien</a></td>
+                              <td><span class="date">06/17/2014, 11:43AM</span></td>
+                              <td class="text-right"><span class="h4">$10.00</span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="badge badge-success badge-block">Complete</span></td>
+                              <td><a href="#">Order #94</a> by <a href="#">Emily Kramer</a></td>
+                              <td><span class="date">06/15/2014, 10:11AM</span></td>
+                              <td class="text-right"><span class="h4">$50.00</span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="badge badge-danger badge-block">Declined</span></td>
+                              <td><a href="#">Order #93</a> by <a href="#">Lorenzo Silva</a></td>
+                              <td><span class="date">06/14/2014, 8:56AM</span></td>
+                              <td class="text-right"><span class="h4">$75.00</span></td>
+                            </tr>
+                        </tbody>
+                      </table>
+                      </div>
+                      <div class="tab-pane" id="processed">Processed</div>
+                      <div class="tab-pane" id="open">Open</div>
+                      <div class="tab-pane" id="declined">Declined</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Begin panel -->
+                <div class="panel panel-default radius-none">
+                  <div class="panel-body pad-bottom-none">
+                    <h3 class="push-top-none">Most Popular Packages</h3>
+                  </div>
+                  <div class="list-group">
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <span class="badge badge-info">98</span>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#"><span class="fa fa-cube"></span> Package Name</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <span class="badge badge-info">76</span>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#"><span class="fa fa-cube"></span> Package Name</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <span class="badge badge-info">63</span>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#"><span class="fa fa-cube"></span> Package Name</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <span class="badge badge-info">45</span>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#"><span class="fa fa-cube"></span> Package Name</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <span class="badge badge-info">41</span>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#"><span class="fa fa-cube"></span> Package Name</a></h5>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <!-- End panel -->
               </div>
-            </div>
-            <ul class="nav nav-underline nav-default" data-spy="affix" data-offset-top="10">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Messages</a></li>
-            </ul>
-            <hr class="hr-default">
-            <div class="row">
-              <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                  <img src="http://lorempixel.com/210/210/nightlife/1" width="100%">
-                </a>
+              <div class="col-sm-5">
+                <!-- Begin panel -->
+                <div class="panel panel-default radius-none">
+                  <div class="panel-body pad-bottom-none">
+                    <h3 class="push-top-none">New Members</h3>
+                  </div>
+                  <div class="list-group">
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-twitter"></span></a>
+                        </div>
+                        <img src="http://lorempixel.com/20/20/people/9" class="img-circle pull-left">
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#">Anaida Parghel <small class="text-sm">AnaidaParghel</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-facebook"></span></a>
+                        </div>
+                        <img src="http://lorempixel.com/20/20/people/1" class="img-circle pull-left">
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#">Lucía Gómez <small class="text-sm">luciagomez</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-facebook"></span></a>
+                        </div>
+                        <img src="http://lorempixel.com/20/20/people/2" class="img-circle pull-left">
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#">Gerald Gardner <small class="text-sm">Gerald_Gardner</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-google"></span></a>
+                        </div>
+                        <img src="http://lorempixel.com/20/20/people/3" class="img-circle pull-left">
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#">Douglas Rice <small class="text-sm">DouglasR</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-twitter"></span></a>
+                        </div>
+                        <img src="http://lorempixel.com/20/20/people/4" class="img-circle pull-left">
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#">Lauren Hall <small class="text-sm">haller</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End panel -->
+                <!-- Begin panel -->
+                <div class="panel panel-default radius-none">
+                  <div class="panel-body pad-bottom-none">
+                    <h3 class="push-top-none">Latest Files</h3>
+                  </div>
+                  <div class="list-group">
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-download"></span></a>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="download-detail.html"><span class="fa fa-file-archive-o"></span> File Name <small>filename.zip</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-download"></span></a>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="download-detail.html"><span class="fa fa-file-audio-o"></span> File Name <small>filename.mp3</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-download"></span></a>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="download-detail.html"><span class="fa fa-file-excel-o"></span> File Name <small>filename.xlsx</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-download"></span></a>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="download-detail.html"><span class="fa fa-file-word-o"></span> File Name <small>filename.docx</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-download"></span></a>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="download-detail.html"><span class="fa fa-file-powerpoint-o"></span> File Name <small>filename.ppt</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End panel -->
               </div>
-              <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                  <img src="http://lorempixel.com/210/210/nightlife/2" width="100%">
-                </a>
-              </div>
-              <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                  <img src="http://lorempixel.com/210/210/nightlife/3" width="100%">
-                </a>
-              </div>
-              <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                  <img src="http://lorempixel.com/210/210/nightlife/4" width="100%">
-                </a>
-              </div>
-            </div>
-            <div class="table-responsive">
-              <table class="table table-hover table-default">
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Table heading</th>
-                    <th>Table heading</th>
-                    <th>Table heading</th>
-                    <th>Table heading</th>
-                    <th>Table heading</th>
-                    <th>Table heading</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                  </tr>
-                  <tr>
-                    <td>8</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                  </tr>
-                  <tr>
-                    <td>9</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                  </tr>
-                  <tr>
-                    <td>10</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                  </tr>
-                  <tr>
-                    <td>11</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                  </tr>
-                  <tr>
-                    <td>12</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <!-- Embed end -->
           </div>
         </section>
-        <footer class="footer">
+        <footer class="footer" style="display:none">
           <nav class="navbar navbar-default navbar-inline text-center" role="navigation">
             <div class="container-fluid">
               <ul class="nav navbar-nav">
@@ -233,9 +365,9 @@
           </nav>
         </footer> 
       </article>
-      <aside class="sidebar sidebar-inverse flex-rows">
+      <aside class="sidebar vibrancy-dark flex-rows">
         <header class="header">
-          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
+          <nav class="navbar navbar-inverse vibrancy-dark navbar-inline" role="navigation">
             <a class="navbar-brand push-left-xs" href="#">Menu</a>
           </nav>
         </header>
@@ -250,8 +382,114 @@
             <li><a href="reports.html"><span aria-hidden="true" class="fa fa-bar-chart-o"></span> Reports</a></li>
           </ul>
         </section>
+        <footer class="footer">
+          <nav class="navbar navbar-inverse vibrancy-dark navbar-inline text-right" role="navigation">
+            <div class="container-fluid dropdown dropup">
+              <a href="#" class="btn btn-inverse navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="fa fa-plus"></span></a>
+              <ul class="dropdown-menu dropdown-menu-right text-left">
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Package</a></li>
+                <li><a href="#">Group</a></li>
+                <li><a href="#">Smart Group</a></li>
+                <li><a href="#">Member</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
       </aside>
-      
+      <aside class="aside aside-inverse flex-rows" style="display:none">
+        <header class="header">
+          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
+            <a class="navbar-brand push-left-xs" href="#">Activity</a>
+          </nav>
+        </header>
+        <section class="content content-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
+            <div class="container-fluid dropdown dropup">
+              <a href="#" class="btn btn-inverse navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="ion-ios7-gear-outline"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+      </aside>
     </div>
     
 
@@ -259,5 +497,10 @@
     <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- Bootstrapapp JS -->
     <script src="../../../dist/js/app.js"></script>
+    <!-- Docs Example JS -->
+    <script src="../../assets/js/d3/d3.v3.js"></script>
+    <script src="../../assets/js/nvd3/nv.d3.min.js"></script>
+    <script src="../../assets/js/nvd3/line-bar.js"></script>
+    <script src="../../assets/js/nvd3/line.js"></script>
   </body>
 </html>

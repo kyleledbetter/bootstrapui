@@ -2156,7 +2156,7 @@ fieldset[disabled] .btn-success.active {
 .btn-info {
   color: #ffffff;
   background-color: #5bc0de;
-  border-color: #46b8da;
+  border-color: #2390b0;
 }
 .btn-info:hover,
 .btn-info:focus,
@@ -2165,7 +2165,7 @@ fieldset[disabled] .btn-success.active {
 .open .dropdown-toggle.btn-info {
   color: #ffffff;
   background-color: #39b3d7;
-  border-color: #269abc;
+  border-color: #19667d;
 }
 .btn-info:active,
 .btn-info.active,
@@ -2188,7 +2188,7 @@ fieldset[disabled] .btn-info:active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
   background-color: #5bc0de;
-  border-color: #46b8da;
+  border-color: #2390b0;
 }
 .btn-info .badge {
   color: #5bc0de;
@@ -4353,60 +4353,60 @@ a.list-group-item-danger.active:focus {
   border-bottom-color: #555555;
 }
 .panel-success {
-  border-color: #d6e9c6;
+  border-color: #648f00;
 }
 .panel-success > .panel-heading {
-  color: #3c763d;
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
+  color: #ffffff;
+  background-color: #648f00;
+  border-color: #648f00;
 }
 .panel-success > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #d6e9c6;
+  border-top-color: #648f00;
 }
 .panel-success > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #d6e9c6;
+  border-bottom-color: #648f00;
 }
 .panel-info {
-  border-color: #bce8f1;
+  border-color: #5bc0de;
 }
 .panel-info > .panel-heading {
-  color: #31708f;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
+  color: #ffffff;
+  background-color: #5bc0de;
+  border-color: #5bc0de;
 }
 .panel-info > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #bce8f1;
+  border-top-color: #5bc0de;
 }
 .panel-info > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #bce8f1;
+  border-bottom-color: #5bc0de;
 }
 .panel-warning {
-  border-color: #faebcc;
+  border-color: #c77c11;
 }
 .panel-warning > .panel-heading {
-  color: #8a6d3b;
-  background-color: #fcf8e3;
-  border-color: #faebcc;
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border-color: #c77c11;
 }
 .panel-warning > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #faebcc;
+  border-top-color: #c77c11;
 }
 .panel-warning > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #faebcc;
+  border-bottom-color: #c77c11;
 }
 .panel-danger {
-  border-color: #ebccd1;
+  border-color: #a02622;
 }
 .panel-danger > .panel-heading {
-  color: #a94442;
-  background-color: #f2dede;
-  border-color: #ebccd1;
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #a02622;
 }
 .panel-danger > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #ebccd1;
+  border-top-color: #a02622;
 }
 .panel-danger > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #ebccd1;
+  border-bottom-color: #a02622;
 }
 .well {
   min-height: 20px;
@@ -5285,6 +5285,12 @@ body,
   color: #a1a4ab;
   border-left: 1px solid #222326;
 }
+.aside-inverse a {
+  color: #797c87;
+}
+.aside-inverse a:hover {
+  color: #c9cbcf;
+}
 .main-inverse {
   background-color: #161719;
   color: #ffffff;
@@ -5297,6 +5303,69 @@ body,
   .aside-2 { order: 3; }
   .footer  { order: 4; }
   */
+}
+.bg-muted {
+  background-color: #999999;
+}
+.bg-muted-light {
+  background-color: #eeeeee;
+}
+.bg-muted-dark {
+  background-color: #555555;
+}
+.bg-success {
+  background-color: #648f00;
+}
+.bg-success-light {
+  background-color: #99dc00;
+}
+.bg-success-dark {
+  background-color: #2f4300;
+}
+.bg-info {
+  background-color: #5bc0de;
+}
+.bg-info-light {
+  background-color: #9bd8eb;
+}
+.bg-info-dark {
+  background-color: #28a1c5;
+}
+.bg-primary {
+  background-color: #555555;
+}
+.bg-primary-light {
+  background-color: #7c7c7c;
+}
+.bg-primary-dark {
+  background-color: #2f2f2f;
+}
+.bg-warning {
+  background-color: #f0ad4e;
+}
+.bg-warning-light {
+  background-color: #f6ce95;
+}
+.bg-warning-dark {
+  background-color: #df8a13;
+}
+.bg-danger {
+  background-color: #d9534f;
+}
+.bg-danger-light {
+  background-color: #F26C63;
+}
+.bg-danger-dark {
+  background-color: #b52b27;
+}
+.bg-inverse {
+  background-color: #222326;
+}
+.bg-inverse-light {
+  background-color: #46484e;
+}
+.bg-inverse-dark {
+  background-color: #000000;
 }
 .navbar-inline .navbar-brand,
 .navbar-inline .navbar-nav > li {
@@ -5394,8 +5463,77 @@ body,
     border-bottom-color: #ffffff;
   }
 }
-.btn {
-  text-transform: uppercase;
+.nav-round > li > a {
+  border-radius: 40px;
+  padding: 6px 20px;
+}
+.nav-round > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.nav-round > li + li {
+  margin-left: 2px;
+}
+.nav-round > li.active > a,
+.nav-round > li.active > a:hover,
+.nav-round > li.active > a:focus {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.navbar-primary,
+.navbar-success,
+.navbar-info,
+.navbar-danger {
+  color: #fff;
+}
+.navbar-primary {
+  background-color: #555555;
+}
+.navbar-primary input,
+.navbar-primary .form-control {
+  border-color: #494949;
+}
+.navbar-primary a {
+  color: #000000;
+}
+.navbar-success {
+  background-color: #648f00;
+}
+.navbar-success input,
+.navbar-success .form-control {
+  border-color: #527600;
+}
+.navbar-success a {
+  color: #000000;
+}
+.navbar-info {
+  background-color: #5bc0de;
+}
+.navbar-info input,
+.navbar-info .form-control {
+  border-color: #2390b0;
+}
+.navbar-info a {
+  color: #175b70;
+}
+.navbar-warning {
+  background-color: #f0ad4e;
+}
+.navbar-warning input,
+.navbar-warning .form-control {
+  border-color: #eea236;
+}
+.navbar-warning a {
+  color: #81500b;
+}
+.navbar-danger {
+  background-color: #d9534f;
+}
+.navbar-danger input,
+.navbar-danger .form-control {
+  border-color: #d43f3a;
+}
+.navbar-danger a {
+  color: #611715;
 }
 .btn-inverse {
   color: #ffffff;
@@ -5585,6 +5723,40 @@ fieldset[disabled] .btn-inverse.active {
 .badge-danger[href]:focus {
   background-color: #c9302c;
 }
+.badge-primary-light {
+  background-color: #6f6f6f;
+}
+.badge-success-light {
+  background-color: #88c200;
+}
+.badge-info-light {
+  background-color: #85d0e7;
+}
+.badge-warning-light {
+  background-color: #f4c37d;
+}
+.badge-danger-light {
+  background-color: #e27c79;
+}
+.badge-primary-dark {
+  background-color: dark(#555555, 10%);
+}
+.badge-success-dark {
+  background-color: dark(#648f00, 10%);
+}
+.badge-info-dark {
+  background-color: dark(#5bc0de, 10%);
+}
+.badge-warning-dark {
+  background-color: dark(#f0ad4e, 10%);
+}
+.badge-danger-dark {
+  background-color: dark(#d9534f, 10%);
+}
+.badge-block {
+  display: block;
+  width: 100%;
+}
 .table-inverse.table > thead > tr > th,
 .table-inverse.table > tbody > tr > th,
 .table-inverse.table > tfoot > tr > th,
@@ -5667,6 +5839,9 @@ fieldset[disabled] .btn-inverse.active {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.text-upper {
+  text-transform: uppercase;
+}
 .text-date {
   color: #999999;
   text-rendering: optimizeLegibility;
@@ -5720,10 +5895,10 @@ fieldset[disabled] .btn-inverse.active {
 .text-inverse {
   color: #222326;
 }
-.text-inverse-inverse {
+.text-inverse-light {
   color: #46484e;
 }
-.text-inverse-inverse {
+.text-inverse-dark {
   color: #000000;
 }
 .text-acqua {
@@ -6096,6 +6271,9 @@ fieldset[disabled] .btn-inverse.active {
 .pull-bottom {
   margin-bottom: -20px;
 }
+.pull-bottom-xxxl {
+  margin-bottom: -100px;
+}
 .pull-bottom-xxl {
   margin-bottom: -40px;
 }
@@ -6138,10 +6316,20 @@ fieldset[disabled] .btn-inverse.active {
 .pull-left-none {
   margin-left: 0px;
 }
+.panel {
+  position: relative;
+}
+.panel-inverse,
+.panel-primary,
+.panel-success,
+.panel-info,
+.panel-warning,
+.panel-danger {
+  color: rgba(0, 0, 0, 0.4);
+}
 .panel-inverse {
   border-color: #222326;
   background-color: #3a3c41;
-  color: #fff;
 }
 .panel-inverse > .panel-heading {
   color: #ffffff;
@@ -6153,6 +6341,21 @@ fieldset[disabled] .btn-inverse.active {
 }
 .panel-inverse > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #222326;
+}
+.panel-primary {
+  background-color: #6f6f6f;
+}
+.panel-success {
+  background-color: #88c200;
+}
+.panel-info {
+  background-color: #85d0e7;
+}
+.panel-warning {
+  background-color: #efa945;
+}
+.panel-danger {
+  background-color: #d74b47;
 }
 .form-group {
   /* We need relative positioning for the parent */
@@ -6189,4 +6392,682 @@ textarea:focus + .float-label {
   clip: auto;
   right: 100%;
   top: 5px;
+}
+/********************
+ * HTML CSS
+ */
+.chartWrap {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/********************
+  Box shadow and border radius styling
+*/
+.nvtooltip.with-3d-shadow,
+.with-3d-shadow .nvtooltip {
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+/********************
+ * TOOLTIP CSS
+ */
+.nvtooltip {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  font-family: Arial;
+  font-size: 13px;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*Give tooltips that old fade in transition by
+    putting a "with-transitions" class on the container div.
+*/
+.nvtooltip.with-transitions,
+.with-transitions .nvtooltip {
+  transition: opacity 250ms linear;
+  -moz-transition: opacity 250ms linear;
+  -webkit-transition: opacity 250ms linear;
+  transition-delay: 250ms;
+  -moz-transition-delay: 250ms;
+  -webkit-transition-delay: 250ms;
+}
+.nvtooltip.x-nvtooltip,
+.nvtooltip.y-nvtooltip {
+  padding: 8px;
+}
+.nvtooltip h3 {
+  margin: 0;
+  padding: 4px 14px;
+  line-height: 18px;
+  font-weight: normal;
+  background-color: rgba(247, 247, 247, 0.75);
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+.nvtooltip p {
+  margin: 0;
+  padding: 5px 14px;
+  text-align: center;
+}
+.nvtooltip span {
+  display: inline-block;
+  margin: 2px 0;
+}
+.nvtooltip table {
+  margin: 6px;
+  border-spacing: 0;
+}
+.nvtooltip table td {
+  padding: 2px 9px 2px 0;
+  vertical-align: middle;
+}
+.nvtooltip table td.key {
+  font-weight: normal;
+}
+.nvtooltip table td.value {
+  text-align: right;
+  font-weight: bold;
+}
+.nvtooltip table tr.highlight td {
+  padding: 1px 9px 1px 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.nvtooltip table td.legend-color-guide div {
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+}
+.nvtooltip .footer {
+  padding: 3px;
+  text-align: center;
+}
+.nvtooltip-pending-removal {
+  position: absolute;
+  pointer-events: none;
+}
+/********************
+ * SVG CSS
+ */
+svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Trying to get SVG to act like a greedy block in all browsers */
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+svg text {
+  font: normal 12px Arial;
+}
+svg .title {
+  font: bold 14px Arial;
+}
+.nvd3 .nv-background {
+  fill: white;
+  fill-opacity: 0;
+  /*
+  pointer-events: none;
+  */
+}
+.nvd3.nv-noData {
+  font-size: 18px;
+  font-weight: bold;
+}
+/**********
+*  Brush
+*/
+.nv-brush .extent {
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+/**********
+*  Legend
+*/
+.nvd3 .nv-legend .nv-series {
+  cursor: pointer;
+}
+.nvd3 .nv-legend .disabled circle {
+  fill-opacity: 0;
+}
+/**********
+*  Axes
+*/
+.nvd3 .nv-axis {
+  pointer-events: none;
+}
+.nvd3 .nv-axis path {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .15;
+  shape-rendering: crispEdges;
+}
+.nvd3 .nv-axis path.domain {
+  stroke-opacity: .75;
+}
+.nvd3 .nv-axis.nv-x path.domain {
+  stroke-opacity: 0;
+}
+.nvd3 .nv-axis line {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.2);
+  shape-rendering: crispEdges;
+}
+.nvd3 .nv-axis .zero line,
+.nvd3 .nv-axis line.zero {
+  stroke-opacity: .75;
+}
+.nvd3 .nv-axis .nv-axisMaxMin text {
+  font-weight: bold;
+  fill: rgba(0, 0, 0, 0.25);
+}
+.nvd3 .x .nv-axis .nv-axisMaxMin text,
+.nvd3 .x2 .nv-axis .nv-axisMaxMin text,
+.nvd3 .x3 .nv-axis .nv-axisMaxMin text {
+  text-anchor: middle;
+}
+/**********
+*  Brush
+*/
+.nv-brush .resize path {
+  fill: #eee;
+  stroke: #666;
+}
+/**********
+*  Bars
+*/
+.nvd3 .nv-bars .negative rect {
+  zfill: brown;
+}
+.nvd3 .nv-bars rect {
+  zfill: steelblue;
+  fill-opacity: .75;
+  transition: fill-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear;
+}
+.nvd3 .nv-bars rect.hover {
+  fill-opacity: 1;
+}
+.nvd3 .nv-bars .hover rect {
+  fill: lightblue;
+}
+.nvd3 .nv-bars text {
+  fill: rgba(0, 0, 0, 0);
+}
+.nvd3 .nv-bars .hover text {
+  fill: #000000;
+}
+/**********
+*  Bars
+*/
+.nvd3 .nv-multibar .nv-groups rect,
+.nvd3 .nv-multibarHorizontal .nv-groups rect,
+.nvd3 .nv-discretebar .nv-groups rect {
+  stroke-opacity: 0;
+  transition: fill-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear;
+}
+.nvd3 .nv-multibar .nv-groups rect:hover,
+.nvd3 .nv-multibarHorizontal .nv-groups rect:hover,
+.nvd3 .nv-discretebar .nv-groups rect:hover {
+  fill-opacity: 1;
+}
+.nvd3 .nv-discretebar .nv-groups text,
+.nvd3 .nv-multibarHorizontal .nv-groups text {
+  font-weight: bold;
+  fill: #000000;
+  stroke: rgba(0, 0, 0, 0);
+}
+/***********
+*  Pie Chart
+*/
+.nvd3.nv-pie path {
+  stroke-opacity: 0;
+  transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
+}
+.nvd3.nv-pie .nv-slice text {
+  stroke: #000;
+  stroke-width: 0;
+}
+.nvd3.nv-pie path {
+  stroke: #fff;
+  stroke-width: 1px;
+  stroke-opacity: 1;
+}
+.nvd3.nv-pie .hover path {
+  fill-opacity: .7;
+}
+.nvd3.nv-pie .nv-label {
+  pointer-events: none;
+}
+.nvd3.nv-pie .nv-label rect {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+/**********
+* Lines
+*/
+.nvd3 .nv-groups path.nv-line {
+  fill: none;
+  stroke-width: 1.5px;
+  /*
+  stroke-linecap: round;
+  shape-rendering: geometricPrecision;
+
+  transition: stroke-width 250ms linear;
+  -moz-transition: stroke-width 250ms linear;
+  -webkit-transition: stroke-width 250ms linear;
+
+  transition-delay: 250ms
+  -moz-transition-delay: 250ms;
+  -webkit-transition-delay: 250ms;
+  */
+}
+.nvd3 .nv-groups path.nv-line.nv-thin-line {
+  stroke-width: 1px;
+}
+.nvd3 .nv-groups path.nv-area {
+  stroke: none;
+  /*
+  stroke-linecap: round;
+  shape-rendering: geometricPrecision;
+
+  stroke-width: 2.5px;
+  transition: stroke-width 250ms linear;
+  -moz-transition: stroke-width 250ms linear;
+  -webkit-transition: stroke-width 250ms linear;
+
+  transition-delay: 250ms
+  -moz-transition-delay: 250ms;
+  -webkit-transition-delay: 250ms;
+  */
+}
+.nvd3 .nv-line.hover path {
+  stroke-width: 6px;
+}
+/*
+.nvd3.scatter .groups .point {
+  fill-opacity: 0.1;
+  stroke-opacity: 0.1;
+}
+  */
+.nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+.nvd3.nv-scatter.nv-single-point .nv-groups .nv-point {
+  fill-opacity: .5 !important;
+  stroke-opacity: .5 !important;
+}
+.with-transitions .nvd3 .nv-groups .nv-point {
+  transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -moz-transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -webkit-transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+}
+.nvd3.nv-scatter .nv-groups .nv-point.hover,
+.nvd3 .nv-groups .nv-point.hover {
+  stroke-width: 7px;
+  fill-opacity: .95 !important;
+  stroke-opacity: .95 !important;
+}
+.nvd3 .nv-point-paths path {
+  stroke: #aaa;
+  stroke-opacity: 0;
+  fill: #eee;
+  fill-opacity: 0;
+}
+.nvd3 .nv-indexLine {
+  cursor: ew-resize;
+}
+/**********
+* Distribution
+*/
+.nvd3 .nv-distribution {
+  pointer-events: none;
+}
+/**********
+*  Scatter
+*/
+/* **Attempting to remove this for useVoronoi(false), need to see if it's required anywhere
+.nvd3 .nv-groups .nv-point {
+  pointer-events: none;
+}
+*/
+.nvd3 .nv-groups .nv-point.hover {
+  stroke-width: 20px;
+  stroke-opacity: .5;
+}
+.nvd3 .nv-scatter .nv-point.hover {
+  fill-opacity: 1;
+}
+/*
+.nv-group.hover .nv-point {
+  fill-opacity: 1;
+}
+*/
+/**********
+*  Stacked Area
+*/
+.nvd3.nv-stackedarea path.nv-area {
+  fill-opacity: .7;
+  /*
+  stroke-opacity: .65;
+  fill-opacity: 1;
+  */
+  stroke-opacity: 0;
+  transition: fill-opacity 250ms linear, stroke-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear, stroke-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear, stroke-opacity 250ms linear;
+  /*
+  transition-delay: 500ms;
+  -moz-transition-delay: 500ms;
+  -webkit-transition-delay: 500ms;
+  */
+}
+.nvd3.nv-stackedarea path.nv-area.hover {
+  fill-opacity: .9;
+  /*
+  stroke-opacity: .85;
+  */
+}
+/*
+.d3stackedarea .groups path {
+  stroke-opacity: 0;
+}
+  */
+.nvd3.nv-stackedarea .nv-groups .nv-point {
+  stroke-opacity: 0;
+  fill-opacity: 0;
+}
+/*
+.nvd3.nv-stackedarea .nv-groups .nv-point.hover {
+  stroke-width: 20px;
+  stroke-opacity: .75;
+  fill-opacity: 1;
+}*/
+/**********
+*  Line Plus Bar
+*/
+.nvd3.nv-linePlusBar .nv-bar rect {
+  fill-opacity: .75;
+}
+.nvd3.nv-linePlusBar .nv-bar rect:hover {
+  fill-opacity: 1;
+}
+/**********
+*  Bullet
+*/
+.nvd3.nv-bullet {
+  font: 10px sans-serif;
+}
+.nvd3.nv-bullet .nv-measure {
+  fill-opacity: .8;
+}
+.nvd3.nv-bullet .nv-measure:hover {
+  fill-opacity: 1;
+}
+.nvd3.nv-bullet .nv-marker {
+  stroke: #000;
+  stroke-width: 2px;
+}
+.nvd3.nv-bullet .nv-markerTriangle {
+  stroke: #000;
+  fill: #fff;
+  stroke-width: 1.5px;
+}
+.nvd3.nv-bullet .nv-tick line {
+  stroke: #666;
+  stroke-width: .5px;
+}
+.nvd3.nv-bullet .nv-range.nv-s0 {
+  fill: #eee;
+}
+.nvd3.nv-bullet .nv-range.nv-s1 {
+  fill: #ddd;
+}
+.nvd3.nv-bullet .nv-range.nv-s2 {
+  fill: #ccc;
+}
+.nvd3.nv-bullet .nv-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.nvd3.nv-bullet .nv-subtitle {
+  fill: #999;
+}
+.nvd3.nv-bullet .nv-range {
+  fill: #bababa;
+  fill-opacity: .4;
+}
+.nvd3.nv-bullet .nv-range:hover {
+  fill-opacity: .7;
+}
+/**********
+* Sparkline
+*/
+.nvd3.nv-sparkline path {
+  fill: none;
+}
+.nvd3.nv-sparklineplus g.nv-hoverValue {
+  pointer-events: none;
+}
+.nvd3.nv-sparklineplus .nv-hoverValue line {
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+.nvd3.nv-sparklineplus,
+.nvd3.nv-sparklineplus g {
+  pointer-events: all;
+}
+.nvd3 .nv-hoverArea {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+.nvd3.nv-sparklineplus .nv-xValue,
+.nvd3.nv-sparklineplus .nv-yValue {
+  /*
+  stroke: #666;
+  */
+  stroke-width: 0;
+  font-size: .9em;
+  font-weight: normal;
+}
+.nvd3.nv-sparklineplus .nv-yValue {
+  stroke: #f66;
+}
+.nvd3.nv-sparklineplus .nv-maxValue {
+  stroke: #2ca02c;
+  fill: #2ca02c;
+}
+.nvd3.nv-sparklineplus .nv-minValue {
+  stroke: #d62728;
+  fill: #d62728;
+}
+.nvd3.nv-sparklineplus .nv-currentValue {
+  /*
+  stroke: #444;
+  fill: #000;
+  */
+  font-weight: bold;
+  font-size: 1.1em;
+}
+/**********
+* historical stock
+*/
+.nvd3.nv-ohlcBar .nv-ticks .nv-tick {
+  stroke-width: 2px;
+}
+.nvd3.nv-ohlcBar .nv-ticks .nv-tick.hover {
+  stroke-width: 4px;
+}
+.nvd3.nv-ohlcBar .nv-ticks .nv-tick.positive {
+  stroke: #2ca02c;
+}
+.nvd3.nv-ohlcBar .nv-ticks .nv-tick.negative {
+  stroke: #d62728;
+}
+.nvd3.nv-historicalStockChart .nv-axis .nv-axislabel {
+  font-weight: bold;
+}
+.nvd3.nv-historicalStockChart .nv-dragTarget {
+  fill-opacity: 0;
+  stroke: none;
+  cursor: move;
+}
+.nvd3 .nv-brush .extent {
+  /*
+  cursor: ew-resize !important;
+  */
+  fill-opacity: 0 !important;
+}
+.nvd3 .nv-brushBackground rect {
+  stroke: #000;
+  stroke-width: .4;
+  fill: #fff;
+  fill-opacity: .7;
+}
+/**********
+* Indented Tree
+*/
+/**
+ * TODO: the following 3 selectors are based on classes used in the example.  I should either make them standard and leave them here, or move to a CSS file not included in the library
+ */
+.nvd3.nv-indentedtree .name {
+  margin-left: 5px;
+}
+.nvd3.nv-indentedtree .clickable {
+  color: #08C;
+  cursor: pointer;
+}
+.nvd3.nv-indentedtree span.clickable:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+.nvd3.nv-indentedtree .nv-childrenCount {
+  display: inline-block;
+  margin-left: 5px;
+}
+.nvd3.nv-indentedtree .nv-treeicon {
+  cursor: pointer;
+  /*
+  cursor: n-resize;
+  */
+}
+.nvd3.nv-indentedtree .nv-treeicon.nv-folded {
+  cursor: pointer;
+  /*
+  cursor: s-resize;
+  */
+}
+/**********
+* Parallel Coordinates
+*/
+.nvd3 .background path {
+  fill: none;
+  stroke: #ccc;
+  stroke-opacity: .4;
+  shape-rendering: crispEdges;
+}
+.nvd3 .foreground path {
+  fill: none;
+  stroke: steelblue;
+  stroke-opacity: .7;
+}
+.nvd3 .brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+.nvd3 .axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.nvd3 .axis text {
+  text-shadow: 0 1px 0 #fff;
+}
+/****
+Interactive Layer
+*/
+.nvd3 .nv-interactiveGuideLine {
+  pointer-events: none;
+}
+.nvd3 line.nv-guideline {
+  stroke: #ccc;
+}
+/****
+Custom
+*/
+svg text {
+  fill: rgba(0, 0, 0, 0.45) !important;
+}
+.vibrancy-dark {
+  background: #45343b;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #45343b 0%, #46353b 2%, #443438 2%, #453639 3%, #433437 3%, #443635 4%, #413636 4%, #413636 5%, #433434 6%, #3d3532 11%, #3b3234 11%, #3c3334 12%, #373231 13%, #383231 13%, #363033 13%, #343131 15%, #312e33 16%, #323034 17%, #302e33 17%, #302f34 18%, #2e2d32 18%, #2f2e33 20%, #2c2e32 20%, #2d2e33 28%, #2f3035 28%, #2f3035 52%, #2d2e33 53%, #2e2f34 55%, #2c2d32 55%, #2d2e33 56%, #2b2c30 57%, #2c2d32 58%, #2a2b30 58%, #2b2c30 61%, #292a2e 61%, #292a2e 65%, #2b2c30 65%, #2c2d32 74%, #2e2f34 74%, #2b2f34 77%, #2f2e33 78%, #2f3035 79%, #2c2f36 82%, #2e3138 83%, #2e3135 85%, #2e3138 85%, #2d3037 86%, #2f3239 86%, #2e3138 88%, #30333a 88%, #2f3239 91%, #31343b 91%, #31343b 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #45343b), color-stop(2%, #46353b), color-stop(2%, #443438), color-stop(3%, #453639), color-stop(3%, #433437), color-stop(4%, #443635), color-stop(4%, #413636), color-stop(5%, #413636), color-stop(6%, #433434), color-stop(11%, #3d3532), color-stop(11%, #3b3234), color-stop(12%, #3c3334), color-stop(13%, #373231), color-stop(13%, #383231), color-stop(13%, #363033), color-stop(15%, #343131), color-stop(16%, #312e33), color-stop(17%, #323034), color-stop(17%, #302e33), color-stop(18%, #302f34), color-stop(18%, #2e2d32), color-stop(20%, #2f2e33), color-stop(20%, #2c2e32), color-stop(28%, #2d2e33), color-stop(28%, #2f3035), color-stop(52%, #2f3035), color-stop(53%, #2d2e33), color-stop(55%, #2e2f34), color-stop(55%, #2c2d32), color-stop(56%, #2d2e33), color-stop(57%, #2b2c30), color-stop(58%, #2c2d32), color-stop(58%, #2a2b30), color-stop(61%, #2b2c30), color-stop(61%, #292a2e), color-stop(65%, #292a2e), color-stop(65%, #2b2c30), color-stop(74%, #2c2d32), color-stop(74%, #2e2f34), color-stop(77%, #2b2f34), color-stop(78%, #2f2e33), color-stop(79%, #2f3035), color-stop(82%, #2c2f36), color-stop(83%, #2e3138), color-stop(85%, #2e3135), color-stop(85%, #2e3138), color-stop(86%, #2d3037), color-stop(86%, #2f3239), color-stop(88%, #2e3138), color-stop(88%, #30333a), color-stop(91%, #2f3239), color-stop(91%, #31343b), color-stop(100%, #31343b));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #45343b 0%, #46353b 2%, #443438 2%, #453639 3%, #433437 3%, #443635 4%, #413636 4%, #413636 5%, #433434 6%, #3d3532 11%, #3b3234 11%, #3c3334 12%, #373231 13%, #383231 13%, #363033 13%, #343131 15%, #312e33 16%, #323034 17%, #302e33 17%, #302f34 18%, #2e2d32 18%, #2f2e33 20%, #2c2e32 20%, #2d2e33 28%, #2f3035 28%, #2f3035 52%, #2d2e33 53%, #2e2f34 55%, #2c2d32 55%, #2d2e33 56%, #2b2c30 57%, #2c2d32 58%, #2a2b30 58%, #2b2c30 61%, #292a2e 61%, #292a2e 65%, #2b2c30 65%, #2c2d32 74%, #2e2f34 74%, #2b2f34 77%, #2f2e33 78%, #2f3035 79%, #2c2f36 82%, #2e3138 83%, #2e3135 85%, #2e3138 85%, #2d3037 86%, #2f3239 86%, #2e3138 88%, #30333a 88%, #2f3239 91%, #31343b 91%, #31343b 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #45343b 0%, #46353b 2%, #443438 2%, #453639 3%, #433437 3%, #443635 4%, #413636 4%, #413636 5%, #433434 6%, #3d3532 11%, #3b3234 11%, #3c3334 12%, #373231 13%, #383231 13%, #363033 13%, #343131 15%, #312e33 16%, #323034 17%, #302e33 17%, #302f34 18%, #2e2d32 18%, #2f2e33 20%, #2c2e32 20%, #2d2e33 28%, #2f3035 28%, #2f3035 52%, #2d2e33 53%, #2e2f34 55%, #2c2d32 55%, #2d2e33 56%, #2b2c30 57%, #2c2d32 58%, #2a2b30 58%, #2b2c30 61%, #292a2e 61%, #292a2e 65%, #2b2c30 65%, #2c2d32 74%, #2e2f34 74%, #2b2f34 77%, #2f2e33 78%, #2f3035 79%, #2c2f36 82%, #2e3138 83%, #2e3135 85%, #2e3138 85%, #2d3037 86%, #2f3239 86%, #2e3138 88%, #30333a 88%, #2f3239 91%, #31343b 91%, #31343b 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #45343b 0%, #46353b 2%, #443438 2%, #453639 3%, #433437 3%, #443635 4%, #413636 4%, #413636 5%, #433434 6%, #3d3532 11%, #3b3234 11%, #3c3334 12%, #373231 13%, #383231 13%, #363033 13%, #343131 15%, #312e33 16%, #323034 17%, #302e33 17%, #302f34 18%, #2e2d32 18%, #2f2e33 20%, #2c2e32 20%, #2d2e33 28%, #2f3035 28%, #2f3035 52%, #2d2e33 53%, #2e2f34 55%, #2c2d32 55%, #2d2e33 56%, #2b2c30 57%, #2c2d32 58%, #2a2b30 58%, #2b2c30 61%, #292a2e 61%, #292a2e 65%, #2b2c30 65%, #2c2d32 74%, #2e2f34 74%, #2b2f34 77%, #2f2e33 78%, #2f3035 79%, #2c2f36 82%, #2e3138 83%, #2e3135 85%, #2e3138 85%, #2d3037 86%, #2f3239 86%, #2e3138 88%, #30333a 88%, #2f3239 91%, #31343b 91%, #31343b 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, #45343b 0%, #46353b 2%, #443438 2%, #453639 3%, #433437 3%, #443635 4%, #413636 4%, #413636 5%, #433434 6%, #3d3532 11%, #3b3234 11%, #3c3334 12%, #373231 13%, #383231 13%, #363033 13%, #343131 15%, #312e33 16%, #323034 17%, #302e33 17%, #302f34 18%, #2e2d32 18%, #2f2e33 20%, #2c2e32 20%, #2d2e33 28%, #2f3035 28%, #2f3035 52%, #2d2e33 53%, #2e2f34 55%, #2c2d32 55%, #2d2e33 56%, #2b2c30 57%, #2c2d32 58%, #2a2b30 58%, #2b2c30 61%, #292a2e 61%, #292a2e 65%, #2b2c30 65%, #2c2d32 74%, #2e2f34 74%, #2b2f34 77%, #2f2e33 78%, #2f3035 79%, #2c2f36 82%, #2e3138 83%, #2e3135 85%, #2e3138 85%, #2d3037 86%, #2f3239 86%, #2e3138 88%, #30333a 88%, #2f3239 91%, #31343b 91%, #31343b 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45343b', endColorstr='#31343b', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+.vibrancy-light {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  background: #fef8ef;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #fef8ef 0%, #fefaef 21%, #fef6ea 24%, #fdf5e9 31%, #fff5eb 39%, #fff8ec 40%, #fef6ea 42%, #fff7ed 42%, #fdf8ed 45%, #fffbf0 46%, #fdf9ee 47%, #fff9ee 62%, #fffaf1 63%, #fff8ef 67%, #fff9f4 70%, #fff6f0 72%, #fbf3f0 82%, #f7efec 83%, #e9e9e7 92%, #e7e7e7 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #fef8ef), color-stop(21%, #fefaef), color-stop(24%, #fef6ea), color-stop(31%, #fdf5e9), color-stop(39%, #fff5eb), color-stop(40%, #fff8ec), color-stop(42%, #fef6ea), color-stop(42%, #fff7ed), color-stop(45%, #fdf8ed), color-stop(46%, #fffbf0), color-stop(47%, #fdf9ee), color-stop(62%, #fff9ee), color-stop(63%, #fffaf1), color-stop(67%, #fff8ef), color-stop(70%, #fff9f4), color-stop(72%, #fff6f0), color-stop(82%, #fbf3f0), color-stop(83%, #f7efec), color-stop(92%, #e9e9e7), color-stop(100%, #e7e7e7));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #fef8ef 0%, #fefaef 21%, #fef6ea 24%, #fdf5e9 31%, #fff5eb 39%, #fff8ec 40%, #fef6ea 42%, #fff7ed 42%, #fdf8ed 45%, #fffbf0 46%, #fdf9ee 47%, #fff9ee 62%, #fffaf1 63%, #fff8ef 67%, #fff9f4 70%, #fff6f0 72%, #fbf3f0 82%, #f7efec 83%, #e9e9e7 92%, #e7e7e7 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #fef8ef 0%, #fefaef 21%, #fef6ea 24%, #fdf5e9 31%, #fff5eb 39%, #fff8ec 40%, #fef6ea 42%, #fff7ed 42%, #fdf8ed 45%, #fffbf0 46%, #fdf9ee 47%, #fff9ee 62%, #fffaf1 63%, #fff8ef 67%, #fff9f4 70%, #fff6f0 72%, #fbf3f0 82%, #f7efec 83%, #e9e9e7 92%, #e7e7e7 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #fef8ef 0%, #fefaef 21%, #fef6ea 24%, #fdf5e9 31%, #fff5eb 39%, #fff8ec 40%, #fef6ea 42%, #fff7ed 42%, #fdf8ed 45%, #fffbf0 46%, #fdf9ee 47%, #fff9ee 62%, #fffaf1 63%, #fff8ef 67%, #fff9f4 70%, #fff6f0 72%, #fbf3f0 82%, #f7efec 83%, #e9e9e7 92%, #e7e7e7 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, #fef8ef 0%, #fefaef 21%, #fef6ea 24%, #fdf5e9 31%, #fff5eb 39%, #fff8ec 40%, #fef6ea 42%, #fff7ed 42%, #fdf8ed 45%, #fffbf0 46%, #fdf9ee 47%, #fff9ee 62%, #fffaf1 63%, #fff8ef 67%, #fff9f4 70%, #fff6f0 72%, #fbf3f0 82%, #f7efec 83%, #e9e9e7 92%, #e7e7e7 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fef8ef', endColorstr='#e7e7e7', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+.radius-none {
+  border-radius: 0;
 }

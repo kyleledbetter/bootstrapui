@@ -112,6 +112,13 @@ body,
   background-color: @aside-inverse-bg;
   color: @aside-inverse-text;
   border-left: 1px solid @aside-inverse-border;
+  
+  a {
+    color: darken(@aside-inverse-text, 15%);
+    &:hover {
+      color: lighten(@aside-inverse-text, 15%);
+    }
+  }
 }
 .main-inverse {
   background-color: @main-inverse-bg;

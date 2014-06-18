@@ -80,3 +80,33 @@
     .nav-tabs-justified();
   }
 }
+
+// Rounded
+// -------------------------
+.nav-round {
+  > li {
+
+    // Links rendered as pills
+    > a {
+      border-radius: 40px;
+      padding: 6px 20px;
+      
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+    }
+    + li {
+      margin-left: 2px;
+    }
+
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @nav-pills-active-link-hover-color;
+        background-color: rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
