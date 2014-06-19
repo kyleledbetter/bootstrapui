@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Membership App UI for Bootstrap</title>
+
+    <!-- Bootstrapapp CSS -->
+    <link href="../../../dist/css/app.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="../../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+  </head>
+
+  <body class="body-default with-transitions">
+    
+    <div class="wrapper flex-columns">
+      
+      <article class="main main-default flex-rows">
+        <header class="header">
+          <nav class="navbar navbar-success" role="navigation">
+            <div class="container-fluid">
+              <a class="btn btn-none navbar-btn pull-left push-right" data-toggle="sidebar"><span aria-hidden="true" class="fa fa-bars"></span></a>
+              <a class="btn btn-none navbar-btn pull-right" data-toggle="aside"><span aria-hidden="true" class="fa fa-align-right"></span></a>
+              <span class="dropdown pull-right">
+                <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
+                  <span class="badge badge-success-light">2</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Nils George has an open order</a></li>
+                  <li><a href="#">Lorenzo Silva's order was declined</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">View all</a></li>
+                </ul>
+              </span>
+              <span class="dropdown pull-right">
+                <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
+                  <img src="http://lorempixel.com/18/18/people/" class="img-circle push-right-xs"> username <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li class="divider"></li>
+                  <li><a href="index.html">Sign Out</a></li>
+                </ul>
+              </span>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="input-group input-group-sm input-group-round">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-success" type="button"><span class="fa fa-search"></span></button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </nav>
+        </header>
+        <section class="content content-default bg-muted-light">
+          <div class="panel panel-success pull-top-md pull-right-md pull-left-md radius-none push-bottom-none">
+            <div class="chart-bar-1 pad">
+              <svg style="height: 200px;">
+                <defs>
+                  <filter id="dropshadow" height="130%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feComponentTransfer>
+                      <feFuncA type="linear" slope="0.2"/>
+                    </feComponentTransfer>
+                    <feMerge> 
+                      <feMergeNode/>
+                      <feMergeNode in="SourceGraphic"/> 
+                    </feMerge>
+                  </filter>
+                </defs>
+              </svg>
+              <ul class="nav nav-round nav-inline text-center text-sm" data-spy="affix" data-offset-top="10">
+                <li class="active"><a href="#">Complete</a></li>
+                <li><a href="#">Processed</a></li>
+                <li><a href="#">Open</a></li>
+                <li><a href="#">Declined</a></li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="pad-top">
+            <!-- Embed start -->
+            <div class="row">
+              <div class="col-xs-6 col-md-3">
+                <div class="panel panel-success radius-none text-center overflow-hidden block">
+                  <div class="h1 long-shadow-success">16</div>
+                  <div class="h6 long-shadow-success">Processed Today</div>
+                  <a href="#" class="btn btn-round-wide-xs btn-success push-bottom">View Report</a>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <div class="panel panel-info radius-none text-center overflow-hidden block">
+                    <div class="h1 long-shadow-info">15</div>
+                    <div class="h6 long-shadow-info push-bottom">Complete Today</div>
+                    <a href="#" class="btn btn-round-wide-xs btn-info push-bottom">View Report</a>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <div class="panel panel-warning radius-none text-center overflow-hidden block">
+                  <div class="h1 long-shadow-warning">25</div>
+                  <div class="h6 long-shadow-warning push-bottom">Open Today</div>
+                  <a href="#" class="btn btn-round-wide-xs btn-warning push-bottom">View Report</a>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <div class="panel panel-danger radius-none text-center overflow-hidden block">
+                  <div class="h1 long-shadow-danger">2</div>
+                  <div class="h6 long-shadow-danger push-bottom">Declined Today</div>
+                  <a href="#" class="btn btn-round-wide-xs btn-danger push-bottom">View Report</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="panel panel-default radius-none">
+                  <div class="panel-body">
+                    <h3 class="page-header push-top-none">Orders</h3>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-round nav-inline text-md push-left-sm">
+                      <li class="active"><a href="#all" data-toggle="tab">All</a></li>
+                      <li><a href="#processed" data-toggle="tab">Processed</a></li>
+                      <li><a href="#open" data-toggle="tab">Open</a></li>
+                      <li><a href="#declined" data-toggle="tab">Declined</a></li>
+                      <li><a href="#cancelled" data-toggle="tab">Cancelled</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content push-top">
+                      <div class="tab-pane active" id="all">
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <td class="dropdown">
+                                <a class="dropdown-toggle btn btn-round-xs btn-warning btn-block" data-toggle="dropdown">Open <span class="caret"></span></a>
+                                <ul class="dropdown-menu text-md">
+                                  <li><a href="#">Complete</a></li>
+                                  <li><a href="#">Processed</a></li>
+                                  <li class="active"><a href="#">Open</a></li>
+                                  <li><a href="#">Declined</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Delete Order</a></li>
+                                </ul>
+                              </td>
+                              <td><a href="order-detail.html">Order #97</a> by <a href="member-detail.html">Nills George</a></td>
+                              <td><span class="date">06/18/2014, 3:30PM</span></td>
+                              <td class="text-right"><span class="h4">$100.00</span></td>
+                            </tr>
+                            <tr>
+                              <td class="dropdown">
+                                <a class="dropdown-toggle btn btn-round-xs btn-info btn-block" data-toggle="dropdown">Processed <span class="caret"></span></a>
+                                <ul class="dropdown-menu text-md">
+                                  <li><a href="#">Complete</a></li>
+                                  <li class="active"><a href="#">Processed</a></li>
+                                  <li><a href="#">Open</a></li>
+                                  <li><a href="#">Declined</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Delete Order</a></li>
+                                </ul>
+                              </td>
+                              <td><a href="#">Order #96</a> by <a href="#">Amy Murphy</a></td>
+                              <td><span class="date">06/18/2014, 2:13PM</span></td>
+                              <td class="text-right"><span class="h4">$25.00</span></td>
+                            </tr>
+                            <tr>
+                              <td class="dropdown">
+                                <a class="dropdown-toggle btn btn-round-xs btn-success btn-block" data-toggle="dropdown">Complete <span class="caret"></span></a>
+                                <ul class="dropdown-menu text-md">
+                                  <li class="active"><a href="#">Complete</a></li>
+                                  <li><a href="#">Processed</a></li>
+                                  <li><a href="#">Open</a></li>
+                                  <li><a href="#">Declined</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Delete Order</a></li>
+                                </ul>
+                              </td>
+                              <td><a href="#">Order #95</a> by <a href="#">Adam Julien</a></td>
+                              <td><span class="date">06/17/2014, 11:43AM</span></td>
+                              <td class="text-right"><span class="h4">$10.00</span></td>
+                            </tr>
+                            <tr>
+                              <td class="dropdown">
+                                <a class="dropdown-toggle btn btn-round-xs btn-success btn-block" data-toggle="dropdown">Complete <span class="caret"></span></a>
+                                <ul class="dropdown-menu text-md">
+                                  <li class="active"><a href="#">Complete</a></li>
+                                  <li><a href="#">Processed</a></li>
+                                  <li><a href="#">Open</a></li>
+                                  <li><a href="#">Declined</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Delete Order</a></li>
+                                </ul>
+                              </td>
+                              <td><a href="#">Order #94</a> by <a href="#">Emily Kramer</a></td>
+                              <td><span class="date">06/15/2014, 10:11AM</span></td>
+                              <td class="text-right"><span class="h4">$50.00</span></td>
+                            </tr>
+                            <tr>
+                              <td class="dropdown">
+                                <a class="dropdown-toggle btn btn-round-xs btn-danger btn-block" data-toggle="dropdown">Declined <span class="caret"></span></a>
+                                <ul class="dropdown-menu text-md">
+                                  <li><a href="#">Complete</a></li>
+                                  <li><a href="#">Processed</a></li>
+                                  <li><a href="#">Open</a></li>
+                                  <li class="active"><a href="#">Declined</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Delete Order</a></li>
+                                </ul>
+                              </td>
+                              <td><a href="#">Order #93</a> by <a href="#">Lorenzo Silva</a></td>
+                              <td><span class="date">06/14/2014, 8:56AM</span></td>
+                              <td class="text-right"><span class="h4">$75.00</span></td>
+                            </tr>
+                            <tr>
+                              <td class="dropdown">
+                                <a class="dropdown-toggle btn btn-round-xs btn-warning btn-block" data-toggle="dropdown">Open <span class="caret"></span></a>
+                                <ul class="dropdown-menu text-md">
+                                  <li><a href="#">Complete</a></li>
+                                  <li><a href="#">Processed</a></li>
+                                  <li class="active"><a href="#">Open</a></li>
+                                  <li><a href="#">Declined</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Delete Order</a></li>
+                                </ul>
+                              </td>
+                              <td><a href="order-detail.html">Order #97</a> by <a href="member-detail.html">Nills George</a></td>
+                              <td><span class="date">06/18/2014, 3:30PM</span></td>
+                              <td class="text-right"><span class="h4">$100.00</span></td>
+                            </tr>
+                            <tr>
+                              <td class="dropdown">
+                                <a class="dropdown-toggle btn btn-round-xs btn-info btn-block" data-toggle="dropdown">Processed <span class="caret"></span></a>
+                                <ul class="dropdown-menu text-md">
+                                  <li><a href="#">Complete</a></li>
+                                  <li class="active"><a href="#">Processed</a></li>
+                                  <li><a href="#">Open</a></li>
+                                  <li><a href="#">Declined</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Delete Order</a></li>
+                                </ul>
+                              </td>
+                              <td><a href="#">Order #96</a> by <a href="#">Amy Murphy</a></td>
+                              <td><span class="date">06/18/2014, 2:13PM</span></td>
+                              <td class="text-right"><span class="h4">$25.00</span></td>
+                            </tr>
+                            <tr>
+                              <td class="dropdown">
+                                <a class="dropdown-toggle btn btn-round-xs btn-success btn-block" data-toggle="dropdown">Complete <span class="caret"></span></a>
+                                <ul class="dropdown-menu text-md">
+                                  <li class="active"><a href="#">Complete</a></li>
+                                  <li><a href="#">Processed</a></li>
+                                  <li><a href="#">Open</a></li>
+                                  <li><a href="#">Declined</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Delete Order</a></li>
+                                </ul>
+                              </td>
+                              <td><a href="#">Order #95</a> by <a href="#">Adam Julien</a></td>
+                              <td><span class="date">06/17/2014, 11:43AM</span></td>
+                              <td class="text-right"><span class="h4">$10.00</span></td>
+                            </tr>
+                            <tr>
+                              <td class="dropdown">
+                                <a class="dropdown-toggle btn btn-round-xs btn-success btn-block" data-toggle="dropdown">Complete <span class="caret"></span></a>
+                                <ul class="dropdown-menu text-md">
+                                  <li class="active"><a href="#">Complete</a></li>
+                                  <li><a href="#">Processed</a></li>
+                                  <li><a href="#">Open</a></li>
+                                  <li><a href="#">Declined</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Delete Order</a></li>
+                                </ul>
+                              </td>
+                              <td><a href="#">Order #94</a> by <a href="#">Emily Kramer</a></td>
+                              <td><span class="date">06/15/2014, 10:11AM</span></td>
+                              <td class="text-right"><span class="h4">$50.00</span></td>
+                            </tr>
+                            <tr>
+                              <td class="dropdown">
+                                <a class="dropdown-toggle btn btn-round-xs btn-danger btn-block" data-toggle="dropdown">Declined <span class="caret"></span></a>
+                                <ul class="dropdown-menu text-md">
+                                  <li><a href="#">Complete</a></li>
+                                  <li><a href="#">Processed</a></li>
+                                  <li><a href="#">Open</a></li>
+                                  <li class="active"><a href="#">Declined</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Delete Order</a></li>
+                                </ul>
+                              </td>
+                              <td><a href="#">Order #93</a> by <a href="#">Lorenzo Silva</a></td>
+                              <td><span class="date">06/14/2014, 8:56AM</span></td>
+                              <td class="text-right"><span class="h4">$75.00</span></td>
+                            </tr>
+                        </tbody>
+                      </table>
+                      </div>
+                      <div class="tab-pane" id="processed">Processed</div>
+                      <div class="tab-pane" id="open">Open</div>
+                      <div class="tab-pane" id="declined">Declined</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Begin panel -->
+                <div class="text-center">
+                  <ul class="pagination pull-top-sm nav-inline">
+                    <li class="disabled"><a href="#"><span class="fa fa-angle-double-left"></span></a></li>
+                    <li class="disabled"><a href="#"><span class="fa fa-angle-left"></span></a></li>
+                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li class=""><a href="#"><span class="fa fa-angle-double-right"></span></a></li>
+                    <li class=""><a href="#"><span class="fa fa-angle-right"></span></a></li>
+                  </ul>
+                </div>
+                <!-- End panel -->
+              </div>
+              <div class="col-sm-4">
+                <!-- Begin panel -->
+                <div class="panel panel-default radius-none">
+                  <div class="panel-body pad-bottom-none">
+                    <h3 class="page-header push-top-none">Order Search</h3>
+                    <form>
+                      <div class="form-group">
+                        <div class="input-group input-group-sm input-group-round">
+                          <input type="text" class="form-control" placeholder="Search name, email, etc">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+                          </span>
+                        </div>
+                      </div>
+                    </form>
+                    <h4 class="page-header push-top-none">Order Filters</h4>
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>Select Package</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>Select Group</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>Select Member</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="panel-footer">
+                    <button role="button" class="btn btn-xs btn-default btn-block">Clear filters</button>
+                  </div>
+                </div>
+                <!-- End panel -->
+              </div>
+            </div>
+            <!-- Embed end -->
+          </div>
+        </section>
+        <footer class="footer" style="display:none">
+          <nav class="navbar navbar-default navbar-inline text-center" role="navigation">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer> 
+      </article>
+      <aside class="sidebar vibrancy-dark flex-rows">
+        <header class="header">
+          <nav class="navbar navbar-inverse vibrancy-dark navbar-inline" role="navigation">
+            <a class="navbar-brand push-left-xs" href="#">Menu</a>
+          </nav>
+        </header>
+        <section class="content content-inverse">
+          <ul class="nav nav-stacked nav-inverse">
+            <li><a href="dashboard.html"><span aria-hidden="true" class="fa fa-tachometer"></span> Dashboard</a></li>
+            <li class="active"><a href="orders.html"><span aria-hidden="true" class="fa fa-file-text-o"></span> Orders</a></li>
+            <li><a href="packages.html"><span aria-hidden="true" class="fa fa-cubes"></span> Packages</a></li>
+            <li><a href="groups.html"><span aria-hidden="true" class="fa fa-users"></span> Groups</a></li>
+            <li><a href="members.html"><span aria-hidden="true" class="fa fa-user"></span> Members</a></li>
+            <li><a href="integrations.html"><span aria-hidden="true" class="fa fa-puzzle-piece"></span> Integrations</a></li>
+            <li><a href="reports.html"><span aria-hidden="true" class="fa fa-bar-chart-o"></span> Reports</a></li>
+          </ul>
+        </section>
+        <footer class="footer">
+          <nav class="navbar navbar-inverse vibrancy-dark navbar-inline text-right" role="navigation">
+            <div class="container-fluid dropdown dropup">
+              <a href="#" class="btn btn-inverse navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="fa fa-plus"></span></a>
+              <ul class="dropdown-menu dropdown-menu-right text-left">
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Package</a></li>
+                <li><a href="#">Group</a></li>
+                <li><a href="#">Smart Group</a></li>
+                <li><a href="#">Member</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+      </aside>
+      <aside class="aside aside-inverse flex-rows" style="display:none">
+        <header class="header">
+          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
+            <a class="navbar-brand push-left-xs" href="#">Activity</a>
+          </nav>
+        </header>
+        <section class="content content-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
+            <div class="container-fluid dropdown dropup">
+              <a href="#" class="btn btn-inverse navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="ion-ios7-gear-outline"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+      </aside>
+    </div>
+    
+
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrapapp JS -->
+    <script src="../../../dist/js/app.js"></script>
+    <!-- Docs Example JS -->
+    <script src="../../assets/js/d3/d3.v3.js"></script>
+    <script src="../../assets/js/nvd3/nv.d3.min.js"></script>
+    <script src="../../assets/js/nvd3/bar.js"></script>
+  </body>
+</html>

@@ -5375,7 +5375,8 @@ body,
 .navbar-inline .navbar-nav {
   float: none;
 }
-.nav-inline > li {
+.nav-inline > li,
+.nav-inline > li > a {
   float: none;
   display: inline-block;
 }
@@ -5496,14 +5497,15 @@ body,
   color: #000000;
 }
 .navbar-success {
-  background-color: #648f00;
+  background-color: #6b9900;
 }
 .navbar-success input,
-.navbar-success .form-control {
-  border-color: #527600;
+.navbar-success .form-control,
+.navbar-success .btn-success {
+  border-color: #395200;
 }
 .navbar-success a {
-  color: #000000;
+  color: #395200;
 }
 .navbar-info {
   background-color: #5bc0de;
@@ -5630,7 +5632,7 @@ fieldset[disabled] .btn-inverse.active {
   border-radius: 30px;
 }
 .btn-round-wide-xs {
-  padding: 1px 13.75px;
+  padding: 1px 28.75px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 30px;
@@ -6345,7 +6347,7 @@ fieldset[disabled] .btn-inverse.active {
 .panel-info,
 .panel-warning,
 .panel-danger {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.9);
 }
 .panel-inverse {
   border-color: #222326;
@@ -7048,7 +7050,7 @@ Interactive Layer
 Custom
 */
 svg text {
-  fill: rgba(0, 0, 0, 0.45) !important;
+  fill: rgba(0, 0, 0, 0.35) !important;
 }
 .nv-linePlusBar .nv-series-0 .nv-line {
   stroke: #fff !important;
@@ -7059,6 +7061,12 @@ svg text {
   stroke: rgba(0, 0, 0, 0.1) !important;
   stroke-width: 1 !important;
   fill-opacity: 0.4;
+}
+.nv-discreteBarWithAxes .nv-discretebar rect {
+  stroke: rgba(255, 255, 255, 0.9) !important;
+  stroke-width: 2 !important;
+  fill: rgba(255, 255, 255, 0.45) !important;
+  filter: url(#dropshadow);
 }
 .nv-lineChart .nv-series-0 .nv-line {
   stroke: rgba(255, 255, 255, 0.65) !important;
@@ -7108,4 +7116,10 @@ svg text {
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.block {
+  display: block;
+}
+.block:hover {
+  text-decoration: none;
 }

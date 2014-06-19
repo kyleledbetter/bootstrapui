@@ -1,6 +1,6 @@
 .navbar-inline {
   .navbar-brand,
-  .navbar-nav > li {
+  .navbar-nav > li, {
     float: none;
     display: inline-block;
   }
@@ -10,8 +10,11 @@
 }
 
 .nav-inline > li {
-  float: none;
-  display: inline-block;
+  &,
+  & > a {
+    float: none;
+    display: inline-block;
+  }
 }
 
 .nav-header {

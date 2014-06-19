@@ -19,14 +19,15 @@
   }
 }
 .navbar-success {
-  background-color: @brand-success;
+  background-color: lighten(@brand-success, 2%);
   
   input,
-  .form-control {
-    border-color: darken(@brand-success, 5%);
+  .form-control,
+  .btn-success {
+    border-color: darken(@brand-success, 12%);
   }
   a {
-    color: darken(@brand-success, 35%);
+    color: darken(@brand-success, 12%);
   }
 }
 .navbar-info {
