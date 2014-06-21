@@ -1,0 +1,60 @@
+// Pagination variations
+@border-radius-pagination:  40px;
+
+.pagination-round {
+  border: 1px solid @pagination-border;
+  border-radius: @border-radius-pagination;
+  .box-shadow (0 1px 1px rgba(0, 0, 0, 0.05));
+
+  > li {
+    display: inline; // Remove list-style and block-level defaults
+    margin-left: -1px;
+    margin-right: -1px;
+    > a,
+    > span {
+      border-width: 0;
+    }
+    &:first-child {
+      > a,
+      > span {
+        .border-left-radius(@border-radius-pagination);
+        margin-left: 0;
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        .border-right-radius(@border-radius-pagination);
+        margin-right: 0;
+      }
+    }
+  }
+
+  > li > a,
+  > li > span {
+    &:hover,
+    &:focus {
+      
+    }
+  }
+
+  > .active > a,
+  > .active > span {
+    &,
+    &:hover,
+    &:focus {
+      
+    }
+  }
+
+  > .disabled {
+    > span,
+    > span:hover,
+    > span:focus,
+    > a,
+    > a:hover,
+    > a:focus {
+      
+    }
+  }
+}

@@ -24,14 +24,14 @@
       
       <article class="main main-default flex-rows">
         <header class="header">
-          <nav class="navbar navbar-success" role="navigation">
+          <nav class="navbar navbar-default" role="navigation">
             <div class="container-fluid">
               <a class="btn btn-none navbar-btn pull-left push-right" data-toggle="sidebar"><span aria-hidden="true" class="fa fa-bars"></span></a>
               <a class="btn btn-none navbar-btn pull-right" data-toggle="aside"><span aria-hidden="true" class="fa fa-align-right"></span></a>
               <a href=".modal-settings" class="btn btn-none navbar-btn pull-right" data-toggle="modal"><span aria-hidden="true" class="fa fa-cog"></span></a>
               <span class="dropdown pull-right">
                 <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
-                  <span class="badge badge-success-light">2</span>
+                  <span class="badge badge-danger-light">2</span>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Nils George has an open order</a></li>
@@ -55,7 +55,7 @@
                 <div class="input-group input-group-sm input-group-round">
                   <input type="text" class="form-control" placeholder="Search">
                   <span class="input-group-btn">
-                    <button class="btn btn-success" type="button"><span class="fa fa-search"></span></button>
+                    <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
                   </span>
                 </div>
               </form>
@@ -63,9 +63,9 @@
           </nav>
         </header>
         <section class="content content-default bg-muted-light">
-          <div class="panel panel-success pull-top-md pull-right-md pull-left-md radius-none push-bottom-none">
-            <div class="chart-bar-1 bar-success pad">
-              <svg style="height: 200px;">
+          <div class="panel panel-default pull-top-md pull-right-md pull-left-md radius-none push-bottom-none">
+            <div class="chart-bar-2 pad">
+              <svg style="height: 240px;">
                 <defs>
                   <filter id="dropshadow" height="130%">
                     <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
@@ -91,47 +91,19 @@
           <div class="pad-top">
             <!-- Embed start -->
             <div class="row">
-              <div class="col-xs-6 col-md-3">
-                <div class="panel panel-success radius-none text-center overflow-hidden block">
-                  <div class="h1 long-shadow-success">16</div>
-                  <div class="h6 long-shadow-success">Processed Today</div>
-                  <a href="#" class="btn btn-round-wide-xs btn-success push-bottom">View Report</a>
-                </div>
-              </div>
-              <div class="col-xs-6 col-md-3">
-                <div class="panel panel-info radius-none text-center overflow-hidden block">
-                    <div class="h1 long-shadow-info">15</div>
-                    <div class="h6 long-shadow-info">Complete Today</div>
-                    <a href="#" class="btn btn-round-wide-xs btn-info push-bottom">View Report</a>
-                </div>
-              </div>
-              <div class="col-xs-6 col-md-3">
-                <div class="panel panel-warning radius-none text-center overflow-hidden block">
-                  <div class="h1 long-shadow-warning">25</div>
-                  <div class="h6 long-shadow-warning">Open Today</div>
-                  <a href="#" class="btn btn-round-wide-xs btn-warning push-bottom">View Report</a>
-                </div>
-              </div>
-              <div class="col-xs-6 col-md-3">
-                <div class="panel panel-danger radius-none text-center overflow-hidden block">
-                  <div class="h1 long-shadow-danger">2</div>
-                  <div class="h6 long-shadow-danger">Declined Today</div>
-                  <a href="#" class="btn btn-round-wide-xs btn-danger push-bottom">View Report</a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
               <div class="col-sm-8">
                 <div class="panel panel-default radius-none">
                   <div class="panel-body">
-                    <h3 class="page-header push-top-none">Orders</h3>
+                    <div class="page-header push-top-none">
+                      <a href="#" class="btn btn-default btn-round-wide-xs pull-right">New <span class="fa fa-plus push-left-xs"></span></a>
+                      <h3 class="push-none">Packages</h3>
+                    </div>
                     <!-- Nav tabs -->
                     <ul class="nav nav-round nav-inline text-md push-left-sm">
                       <li class="active"><a href="#all" data-toggle="tab">All</a></li>
-                      <li><a href="#processed" data-toggle="tab">Processed</a></li>
-                      <li><a href="#open" data-toggle="tab">Open</a></li>
-                      <li><a href="#declined" data-toggle="tab">Declined</a></li>
-                      <li><a href="#cancelled" data-toggle="tab">Cancelled</a></li>
+                      <li><a href="#processed" data-toggle="tab">Active</a></li>
+                      <li><a href="#open" data-toggle="tab">Hidden</a></li>
+                      <li><a href="#declined" data-toggle="tab">Disabled</a></li>
                     </ul>
                     <!-- Tab panes -->
                     <div class="tab-content push-top">
@@ -139,164 +111,184 @@
                         <table class="table">
                           <tbody>
                             <tr>
-                              <td class="dropdown">
-                                <a class="dropdown-toggle btn btn-round-xs btn-warning btn-block" data-toggle="dropdown">Open <span class="caret"></span></a>
+                              <td style="width:20px">
+                                <img src="http://lorempixel.com/20/20/business/1"  class="img-circle">
+                              </td>
+                              <td><a href="order-detail.html"><span class="h4">Beginner</span></a></td>
+                              <td class="dropdown" style="width:100px">
+                                <a class="dropdown-toggle btn btn-round-xs btn-info btn-block" data-toggle="dropdown">Active <span class="caret"></span></a>
                                 <ul class="dropdown-menu text-md">
-                                  <li><a href="#">Complete</a></li>
-                                  <li><a href="#">Processed</a></li>
-                                  <li class="active"><a href="#">Open</a></li>
-                                  <li><a href="#">Declined</a></li>
+                                  <li class="active"><a href="#">Active</a></li>
+                                  <li><a href="#">Hidden</a></li>
+                                  <li><a href="#">Disabled</a></li>
                                   <li class="divider"></li>
-                                  <li><a href="#">Delete Order</a></li>
+                                  <li><a href="#">Delete</a></li>
                                 </ul>
                               </td>
-                              <td><a href="order-detail.html">Order #97</a> <span class="text-md">by</span> <a href="member-detail.html">Nills George</a></td>
-                              <td><span class="text-md text-muted">06/18/2014, 3:30PM</span></td>
-                              <td class="text-right"><span class="h4">$100.00</span></td>
+                              <td class="text-right"><span class="h4">$5.00</span></td>
+                              <td class="text-right"><span class="text-md text-muted">06/18/2014, 3:30PM</span></td>
                             </tr>
                             <tr>
-                              <td class="dropdown">
-                                <a class="dropdown-toggle btn btn-round-xs btn-info btn-block" data-toggle="dropdown">Processed <span class="caret"></span></a>
+                              <td style="width:20px">
+                                <img src="http://lorempixel.com/20/20/business/2"  class="img-circle">
+                              </td>
+                              <td><a href="order-detail.html"><span class="h4">Rookie</span></a></td>
+                              <td class="dropdown" style="width:100px">
+                                <a class="dropdown-toggle btn btn-round-xs btn-info btn-block" data-toggle="dropdown">Active <span class="caret"></span></a>
                                 <ul class="dropdown-menu text-md">
-                                  <li><a href="#">Complete</a></li>
-                                  <li class="active"><a href="#">Processed</a></li>
-                                  <li><a href="#">Open</a></li>
-                                  <li><a href="#">Declined</a></li>
+                                  <li class="active"><a href="#">Active</a></li>
+                                  <li><a href="#">Hidden</a></li>
+                                  <li><a href="#">Disabled</a></li>
                                   <li class="divider"></li>
-                                  <li><a href="#">Delete Order</a></li>
+                                  <li><a href="#">Delete</a></li>
                                 </ul>
                               </td>
-                              <td><a href="#">Order #96</a> <span class="text-md">by</span> <a href="#">Amy Murphy</a></td>
-                              <td><span class="text-md text-muted">06/18/2014, 2:13PM</span></td>
-                              <td class="text-right"><span class="h4">$25.00</span></td>
-                            </tr>
-                            <tr>
-                              <td class="dropdown">
-                                <a class="dropdown-toggle btn btn-round-xs btn-success btn-block" data-toggle="dropdown">Complete <span class="caret"></span></a>
-                                <ul class="dropdown-menu text-md">
-                                  <li class="active"><a href="#">Complete</a></li>
-                                  <li><a href="#">Processed</a></li>
-                                  <li><a href="#">Open</a></li>
-                                  <li><a href="#">Declined</a></li>
-                                  <li class="divider"></li>
-                                  <li><a href="#">Delete Order</a></li>
-                                </ul>
-                              </td>
-                              <td><a href="#">Order #95</a> <span class="text-md">by</span> <a href="#">Adam Julien</a></td>
-                              <td><span class="text-md text-muted">06/17/2014, 11:43AM</span></td>
                               <td class="text-right"><span class="h4">$10.00</span></td>
+                              <td class="text-right"><span class="text-md text-muted">06/18/2014, 3:30PM</span></td>
                             </tr>
                             <tr>
-                              <td class="dropdown">
-                                <a class="dropdown-toggle btn btn-round-xs btn-success btn-block" data-toggle="dropdown">Complete <span class="caret"></span></a>
+                              <td style="width:20px">
+                                <img src="http://lorempixel.com/20/20/business/3"  class="img-circle">
+                              </td>
+                              <td><a href="order-detail.html"><span class="h4">Greenhorn</span></a></td>
+                              <td class="dropdown" style="width:100px">
+                                <a class="dropdown-toggle btn btn-round-xs btn-default btn-block" data-toggle="dropdown">Hidden <span class="caret"></span></a>
                                 <ul class="dropdown-menu text-md">
-                                  <li class="active"><a href="#">Complete</a></li>
-                                  <li><a href="#">Processed</a></li>
-                                  <li><a href="#">Open</a></li>
-                                  <li><a href="#">Declined</a></li>
+                                  <li class="active"><a href="#">Active</a></li>
+                                  <li><a href="#">Hidden</a></li>
+                                  <li><a href="#">Disabled</a></li>
                                   <li class="divider"></li>
-                                  <li><a href="#">Delete Order</a></li>
+                                  <li><a href="#">Delete</a></li>
                                 </ul>
                               </td>
-                              <td><a href="#">Order #94</a> <span class="text-md">by</span> <a href="#">Emily Kramer</a></td>
-                              <td><span class="text-md text-muted">06/15/2014, 10:11AM</span></td>
-                              <td class="text-right"><span class="h4">$50.00</span></td>
+                              <td class="text-right"><span class="h4">$15.00</span></td>
+                              <td class="text-right"><span class="text-md text-muted">06/18/2014, 3:30PM</span></td>
                             </tr>
                             <tr>
-                              <td class="dropdown">
-                                <a class="dropdown-toggle btn btn-round-xs btn-danger btn-block" data-toggle="dropdown">Declined <span class="caret"></span></a>
+                              <td style="width:20px">
+                                <img src="http://lorempixel.com/20/20/business/4"  class="img-circle">
+                              </td>
+                              <td><a href="order-detail.html"><span class="h4">Apprentice</span></a></td>
+                              <td class="dropdown" style="width:100px">
+                                <a class="dropdown-toggle btn btn-round-xs btn-info btn-block" data-toggle="dropdown">Active <span class="caret"></span></a>
                                 <ul class="dropdown-menu text-md">
-                                  <li><a href="#">Complete</a></li>
-                                  <li><a href="#">Processed</a></li>
-                                  <li><a href="#">Open</a></li>
-                                  <li class="active"><a href="#">Declined</a></li>
+                                  <li class="active"><a href="#">Active</a></li>
+                                  <li><a href="#">Hidden</a></li>
+                                  <li><a href="#">Disabled</a></li>
                                   <li class="divider"></li>
-                                  <li><a href="#">Delete Order</a></li>
+                                  <li><a href="#">Delete</a></li>
                                 </ul>
                               </td>
-                              <td><a href="#">Order #93</a> <span class="text-md">by</span> <a href="#">Lorenzo Silva</a></td>
-                              <td><span class="text-md text-muted">06/14/2014, 8:56AM</span></td>
-                              <td class="text-right"><span class="h4">$75.00</span></td>
+                              <td class="text-right"><span class="h4">$20.00</span></td>
+                              <td class="text-right"><span class="text-md text-muted">06/18/2014, 3:30PM</span></td>
                             </tr>
                             <tr>
-                              <td class="dropdown">
-                                <a class="dropdown-toggle btn btn-round-xs btn-warning btn-block" data-toggle="dropdown">Open <span class="caret"></span></a>
+                              <td style="width:20px">
+                                <img src="http://lorempixel.com/20/20/business/5"  class="img-circle">
+                              </td>
+                              <td><a href="order-detail.html"><span class="h4">Adventurer</span></a></td>
+                              <td class="dropdown" style="width:100px">
+                                <a class="dropdown-toggle btn btn-round-xs btn-warning btn-block" data-toggle="dropdown">Disabled <span class="caret"></span></a>
                                 <ul class="dropdown-menu text-md">
-                                  <li><a href="#">Complete</a></li>
-                                  <li><a href="#">Processed</a></li>
-                                  <li class="active"><a href="#">Open</a></li>
-                                  <li><a href="#">Declined</a></li>
+                                  <li class="active"><a href="#">Active</a></li>
+                                  <li><a href="#">Hidden</a></li>
+                                  <li><a href="#">Disabled</a></li>
                                   <li class="divider"></li>
-                                  <li><a href="#">Delete Order</a></li>
+                                  <li><a href="#">Delete</a></li>
                                 </ul>
                               </td>
-                              <td><a href="order-detail.html">Order #97</a> <span class="text-md">by</span> <a href="member-detail.html">Nills George</a></td>
-                              <td><span class="text-md text-muted">06/18/2014, 3:30PM</span></td>
-                              <td class="text-right"><span class="h4">$100.00</span></td>
-                            </tr>
-                            <tr>
-                              <td class="dropdown">
-                                <a class="dropdown-toggle btn btn-round-xs btn-info btn-block" data-toggle="dropdown">Processed <span class="caret"></span></a>
-                                <ul class="dropdown-menu text-md">
-                                  <li><a href="#">Complete</a></li>
-                                  <li class="active"><a href="#">Processed</a></li>
-                                  <li><a href="#">Open</a></li>
-                                  <li><a href="#">Declined</a></li>
-                                  <li class="divider"></li>
-                                  <li><a href="#">Delete Order</a></li>
-                                </ul>
-                              </td>
-                              <td><a href="#">Order #96</a> <span class="text-md">by</span> <a href="#">Amy Murphy</a></td>
-                              <td><span class="text-md text-muted">06/18/2014, 2:13PM</span></td>
                               <td class="text-right"><span class="h4">$25.00</span></td>
+                              <td class="text-right"><span class="text-md text-muted">06/18/2014, 3:30PM</span></td>
                             </tr>
                             <tr>
-                              <td class="dropdown">
-                                <a class="dropdown-toggle btn btn-round-xs btn-success btn-block" data-toggle="dropdown">Complete <span class="caret"></span></a>
+                              <td style="width:20px">
+                                <img src="http://lorempixel.com/20/20/business/6"  class="img-circle">
+                              </td>
+                              <td><a href="order-detail.html"><span class="h4">Veteran</span></a></td>
+                              <td class="dropdown" style="width:100px">
+                                <a class="dropdown-toggle btn btn-round-xs btn-info btn-block" data-toggle="dropdown">Active <span class="caret"></span></a>
                                 <ul class="dropdown-menu text-md">
-                                  <li class="active"><a href="#">Complete</a></li>
-                                  <li><a href="#">Processed</a></li>
-                                  <li><a href="#">Open</a></li>
-                                  <li><a href="#">Declined</a></li>
+                                  <li class="active"><a href="#">Active</a></li>
+                                  <li><a href="#">Hidden</a></li>
+                                  <li><a href="#">Disabled</a></li>
                                   <li class="divider"></li>
-                                  <li><a href="#">Delete Order</a></li>
+                                  <li><a href="#">Delete</a></li>
                                 </ul>
                               </td>
-                              <td><a href="#">Order #95</a> <span class="text-md">by</span> <a href="#">Adam Julien</a></td>
-                              <td><span class="text-md text-muted">06/17/2014, 11:43AM</span></td>
-                              <td class="text-right"><span class="h4">$10.00</span></td>
+                              <td class="text-right"><span class="h4">$30.00</span></td>
+                              <td class="text-right"><span class="text-md text-muted">06/18/2014, 3:30PM</span></td>
                             </tr>
                             <tr>
-                              <td class="dropdown">
-                                <a class="dropdown-toggle btn btn-round-xs btn-success btn-block" data-toggle="dropdown">Complete <span class="caret"></span></a>
+                              <td style="width:20px">
+                                <img src="http://lorempixel.com/20/20/business/7"  class="img-circle">
+                              </td>
+                              <td><a href="order-detail.html"><span class="h4">Knight</span></a></td>
+                              <td class="dropdown" style="width:100px">
+                                <a class="dropdown-toggle btn btn-round-xs btn-info btn-block" data-toggle="dropdown">Active <span class="caret"></span></a>
                                 <ul class="dropdown-menu text-md">
-                                  <li class="active"><a href="#">Complete</a></li>
-                                  <li><a href="#">Processed</a></li>
-                                  <li><a href="#">Open</a></li>
-                                  <li><a href="#">Declined</a></li>
+                                  <li class="active"><a href="#">Active</a></li>
+                                  <li><a href="#">Hidden</a></li>
+                                  <li><a href="#">Disabled</a></li>
                                   <li class="divider"></li>
-                                  <li><a href="#">Delete Order</a></li>
+                                  <li><a href="#">Delete</a></li>
                                 </ul>
                               </td>
-                              <td><a href="#">Order #94</a> <span class="text-md">by</span> <a href="#">Emily Kramer</a></td>
-                              <td><span class="text-md text-muted">06/15/2014, 10:11AM</span></td>
+                              <td class="text-right"><span class="h4">$35.00</span></td>
+                              <td class="text-right"><span class="text-md text-muted">06/18/2014, 3:30PM</span></td>
+                            </tr>
+                            <tr>
+                              <td style="width:20px">
+                                <img src="http://lorempixel.com/20/20/business/8"  class="img-circle">
+                              </td>
+                              <td><a href="order-detail.html"><span class="h4">Viceroy</span></a></td>
+                              <td class="dropdown" style="width:100px">
+                                <a class="dropdown-toggle btn btn-round-xs btn-info btn-block" data-toggle="dropdown">Active <span class="caret"></span></a>
+                                <ul class="dropdown-menu text-md">
+                                  <li class="active"><a href="#">Active</a></li>
+                                  <li><a href="#">Hidden</a></li>
+                                  <li><a href="#">Disabled</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Delete</a></li>
+                                </ul>
+                              </td>
+                              <td class="text-right"><span class="h4">$40.00</span></td>
+                              <td class="text-right"><span class="text-md text-muted">06/18/2014, 3:30PM</span></td>
+                            </tr>
+                            <tr>
+                              <td style="width:20px">
+                                <img src="http://lorempixel.com/20/20/business/9"  class="img-circle">
+                              </td>
+                              <td><a href="order-detail.html"><span class="h4">Crusader</span></a></td>
+                              <td class="dropdown" style="width:100px">
+                                <a class="dropdown-toggle btn btn-round-xs btn-default btn-block" data-toggle="dropdown">Hidden <span class="caret"></span></a>
+                                <ul class="dropdown-menu text-md">
+                                  <li class="active"><a href="#">Active</a></li>
+                                  <li><a href="#">Hidden</a></li>
+                                  <li><a href="#">Disabled</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Delete</a></li>
+                                </ul>
+                              </td>
+                              <td class="text-right"><span class="h4">$45.00</span></td>
+                              <td class="text-right"><span class="text-md text-muted">06/18/2014, 3:30PM</span></td>
+                            </tr>
+                            <tr>
+                              <td style="width:20px">
+                                <img src="http://lorempixel.com/20/20/business/8"  class="img-circle">
+                              </td>
+                              <td><a href="order-detail.html"><span class="h4">Epic</span></a></td>
+                              <td class="dropdown" style="width:100px">
+                                <a class="dropdown-toggle btn btn-round-xs btn-info btn-block" data-toggle="dropdown">Active <span class="caret"></span></a>
+                                <ul class="dropdown-menu text-md">
+                                  <li class="active"><a href="#">Active</a></li>
+                                  <li><a href="#">Hidden</a></li>
+                                  <li><a href="#">Disabled</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Delete</a></li>
+                                </ul>
+                              </td>
                               <td class="text-right"><span class="h4">$50.00</span></td>
-                            </tr>
-                            <tr>
-                              <td class="dropdown">
-                                <a class="dropdown-toggle btn btn-round-xs btn-danger btn-block" data-toggle="dropdown">Declined <span class="caret"></span></a>
-                                <ul class="dropdown-menu text-md">
-                                  <li><a href="#">Complete</a></li>
-                                  <li><a href="#">Processed</a></li>
-                                  <li><a href="#">Open</a></li>
-                                  <li class="active"><a href="#">Declined</a></li>
-                                  <li class="divider"></li>
-                                  <li><a href="#">Delete Order</a></li>
-                                </ul>
-                              </td>
-                              <td><a href="#">Order #93</a> <span class="text-md">by</span> <a href="#">Lorenzo Silva</a></td>
-                              <td><span class="text-md text-muted">06/14/2014, 8:56AM</span></td>
-                              <td class="text-right"><span class="h4">$75.00</span></td>
+                              <td class="text-right"><span class="text-md text-muted">06/18/2014, 3:30PM</span></td>
                             </tr>
                         </tbody>
                       </table>
@@ -327,7 +319,7 @@
                 <!-- Begin panel -->
                 <div class="panel panel-default radius-none">
                   <div class="panel-body pad-bottom-none">
-                    <h3 class="page-header push-top-none">Order Search</h3>
+                    <h3 class="page-header push-top-none">Package Search</h3>
                     <form>
                       <div class="form-group">
                         <div class="input-group input-group-sm input-group-round">
@@ -338,17 +330,22 @@
                         </div>
                       </div>
                     </form>
-                    <h4 class="page-header push-top-none">Date Range</h4>
+                    <h4 class="page-header push-top-none">Created Date Range</h4>
                     <div class="form-group">
                     <div class="date-range btn btn-default btn-block">
                         <i class="fa fa-calendar"></i>
                         <span>Select Date Range</span> <b class="caret"></b>
                       </div>
                     </div>
-                    <h4 class="page-header push-top-none">Order Filters</h4>
+                    <h4 class="page-header push-top-none">Package Filters</h4>
                     <div class="form-group">
                       <select class="form-control">
-                        <option>Select Package</option>
+                        <option>Select File</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>Select Status</option>
                       </select>
                     </div>
                     <div class="form-group">
@@ -387,15 +384,15 @@
       </article>
       <aside class="sidebar vibrancy-dark flex-rows">
         <header class="header">
-          <nav class="navbar navbar-inverse vibrancy-dark navbar-inline" role="navigation">
+          <nav class="navbar navbar-danger navbar-inline" role="navigation">
             <a class="navbar-brand push-left-xs" href="#">Menu</a>
           </nav>
         </header>
         <section class="content content-inverse">
           <ul class="nav nav-stacked nav-inverse">
             <li><a href="dashboard.html"><span aria-hidden="true" class="fa fa-tachometer"></span> Dashboard</a></li>
-            <li class="active"><a href="orders.html"><span aria-hidden="true" class="fa fa-file-text-o text-success-light"></span> Orders</a></li>
-            <li><a href="packages.html"><span aria-hidden="true" class="fa fa-cubes"></span> Packages</a></li>
+            <li><a href="orders.html"><span aria-hidden="true" class="fa fa-file-text-o"></span> Orders</a></li>
+            <li class="active"><a href="packages.html"><span aria-hidden="true" class="fa fa-cubes text-danger-light"></span> Packages</a></li>
             <li><a href="groups.html"><span aria-hidden="true" class="fa fa-users"></span> Groups</a></li>
             <li><a href="members.html"><span aria-hidden="true" class="fa fa-user"></span> Members</a></li>
             <li><a href="integrations.html"><span aria-hidden="true" class="fa fa-puzzle-piece"></span> Integrations</a></li>
@@ -524,7 +521,7 @@
     <!-- Docs Example JS -->
     <script src="../../assets/js/d3/d3.v3.js"></script>
     <script src="../../assets/js/nvd3/nv.d3.min.js"></script>
-    <script src="../../assets/js/nvd3/bar.js"></script>
-    
+    <script src="../../assets/js/nvd3/multi-bar.js"></script>
+
   </body>
 </html>

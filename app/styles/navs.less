@@ -28,10 +28,10 @@
 .nav-inverse {
   > li {
     > a {
-      color: lighten(@brand-inverse, 50%);
+      color: rgba(255, 255, 255, 0.5);
       &:hover,
       &:focus {
-        background-color: lighten(@brand-inverse, 5%);
+        background-color: rgba(0, 0, 0, 0.35);
       }
     }
     // Active state
@@ -40,7 +40,7 @@
       &:hover,
       &:focus {
         color: #fff;
-        background-color: darken(@brand-inverse, 2%);
+        background-color: rgba(0, 0, 0, 0.25);
       }
     }
   }

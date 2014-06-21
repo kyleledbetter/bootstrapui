@@ -156,9 +156,6 @@ historicalBarChart = [
   }
 ];
 
-
-
-
 nv.addGraph(function() {  
   var chart = nv.models.discreteBarChart()
       .x(function(d) { return d.label })
@@ -167,11 +164,105 @@ nv.addGraph(function() {
       //.staggerLabels(historicalBarChart[0].values.length > 8)
       .tooltips(false)
       .showValues(true)
-      .transitionDuration(250)
+      .transitionDuration(1050)
       ;
 
   d3.select('.chart-bar-1 svg')
       .datum(historicalBarChart)
+      .call(chart);
+
+  nv.utils.windowResize(chart.update);
+  return chart;
+});
+
+/* Chart */
+
+historicalBarChart2 = [ 
+  {
+    key: "Packages",
+    values: [
+      { 
+        "label" : "Beginner" ,
+        "value" : 12
+      } , 
+      { 
+        "label" : "Rookie" ,
+        "value" : 3
+      } ,
+      { 
+        "label" : "Casual" ,
+        "value" : 9
+      } ,
+      { 
+        "label" : "Greenhorn" ,
+        "value" : 11
+      } ,
+      { 
+        "label" : "Apprentice" ,
+        "value" : 10
+      } ,
+      { 
+        "label" : "Authentic" ,
+        "value" : 3
+      } ,
+      { 
+        "label" : "Adventurer" ,
+        "value" : 6
+      } ,
+      { 
+        "label" : "Old Hand" ,
+        "value" : 4
+      } ,
+      { 
+        "label" : "Veteran" ,
+        "value" : 7
+      } ,
+      { 
+        "label" : "Knight" ,
+        "value" : 2
+      } ,
+      { 
+        "label" : "Viceroy" ,
+        "value" : 8
+      } ,
+      { 
+        "label" : "Crusader" ,
+        "value" : 15
+      } ,
+      { 
+        "label" : "Epic" ,
+        "value" : 13
+      } ,
+      { 
+        "label" : "Savior" ,
+        "value" : 7
+      }
+    ]
+  }
+];
+
+
+var myColors = ["#D9534F"];
+  d3.scale.myColors = function() {
+      return d3.scale.ordinal().range(myColors);
+  };
+
+nv.addGraph(function() {  
+  var chart = nv.models.discreteBarChart()
+      .x(function(d) { return d.label })
+      .y(function(d) { return d.value })
+      .staggerLabels(false)
+      //.staggerLabels(historicalBarChart[0].values.length > 8)
+      .tooltips(false)
+      .showValues(true)
+      .transitionDuration(1050)
+      .color(d3.scale.myColors().range())
+      //.color(d3.scale.category20c().range())
+      .margin({top: 10, right: 10, bottom: 35, left: 40})
+      ;
+
+  d3.select('.chart-bar-2 svg')
+      .datum(historicalBarChart2)
       .call(chart);
 
   nv.utils.windowResize(chart.update);

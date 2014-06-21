@@ -72,14 +72,10 @@
   padding: 4px 14px;
   line-height: 18px;
   font-weight: normal;
-  background-color: rgba(247,247,247,0.75);
+  background-color: rgba(0,0,0,0.6);
   text-align: center;
-
-  border-bottom: 1px solid #ebebeb;
-
-  -webkit-border-radius: 5px 5px 0 0;
-  -moz-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
 }
 
 .nvtooltip p {
@@ -213,8 +209,8 @@ svg .title {
 
 .nvd3 .nv-axis path {
   fill: none;
-  stroke: #000;
-  stroke-opacity: .15;
+  stroke: rgba(0, 0, 0, 0.2);
+  stroke-opacity: .05;
   shape-rendering: crispEdges;
 }
 
@@ -228,7 +224,7 @@ svg .title {
 
 .nvd3 .nv-axis line {
   fill: none;
-  stroke: rgba(255, 255, 255, 0.2);
+  stroke: rgba(255, 255, 255, 0.1);
   shape-rendering: crispEdges;
 }
 
@@ -788,11 +784,17 @@ svg text {
     fill-opacity: 0.4;
   }
 }
+.bar-success {
+  .nv-discreteBarWithAxes .nv-discretebar rect {
+    stroke: rgba(255, 255, 255, 0.5) !important;
+    stroke-width: 1 !important;
+    fill: rgba(202, 255, 163, 0.45) !important;
+    filter: url(#dropshadow);
+  }
+}
 .nv-discreteBarWithAxes .nv-discretebar rect {
-  stroke: rgba(255, 255, 255, 0.9) !important;
-  stroke-width: 2 !important;
-  fill: rgba(255, 255, 255, 0.45) !important;
-  filter: url(#dropshadow);
+  stroke-opacity: 1 !important;
+  fill-opacity: 1 !important;
 }
 .nv-lineChart .nv-series-0 .nv-line {
   stroke: rgba(255, 255, 255, 0.65) !important;
