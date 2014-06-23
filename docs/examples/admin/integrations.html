@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Membership App UI for Bootstrap</title>
+
+    <!-- Bootstrapapp CSS -->
+    <link href="../../../dist/css/app.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="../../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+
+    <!-- Google Fonts (optional) -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body class="body-default with-transitions">
+    
+    <div class="wrapper flex-columns">
+      
+      <article class="main main-default flex-rows">
+        <header class="header">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+              <a class="btn btn-none navbar-btn pull-left push-right" data-toggle="sidebar"><span aria-hidden="true" class="fa fa-bars"></span></a>
+              <a class="btn btn-none navbar-btn pull-right" data-toggle="aside"><span aria-hidden="true" class="fa fa-align-right"></span></a>
+              <a href=".modal-settings" class="btn btn-none navbar-btn pull-right" data-toggle="modal"><span aria-hidden="true" class="fa fa-cog"></span></a>
+              <span class="dropdown pull-right">
+                <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
+                  <span class="badge badge-danger-light">2</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Nils George has an open order</a></li>
+                  <li><a href="#">Lorenzo Silva's order was declined</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">View all</a></li>
+                </ul>
+              </span>
+              <span class="dropdown pull-right">
+                <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
+                  <img src="http://lorempixel.com/18/18/people/" class="img-circle push-right-xs"> username <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li class="divider"></li>
+                  <li><a href="index.html">Sign Out</a></li>
+                </ul>
+              </span>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="input-group input-group-sm input-group-round">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </nav>
+        </header>
+        <section class="content content-default bg-muted-light">
+          <div class="row">
+            <div class="col-sm-4 col-md-3">
+              <a href="#" class="btn btn-default btn-block radius-none" data-toggle="button">
+                <h3 class="text-center">PayPal</h3>
+                <div class="text-super text-center fa fa-credit-card"></div>
+                <p class="text-truncate">Chia authentic you probably haven't heard of them, hoodie vinyl actually banjo pour-over messenger bag retro whatever XOXO hashtag.</p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <footer class="footer" style="display:none">
+          <nav class="navbar navbar-default navbar-inline text-center" role="navigation">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer> 
+      </article>
+      <aside class="sidebar vibrancy-dark flex-rows">
+        <header class="header">
+          <nav class="navbar navbar-primary navbar-inline" role="navigation">
+            <a class="navbar-brand push-left-xs" href="#">Menu</a>
+          </nav>
+        </header>
+        <section class="content content-inverse">
+          <ul class="nav nav-stacked nav-inverse">
+            <li><a href="dashboard.html"><span aria-hidden="true" class="fa fa-tachometer"></span> Dashboard</a></li>
+            <li><a href="orders.html"><span aria-hidden="true" class="fa fa-file-text-o"></span> Orders</a></li>
+            <li><a href="packages.html"><span aria-hidden="true" class="fa fa-cubes"></span> Packages</a></li>
+            <li><a href="groups.html"><span aria-hidden="true" class="fa fa-users"></span> Groups</a></li>
+            <li><a href="members.html"><span aria-hidden="true" class="fa fa-user"></span> Members</a></li>
+            <li class="active"><a href="integrations.html"><span aria-hidden="true" class="fa fa-puzzle-piece text-primary"></span> Integrations</a></li>
+            <li><a href="reports.html"><span aria-hidden="true" class="fa fa-bar-chart-o"></span> Reports</a></li>
+          </ul>
+        </section>
+        <footer class="footer">
+          <nav class="navbar navbar-inverse vibrancy-dark navbar-inline text-right" role="navigation">
+            <div class="container-fluid dropdown dropup">
+              <a href="#" class="btn btn-inverse navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="fa fa-plus"></span></a>
+              <ul class="dropdown-menu dropdown-menu-right text-left">
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Package</a></li>
+                <li><a href="#">Group</a></li>
+                <li><a href="#">Smart Group</a></li>
+                <li><a href="#">Member</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+      </aside>
+      <aside class="aside aside-inverse flex-rows" style="display:none">
+        <header class="header">
+          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
+            <a class="navbar-brand push-left-xs" href="#">Activity</a>
+          </nav>
+        </header>
+        <section class="content content-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
+            <div class="container-fluid dropdown dropup">
+              <a href="#" class="btn btn-inverse navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="ion-ios7-gear-outline"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+      </aside>
+    </div>
+    
+
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrapapp JS -->
+    <script src="../../../dist/js/app.js"></script>
+    <!-- Docs Example JS -->
+    <script src="../../assets/js/d3/d3.v3.js"></script>
+    <script src="../../assets/js/nvd3/nv.d3.min.js"></script>
+    <script src="../../assets/js/nvd3/multi-bar.js"></script>
+    <script src="../../assets/js/nvd3/pie.js"></script>
+  </body>
+</html>
