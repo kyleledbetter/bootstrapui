@@ -5845,6 +5845,9 @@ fieldset[disabled] .btn-inverse.active {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.text-wrap {
+  white-space: normal;
+}
 .text-upper {
   text-transform: uppercase;
 }
