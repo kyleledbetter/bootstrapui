@@ -25,16 +25,16 @@
     
     <div class="wrapper flex-columns">
       
-      <article class="main main-default flex-rows">
+      <article class="main main-inverse flex-rows">
         <header class="header">
-          <nav class="navbar navbar-default" role="navigation">
+          <nav class="navbar navbar-inverse" role="navigation">
             <div class="container-fluid">
               <a class="btn btn-none navbar-btn pull-left push-right" data-toggle="sidebar"><span aria-hidden="true" class="fa fa-bars"></span></a>
               <a class="btn btn-none navbar-btn pull-right" data-toggle="aside"><span aria-hidden="true" class="fa fa-align-right"></span></a>
-              <a data-target=".modal-settings" class="btn btn-none navbar-btn pull-right" data-toggle="modal"><span aria-hidden="true" class="fa fa-cog"></span></a>
+              <a href=".modal-settings" class="btn btn-none navbar-btn pull-right" data-toggle="modal"><span aria-hidden="true" class="fa fa-cog"></span></a>
               <span class="dropdown pull-right">
                 <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
-                  <span class="badge badge-danger-light">2</span>
+                  <span class="badge badge-inverse-light">2</span>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Nils George has an open order</a></li>
@@ -56,96 +56,115 @@
               </span>
               <form class="navbar-form navbar-left" role="search">
                 <div class="input-group input-group-sm input-group-round">
-                  <input type="text" class="form-control" placeholder="Search">
+                  <input type="text" class="form-control form-control-inverse" placeholder="Search">
                   <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+                    <button class="btn btn-inverse" type="button"><span class="fa fa-search"></span></button>
                   </span>
                 </div>
               </form>
             </div>
           </nav>
         </header>
-        <section class="content content-default bg-muted-light">
+        <section class="content content-inverse">
           <div class="row">
-            <div class="col-sm-4 col-md-3 push-bottom">
-              <a href="#" class="btn btn-default btn-block radius-none active" data-toggle="button">
-                <h3 class="">PayPal</h3>
-                <div class="text-super fa fa-credit-card"></div>
-                <div class="panel-body text-wrap">
-                  <p>Chia authentic you probably haven't heard of them, hoodie vinyl actually banjo pour-over messenger bag retro whatever XOXO hashtag.</p>
+            <div class="col-sm-8">
+              <div class="panel panel-inverse radius-none push-bottom-none">
+                <div class="chart-bar-3 pad">
+                  <svg style="height: 240px;">
+                    <defs>
+                      <filter id="dropshadow" height="130%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
+                        <feOffset dx="2" dy="2" result="offsetblur"/>
+                        <feComponentTransfer>
+                          <feFuncA type="linear" slope="0.2"/>
+                        </feComponentTransfer>
+                        <feMerge> 
+                          <feMergeNode/>
+                          <feMergeNode in="SourceGraphic"/> 
+                        </feMerge>
+                      </filter>
+                    </defs>
+                  </svg>
+                  <ul class="nav nav-round nav-inline text-center text-sm" data-spy="affix" data-offset-top="10">
+                    <li class="active"><a href="#">Complete</a></li>
+                    <li><a href="#">Processed</a></li>
+                    <li><a href="#">Open</a></li>
+                    <li><a href="#">Declined</a></li>
+                  </ul>
                 </div>
-              </a>
+              </div>
             </div>
-            <div class="col-sm-4 col-md-3 push-bottom">
-              <a href="#" class="btn btn-default btn-block radius-none" data-toggle="button">
-                <h3 class="">Stripe</h3>
-                <div class="text-super fa fa-credit-card"></div>
-                <div class="panel-body text-wrap">
-                  <p>Chia authentic you probably haven't heard of them, hoodie vinyl actually banjo pour-over messenger bag retro whatever XOXO hashtag.</p>
+            <div class="col-sm-4">
+              <div class="panel panel-inverse radius-none push-bottom-none" style="min-height:308px">
+                <svg class="pie-chart-2 push-top" style="height:286px;"></svg>
+                <div class="h5 text-center" style="margin-top:-142px">
+                  <p class="text-super fa fa-users text-inverse"></p>
+                  <div>Users</div>
                 </div>
-              </a>
-            </div>
-            <div class="col-sm-4 col-md-3 push-bottom">
-              <a href="#" class="btn btn-default btn-block radius-none active" data-toggle="button">
-                <h3 class="">Mailchimp</h3>
-                <div class="text-super fa fa-paper-plane"></div>
-                <div class="panel-body text-wrap">
-                  <p>Chia authentic you probably haven't heard of them, hoodie vinyl actually banjo pour-over messenger bag retro whatever XOXO hashtag.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-4 col-md-3 push-bottom">
-              <a href="#" class="btn btn-default btn-block radius-none active" data-toggle="button">
-                <h3 class="">Facebook</h3>
-                <div class="text-super fa fa-facebook"></div>
-                <div class="panel-body text-wrap">
-                  <p>Chia authentic you probably haven't heard of them, hoodie vinyl actually banjo pour-over messenger bag retro whatever XOXO hashtag.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-4 col-md-3 push-bottom">
-              <a href="#" class="btn btn-default btn-block radius-none active" data-toggle="button">
-                <h3 class="">Twitter</h3>
-                <div class="text-super fa fa-twitter"></div>
-                <div class="panel-body text-wrap">
-                  <p>Chia authentic you probably haven't heard of them, hoodie vinyl actually banjo pour-over messenger bag retro whatever XOXO hashtag.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-4 col-md-3 push-bottom">
-              <a href="#" class="btn btn-default btn-block radius-none active" data-toggle="button">
-                <h3 class="">Google</h3>
-                <div class="text-super fa fa-google"></div>
-                <div class="panel-body text-wrap">
-                  <p>Chia authentic you probably haven't heard of them, hoodie vinyl actually banjo pour-over messenger bag retro whatever XOXO hashtag.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-4 col-md-3 push-bottom">
-              <a href="#" class="btn btn-default btn-block radius-none" data-toggle="button">
-                <h3 class="">WordPress</h3>
-                <div class="text-super fa fa-wordpress"></div>
-                <div class="panel-body text-wrap">
-                  <p>Chia authentic you probably haven't heard of them, hoodie vinyl actually banjo pour-over messenger bag retro whatever XOXO hashtag.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-4 col-md-3 push-bottom">
-              <a href="#" class="btn btn-default btn-block radius-none" data-toggle="button">
-                <h3 class="">Squarespace</h3>
-                <div class="text-super fa fa-cube"></div>
-                <div class="panel-body text-wrap">
-                  <p>Chia authentic you probably haven't heard of them, hoodie vinyl actually banjo pour-over messenger bag retro whatever XOXO hashtag.</p>
-                </div>
-              </a>
+              </div>
             </div>
           </div>
-          <div>
-            <span class="btn btn-info active">Active</span> <span class="btn btn-default">In-active</span>
+          <div class="pad-top">
+            <!-- Embed start -->
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="panel panel-inverse radius-none push-bottom-none">
+                  <div class="chart-line-bar pad">
+                    <svg style="height: 300px;">
+                      <defs>
+                        <filter id="dropshadow" height="130%">
+                          <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
+                          <feOffset dx="2" dy="2" result="offsetblur"/>
+                          <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.2"/>
+                          </feComponentTransfer>
+                          <feMerge> 
+                            <feMergeNode/>
+                            <feMergeNode in="SourceGraphic"/> 
+                          </feMerge>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="panel panel-inverse radius-none push-bottom-none">
+                  <div class="chart-bar-1 bar-success pad">
+                    <svg style="height: 300px;">
+                      <defs>
+                        <filter id="dropshadow" height="130%">
+                          <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
+                          <feOffset dx="2" dy="2" result="offsetblur"/>
+                          <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.2"/>
+                          </feComponentTransfer>
+                          <feMerge> 
+                            <feMergeNode/>
+                            <feMergeNode in="SourceGraphic"/> 
+                          </feMerge>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-5">
+                <div class="panel panel-inverse radius-none push-bottom-none">
+                  <div class="panel-body text-center">
+                    <h3>Data Usage</h3>
+                    <div class="chart-donut" style="height:300px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Embed end -->
           </div>
         </section>
         <footer class="footer" style="display:none">
-          <nav class="navbar navbar-default navbar-inline text-center" role="navigation">
+          <nav class="navbar navbar-inverse navbar-inline text-center" role="navigation">
             <div class="container-fluid">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Link</a></li>
@@ -157,9 +176,9 @@
           </nav>
         </footer> 
       </article>
-      <aside class="sidebar vibrancy-dark flex-rows">
+      <aside class="sidebar sidebar-inverse flex-rows">
         <header class="header">
-          <nav class="navbar navbar-info-dark navbar-inline" role="navigation">
+          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
             <a class="navbar-brand push-left-xs" href="#">Menu</a>
           </nav>
         </header>
@@ -170,12 +189,12 @@
             <li><a href="packages.html"><span aria-hidden="true" class="fa fa-cubes"></span> Packages</a></li>
             <li><a href="groups.html"><span aria-hidden="true" class="fa fa-users"></span> Groups</a></li>
             <li><a href="members.html"><span aria-hidden="true" class="fa fa-user"></span> Members</a></li>
-            <li class="active"><a href="integrations.html"><span aria-hidden="true" class="fa fa-puzzle-piece text-info-dark"></span> Integrations</a></li>
-            <li><a href="reports.html"><span aria-hidden="true" class="fa fa-bar-chart-o"></span> Reports</a></li>
+            <li><a href="integrations.html"><span aria-hidden="true" class="fa fa-puzzle-piece"></span> Integrations</a></li>
+            <li class="active"><a href="reports.html"><span aria-hidden="true" class="fa fa-bar-chart-o text-muted"></span> Reports</a></li>
           </ul>
         </section>
         <footer class="footer">
-          <nav class="navbar navbar-inverse vibrancy-dark navbar-inline text-right" role="navigation">
+          <nav class="navbar navbar-inverse navbar-inline text-right" role="navigation">
             <div class="container-fluid dropdown dropup">
               <a href="#" class="btn btn-inverse navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="fa fa-plus"></span></a>
               <ul class="dropdown-menu dropdown-menu-right text-left">
@@ -283,35 +302,14 @@
         </footer>
       </aside>
     </div>
-
-    <!-- begin modal -->
-    <div class="modal fade modal-settings" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <button type="button" class="close push-top-sm push-right-sm" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <!-- Nav tabs -->
-          <ul class="nav nav-underline">
-            <li class="active"><a href="#home" data-toggle="tab" class="radius-none">Home</a></li>
-            <li><a href="#profile" data-toggle="tab" class="radius-none">Profile</a></li>
-            <li><a href="#messages" data-toggle="tab" class="radius-none">Messages</a></li>
-            <li><a href="#settings" data-toggle="tab" class="radius-none">Settings</a></li>
-          </ul>
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div class="tab-pane active" id="home">...</div>
-            <div class="tab-pane" id="profile">...</div>
-            <div class="tab-pane" id="messages">...</div>
-            <div class="tab-pane" id="settings">...</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end modal -->
     
 
     <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <!-- Moment JS & datarangepicker have to come before app.js -->
+    <script src="../../../bower_components/momentjs/moment.js"></script>
+    <script src="../../../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="../../assets/js/daterangepicker/daterange.js"></script>
     <!-- Bootstrapapp JS -->
     <script src="../../../dist/js/app.js"></script>
     <!-- Docs Example JS -->
@@ -319,5 +317,62 @@
     <script src="../../assets/js/nvd3/nv.d3.min.js"></script>
     <script src="../../assets/js/nvd3/multi-bar.js"></script>
     <script src="../../assets/js/nvd3/pie.js"></script>
+    <script src="../../assets/js/nvd3/line-bar.js"></script>
+    <script src="../../assets/js/nvd3/line.js"></script>
+    <script src="../../assets/js/nvd3/bar.js"></script>
+
+    <script>
+      var dataset = {
+        hddrives: [20301672448, 9408258048, 2147483648, 21474836480, 35622912,32212254720],
+      };
+
+      var width = 300,
+          height = 300,
+          radius = Math.min(width, height) / 2;
+
+      var color = d3.scale.ordinal()
+          .range(["#2DA7E2"]);
+
+      var pie = d3.layout.pie()
+          .sort(null);
+
+
+
+      var arc = d3.svg.arc()
+          .innerRadius(radius - 10)
+          .outerRadius(radius - 20);
+
+      var svg = d3.select(".chart-donut").append("svg")
+          .attr("width", width)
+          .attr("height", height)
+          .append("g")
+          .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+      //Draw the Circle
+       svg.append("circle")
+          .attr("cx", 0)
+          .attr("cy", 0)
+          .attr("r", (radius - 20))
+          .attr("fill", "rgba(0, 0, 0, 0.3)");
+
+      var path = svg.selectAll("path")
+          .data(pie(dataset.hddrives))
+            .enter().append("path")
+           .attr("class", "arc")
+          .style("opacity", function(d, i) { return i == dataset.hddrives.length - 1 ? 0 : 1; })
+          .attr("fill", function(d, i) { return color(i); })
+          .attr("d", arc);
+      svg.append("text")
+            .attr("dy", "0em")
+            .style("text-anchor", "middle")
+            .attr("class", "inside text-super push-bottom")
+            .text(function(d) { return '65%'; });
+      svg.append("text")
+             .attr("dy", "1.5em")
+            .style("text-anchor", "middle")
+            .attr("class", "data")
+            .text(function(d) { return '79GB / 123GB'; });
+
+    </script>
   </body>
 </html>

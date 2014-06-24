@@ -1,4 +1,4 @@
-var testdata = [
+var pie_data = [
     {
       key: "Beginner",
       y: 12
@@ -42,8 +42,8 @@ nv.addGraph(function() {
         .height(height);
 
       d3.select(".pie-chart-1")
-          .datum(testdata)
-        .transition().duration(1200)
+          .datum(pie_data)
+          .transition().duration(1200)
           .attr('width', width)
           .attr('height', height)
           .call(chart);
@@ -73,7 +73,8 @@ nv.addGraph(function() {
         .width(width)
         .showLegend(true)
         .height(height)
-        .margin({top: 0, right: 10, bottom: 40, left: 40})
+        .margin({top: 0, right: 10, bottom: 40, left:10})
+        .donutRatio(0.7)
         .donut(true);
 
     // half pie
@@ -87,8 +88,8 @@ nv.addGraph(function() {
 
       d3.select(".pie-chart-2")
           //.datum(historicalBarChart)
-          .datum(testdata)
-        .transition().duration(1200)
+          .datum(pie_data)
+          .transition().duration(1200)
           .attr('width', width)
           .attr('height', height)
           .call(chart);

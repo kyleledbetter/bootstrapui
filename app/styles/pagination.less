@@ -58,3 +58,52 @@
     }
   }
 }
+
+//
+// Pagination Inverse (dark)
+// --------------------------------------------------
+.pagination-inverse {
+  border-color: darken(@brand-inverse, 10%);
+  > li {
+    > a,
+    > span {
+      color: @gray-light;
+      background-color: @brand-inverse;
+      border-color: darken(@brand-inverse, 10%);
+    }
+  }
+
+  > li > a,
+  > li > span {
+    &:hover,
+    &:focus {
+      color: @gray-lighter;
+      background-color: lighten(@brand-inverse, 3%);
+      border-color: darken(@brand-inverse, 10%);
+    }
+  }
+
+  > .active > a,
+  > .active > span {
+    &,
+    &:hover,
+    &:focus {
+      color: @gray-lighter;
+      background-color: lighten(@brand-inverse, 6%);
+      border-color: darken(@brand-inverse, 10%);
+    }
+  }
+
+  > .disabled {
+    > span,
+    > span:hover,
+    > span:focus,
+    > a,
+    > a:hover,
+    > a:focus {
+      color: @gray;
+      background-color: lighten(@brand-inverse, 1%);
+      border-color: darken(@brand-inverse, 10%);
+    }
+  }
+}

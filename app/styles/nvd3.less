@@ -771,6 +771,11 @@ Custom
 svg text {
   fill: rgba(0, 0, 0, 0.35) !important;
 }
+.panel-inverse {
+  svg text {
+    fill: rgba(255, 255, 255, 0.35) !important;
+  }
+}
 .nv-linePlusBar {
   .nv-series-0 .nv-line {
     stroke: #fff !important;
@@ -788,9 +793,14 @@ svg text {
   .nv-discreteBarWithAxes .nv-discretebar rect {
     stroke: rgba(255, 255, 255, 0.5) !important;
     stroke-width: 1 !important;
-    fill: rgba(202, 255, 163, 0.45) !important;
+    fill: rgba(118, 191, 63, 0.75) !important;
     filter: url(#dropshadow);
   }
+}
+.nv-multiBarWithLegend .nv-series-0 rect {
+  stroke: rgba(255, 255, 255, 0.5) !important;
+  stroke-width: 1 !important;
+  filter: url(#dropshadow);
 }
 .nv-discreteBarWithAxes .nv-discretebar rect {
   stroke-opacity: 1 !important;
