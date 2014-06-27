@@ -27,6 +27,11 @@
 .badge-danger {
   .label-variant(@label-danger-bg);
 }
+
+.badge-inverse {
+  .label-variant(@brand-inverse);
+}
+
 .badge-primary-light {
   background-color: lighten(@label-primary-bg, 10%);
 }
@@ -47,23 +52,23 @@
   background-color: lighten(@label-danger-bg, 10%);
 }
 .badge-primary-dark {
-  background-color: dark(@label-primary-bg, 10%);
+  background-color: darken(@label-primary-bg, 10%);
 }
 
 .badge-success-dark {
-  background-color: dark(@label-success-bg, 10%);
+  background-color: darken(@label-success-bg, 10%);
 }
 
 .badge-info-dark {
-  background-color: dark(@label-info-bg, 10%);
+  background-color: darken(@label-info-bg, 10%);
 }
 
 .badge-warning-dark {
-  background-color: dark(@label-warning-bg, 10%);
+  background-color: darken(@label-warning-bg, 10%);
 }
 
 .badge-danger-dark {
-  background-color: dark(@label-danger-bg, 10%);
+  background-color: darken(@label-danger-bg, 10%);
 }
 .badge-block {
   display: block;

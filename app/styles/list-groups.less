@@ -1,0 +1,43 @@
+//
+// List groups
+// --------------------------------------------------
+
+
+// Base class
+//
+// Easily usable on <ul>, <ol>, or <div>.
+
+.list-group-inverse {
+  .list-group-item {
+    border: 1px solid darken(@brand-inverse, 10%);
+  }
+  &.list-group-striped {
+    > .list-group-item:nth-of-type(odd) {
+      background-color: lighten(@brand-inverse, 5%);
+    }
+    > .list-group-item-success:nth-of-type(odd) {
+      background-color: @brand-success;
+    }
+    > .list-group-item-danger:nth-of-type(odd) {
+      background-color: @brand-danger;
+    }
+    > .list-group-item-warning:nth-of-type(odd) {
+      background-color: @brand-warning;
+    }
+    > .list-group-item-info:nth-of-type(odd) {
+      background-color: @brand-info;
+    }
+  }
+}
+
+.list-group-item-variant(inverse; lighten(@brand-inverse, 10%); #eee);
+
+.list-group-none {
+  .list-group-item {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+  }
+  & > list-group-item {
+    background-color: transparent;
+  }
+}

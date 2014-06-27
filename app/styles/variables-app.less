@@ -7,6 +7,9 @@
 @headings-font-family:    "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @headings-font-weight:    300;
 @brand-primary:            @gray;
+@brand-info:              #47aeb7;
+@brand-warning:           #ff9935;
+@gray-light:              rgba(255, 255, 255, 0.4);
 @btn-info-border:                darken(@brand-info, 20%);
 @btn-warning-border:                darken(@brand-warning, 16%);
 @btn-danger-border:                darken(@brand-danger, 17%);
@@ -37,7 +40,7 @@
 @panel-danger-border:         darken(@brand-danger, 20%);
 @panel-danger-heading-bg:     @brand-danger;
 @pagination-active-bg:                 @brand-inverse-light;
-@hr-border:                   rgba(0, 0, 0, 0.1);
+@hr-border:                   rgba(0, 0, 0, 0.9);
 @page-header-border-color:    @hr-border;
 @modal-backdrop-bg:           #fff;
 @modal-backdrop-opacity:      .9;
@@ -48,6 +51,7 @@
 //## Gray and brand colors for use across Bootstrap.
 
 @brand-inverse:          #222326;
+@brand-vmware:           #5856D6; // Purple screen of death
 
 //== Light Brand Colors
 //
@@ -59,6 +63,7 @@
 @brand-danger-light:          #F26C63;
 @brand-info-light:            lighten(@brand-info, 15%);
 @brand-inverse-light:         lighten(@brand-inverse, 15%);
+@brand-vmware-light:         lighten(@brand-inverse, 15%);
 
 //== Dark Brand Colors
 //
@@ -70,6 +75,7 @@
 @brand-danger-dark:          darken(@brand-danger, 15%);
 @brand-info-dark:            darken(@brand-info, 15%);
 @brand-inverse-dark:         darken(@brand-inverse, 15%);
+@brand-vmware-dark:         darken(@brand-inverse, 15%);
 
 //== Dark Body Colors
 //
@@ -206,7 +212,7 @@
 @main-danger-border:         @state-danger-border;
 @main-danger-heading-bg:     @state-danger-bg;
 
-@main-inverse-bg:            darken(@brand-inverse, 5%);
+@main-inverse-bg:            darken(@brand-inverse, 3%);
 @main-inverse-text:          #fff;
 @main-inverse-border:        @brand-inverse;
 @main-inverse-heading-bg:    @brand-inverse;

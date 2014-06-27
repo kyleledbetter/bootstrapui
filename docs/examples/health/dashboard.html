@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Membership App UI for Bootstrap</title>
+
+    <!-- Bootstrapapp CSS -->
+    <link href="../../../dist/css/app.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="../../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+
+    <!-- Google Fonts (optional) -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body class="body-default with-transitions">
+    
+    <div class="wrapper flex-columns">
+      
+      <article class="main main-default flex-rows">
+        <header class="header">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+              <a class="btn btn-none navbar-btn pull-left push-right" data-toggle="sidebar"><span aria-hidden="true" class="fa fa-bars"></span></a>
+              <a class="btn btn-none navbar-btn pull-right" data-toggle="aside"><span aria-hidden="true" class="fa fa-align-right"></span></a>
+              <a href=".modal-settings" class="btn btn-none navbar-btn pull-right" data-toggle="modal"><span aria-hidden="true" class="fa fa-cog"></span></a>
+              <span class="dropdown pull-right">
+                <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
+                  <span class="badge badge-danger-light">2</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Nils George has an open order</a></li>
+                  <li><a href="#">Lorenzo Silva's order was declined</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">View all</a></li>
+                </ul>
+              </span>
+              <span class="dropdown pull-right">
+                <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
+                  <img src="http://lorempixel.com/18/18/people/" class="img-circle push-right-xs"> username <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li class="divider"></li>
+                  <li><a href="index.html">Sign Out</a></li>
+                </ul>
+              </span>
+              <form class="navbar-form navbar-left" role="search" style="margin-top:9px">
+                <div class="input-group input-group-sm input-group-round">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+                  </span>
+                </div>
+              </form>
+              <a href="#" class="btn btn-info btn-circle-sm" style="margin:9px 0 0 10px"><span class="fa fa-plus"></span></a>
+            </div>
+          </nav>
+        </header>
+        <section class="content content-default bg-muted-light">
+          <div class="pad-sm">
+            <div class="row">
+              <div class="col-xs-6 col-md-3">
+                <div class="panel panel-default radius-none text-center overflow-hidden block">
+                    <div class="chart-donut-1" style="height: 200px"></div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <div class="panel panel-default radius-none text-center overflow-hidden">
+                  <div class="chart-donut-2" style="height: 200px"></div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <div class="panel panel-default radius-none text-center overflow-hidden">
+                  <div class="chart-donut-3" style="height: 200px"></div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <div class="panel panel-default radius-none text-center overflow-hidden">
+                  <div class="chart-donut-4" style="height: 200px"></div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default radius-none overflow-hidden">
+              <div class="row">
+                <div class="col-sm-6 col-md-7">
+                  <div class="pad-top pull-bottom-xxl">
+                      <div class="chart-column" style="height: 240px"></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-5">
+                  <div class="pad-top pull-bottom-xxl">
+                    <div class="chart-donut-5" style="height: 300px"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Embed start -->
+            
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="panel panel-default radius-none">
+                  <div class="panel-body">
+                    <h3 class="page-header push-top-none push-bottom-md">Recent Comments</h3>
+                    <div class="media">
+                      <img src="http://lorempixel.com/64/64/people/2" class="img-circle pull-left push-top-sm">
+                      <div class="media-body">
+                        <div class="bubble-left">
+                          Tell me, why this strong young colt, foaled in some peaceful valley of Vermont, far removed from all beasts of prey—why is it that upon the sunniest day, if you but shake a fresh buffalo robe behind him, so that
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media">
+                      <img src="http://lorempixel.com/64/64/people/9" class="img-circle pull-right push-top-sm">
+                      <div class="media-body">
+                        <div class="bubble-right">
+                          Look ye, carpenter, I dare say thou callest thyself a right good workmanlike workman, eh? Well, then, will it speak thoroughly well for thy work, if, when I come to mount this leg thou makest
+                        </div>
+                      </div>
+                    </div>
+                    <div ng-init="toggleStack2 = false" ng-show="toggleStack2" class="animate-show">
+                      <div class="push-top"></div>
+                      <div class="media">
+                        <img src="http://lorempixel.com/64/64/people/2" class="img-circle pull-left push-top-sm">
+                        <div class="media-body">
+                          <div class="bubble-left">
+                          Truly, sir, I begin to understand somewhat now. Yes, I have heard something curious on that score, sir; how that a dismasted man never entirely loses the feeling of his old spar
+                          </div>
+                        </div>
+                      </div>
+                      <div class="media">
+                        <img src="http://lorempixel.com/64/64/people/9" class="img-circle pull-right push-top-sm">
+                        <div class="media-body">
+                          <div class="bubble-right">
+                          It was a humorously perilous business for both of us. For, before we proceed further, it must be said that the
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="push-bottom-none">
+                  <div class="input-group input-group-round input-group-lg pad-sm">
+                    <input type="text" class="form-control" placeholder="reply">
+                    <span class="input-group-btn">
+                      <button class="btn btn-info" type="button"><span class="fa fa-comment-o"></span></button>
+                    </span>
+                  </div>
+                </div>
+                <!-- End panel -->
+              </div>
+              <div class="col-sm-5">
+                <!-- Begin panel -->
+                <div class="panel panel-default radius-none">
+                  <div class="panel-body pad-bottom-none">
+                    <h3 class="push-top-none">Friends</h3>
+                  </div>
+                  <div class="list-group">
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-twitter"></span></a>
+                        </div>
+                        <img src="http://lorempixel.com/20/20/people/10" class="img-circle pull-left">
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#">Anaida Parghel <small class="text-sm">AnaidaParghel</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-facebook"></span></a>
+                        </div>
+                        <img src="http://lorempixel.com/20/20/people/1" class="img-circle pull-left">
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#">Lucía Gómez <small class="text-sm">luciagomez</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-facebook"></span></a>
+                        </div>
+                        <img src="http://lorempixel.com/20/20/people/2" class="img-circle pull-left">
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#">Gerald Gardner <small class="text-sm">Gerald_Gardner</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-google"></span></a>
+                        </div>
+                        <img src="http://lorempixel.com/20/20/people/3" class="img-circle pull-left">
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#">Douglas Rice <small class="text-sm">DouglasR</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-twitter"></span></a>
+                        </div>
+                        <img src="http://lorempixel.com/20/20/people/4" class="img-circle pull-left">
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="#">Lauren Hall <small class="text-sm">haller</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End panel -->
+                <!-- Begin panel -->
+                <div class="panel panel-default radius-none">
+                  <div class="panel-body pad-bottom-none">
+                    <h3 class="push-top-none">Motivational Tracks</h3>
+                  </div>
+                  <div class="list-group">
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-volume-up"></span></a>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="download-detail.html"><span class="fa fa-music text-warning-dark push-right-xs"></span> Fancy <small>Iggy Azalea</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-volume-up"></span></a>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="download-detail.html"><span class="fa fa-music text-warning-dark push-right-xs"></span> Rude <small>Magic!</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-volume-up"></span></a>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="download-detail.html"><span class="fa fa-music text-warning-dark push-right-xs"></span> Problem <small>Ariana Grande</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-volume-up"></span></a>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="download-detail.html"><span class="fa fa-music text-warning-dark push-right-xs"></span> Summer <small>Calvin Harris</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="media">
+                        <div class="pull-right text-center">
+                          <a href="#" class="btn btn-circle-xs btn-none"><span class="fa fa-volume-up"></span></a>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading"><a href="download-detail.html"><span class="fa fa-music text-warning-dark push-right-xs"></span> Am I Wrong <small>Nico &amp; Vinz</small></a></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End panel -->
+              </div>
+            </div>
+            <!-- Embed end -->
+          </div>
+        </section>
+        <footer class="footer" style="display:none">
+          <nav class="navbar navbar-default navbar-inline text-center" role="navigation">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer> 
+      </article>
+      <aside class="sidebar vibrancy-dark flex-rows">
+        <header class="header">
+          <nav class="navbar navbar-info navbar-inline text-center" role="navigation">
+            <a class="navbar-brand" href="#"><span class="fa fa-heart-o 2x"></span> myHealth App</a>
+          </nav>
+        </header>
+        <section class="content content-inverse">
+          <ul class="nav nav-stacked nav-inverse">
+            <li class="active"><a href="dashboard.html"><span aria-hidden="true" class="fa fa-tachometer text-info-light"></span> Dashboard</a></li>
+            <li><a href="log.html"><span aria-hidden="true" class="fa fa-file-text-o"></span> Log</a></li>
+            <li><a href="steops.html"><span aria-hidden="true" class="fa fa-child"></span> Steps</a></li>
+            <li><a href="calories.html"><span aria-hidden="true" class="fa fa-cutlery"></span> Calories</a></li>
+            <li><a href="distance.html"><span aria-hidden="true" class="fa fa-map-marker"></span> Distance</a></li>
+            <li><a href="time.html"><span aria-hidden="true" class="fa fa-clock-o"></span> Time</a></li>
+            <li><a href="friends.html"><span aria-hidden="true" class="fa fa-users"></span> Friends</a></li>
+            <li><a href="reports.html"><span aria-hidden="true" class="fa fa-bar-chart-o"></span> Reports</a></li>
+          </ul>
+        </section>
+        <footer class="footer">
+          <nav class="navbar navbar-inverse vibrancy-dark navbar-inline text-right" role="navigation">
+            <div class="container-fluid dropdown dropup">
+              <a href="#" class="btn btn-inverse navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="fa fa-plus"></span></a>
+              <ul class="dropdown-menu dropdown-menu-right text-left">
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Package</a></li>
+                <li><a href="#">Group</a></li>
+                <li><a href="#">Smart Group</a></li>
+                <li><a href="#">Member</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+      </aside>
+      <aside class="aside aside-inverse flex-rows" style="display:none">
+        <header class="header">
+          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
+            <a class="navbar-brand push-left-xs" href="#">Activity</a>
+          </nav>
+        </header>
+        <section class="content content-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
+            <div class="container-fluid dropdown dropup">
+              <a href="#" class="btn btn-inverse navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="ion-ios7-gear-outline"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+      </aside>
+    </div>
+    
+
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrapapp JS -->
+    <script src="../../../dist/js/app.js"></script>
+    <!-- Docs Example JS -->
+    <script src="../../assets/js/highcharts/highcharts.js"></script>
+    <script src="../../assets/js/highcharts/column.js"></script>
+    <script src="../../assets/js/highcharts/donut-half.js"></script>
+
+    
+  </body>
+</html>
