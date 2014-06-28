@@ -8,14 +8,14 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <title>Membership App UI for Bootstrap</title>
+    <title>Health App UI for Bootstrap</title>
 
     <!-- Bootstrapapp CSS -->
     <link href="../../../dist/css/app.css" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
-    <link href="../../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../../../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+    <link href="../../assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap-social/bootstrap-social.css" rel="stylesheet">
 
     <!-- Google Fonts (optional) -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Raleway:400,300,600' rel='stylesheet' type='text/css'>
@@ -45,7 +45,7 @@
               </span>
               <span class="dropdown pull-right">
                 <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
-                  <img src="http://lorempixel.com/18/18/people/" class="img-circle push-right-xs"> username <span class="caret"></span>
+                  <img src="http://lorempixel.com/18/18/people/9" class="img-circle push-right-xs"> username <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Profile</a></li>
@@ -68,7 +68,7 @@
         </header>
         <section class="content content-inverse">
           <div class="pad-sm">
-            <div class="row push-top-sm">
+            <div class="row push-top-sm pad-left pad-right">
               <div class="col-sm-1">
                 <div class="text-center pull-right-xxl">
                   <div class="fa fa-angle-left text-30  pull-left"></div>
@@ -120,27 +120,27 @@
             </div>
             <div class="row push-top-sm">
               <div class="col-xs-6 col-md-3">
-                <div class="panel panel-none radius-none text-center overflow-hidden block">
+                <div class="panel panel-none push-bottom-none radius-none text-center overflow-hidden block">
                     <div class="chart-donut-1" style="height: 200px"></div>
                 </div>
               </div>
               <div class="col-xs-6 col-md-3">
-                <div class="panel panel-none radius-none text-center overflow-hidden">
+                <div class="panel panel-none push-bottom-none radius-none text-center overflow-hidden">
                   <div class="chart-donut-2" style="height: 200px"></div>
                 </div>
               </div>
               <div class="col-xs-6 col-md-3">
-                <div class="panel panel-none radius-none text-center overflow-hidden">
+                <div class="panel panel-none push-bottom-none radius-none text-center overflow-hidden">
                   <div class="chart-donut-3" style="height: 200px"></div>
                 </div>
               </div>
               <div class="col-xs-6 col-md-3">
-                <div class="panel panel-none radius-none text-center overflow-hidden">
+                <div class="panel panel-none push-bottom-none radius-none text-center overflow-hidden">
                   <div class="chart-donut-4" style="height: 200px"></div>
                 </div>
               </div>
             </div>
-            <div class="panel panel-none radius-none overflow-hidden">
+            <div class="panel panel-none push-bottom-xs radius-none overflow-hidden">
               <div class="row">
                 <div class="col-sm-6 col-md-7">
                   <div class="pad-top pull-bottom-xxl">
@@ -161,11 +161,11 @@
               <div class="col-sm-7">
                 <div class="panel panel-none radius-none">
                   <div class="panel-body">
-                    <h3 class="page-header push-top-none push-bottom-md">Recent Comments</h3>
+                    <h3 class="page-header page-header-inverse push-top-none push-bottom-md">Recent Comments</h3>
                     <div class="media push-bottom">
                       <img src="http://lorempixel.com/64/64/people/2" class="img-circle pull-left push-top-sm">
                       <div class="media-body">
-                        <div class="bubble-left">
+                        <div class="bubble-inverse bubble-left">
                           Tell me, why this strong young colt, foaled in some peaceful valley of Vermont, far removed from all beasts of prey—why is it that upon the sunniest day, if you but shake a fresh buffalo robe behind him, so that
                         </div>
                       </div>
@@ -173,7 +173,7 @@
                     <div class="media push-bottom">
                       <img src="http://lorempixel.com/64/64/people/9" class="img-circle pull-right push-top-sm">
                       <div class="media-body">
-                        <div class="bubble-right">
+                        <div class="bubble-inverse bubble-right">
                           Look ye, carpenter, I dare say thou callest thyself a right good workmanlike workman, eh? Well, then, will it speak thoroughly well for thy work, if, when I come to mount this leg thou makest
                         </div>
                       </div>
@@ -182,7 +182,7 @@
                       <div class="media push-bottom">
                         <img src="http://lorempixel.com/64/64/people/2" class="img-circle pull-left push-top-sm">
                         <div class="media-body">
-                          <div class="bubble-left">
+                          <div class="bubble-inverse bubble-left">
                           Truly, sir, I begin to understand somewhat now. Yes, I have heard something curious on that score, sir; how that a dismasted man never entirely loses the feeling of his old spar
                           </div>
                         </div>
@@ -190,7 +190,7 @@
                       <div class="media">
                         <img src="http://lorempixel.com/64/64/people/9" class="img-circle pull-right push-top-sm">
                         <div class="media-body">
-                          <div class="bubble-right">
+                          <div class="bubble-inverse bubble-right">
                           It was a humorously perilous business for both of us. For, before we proceed further, it must be said that the
                           </div>
                         </div>
@@ -198,9 +198,9 @@
                     </div>
                   </div>
                   <div class="input-group input-group-round input-group-lg pad-sm">
-                    <input type="text" class="form-control" placeholder="reply">
+                    <input type="text" class="form-control form-control-inverse" placeholder="reply" value="reply">
                     <span class="input-group-btn">
-                      <button class="btn btn-info" type="button"><span class="fa fa-comment-o"></span></button>
+                      <button class="btn btn-danger bg-danger-gradient" type="button"><span class="fa fa-comment-o"></span></button>
                     </span>
                   </div>
                 </div>
@@ -477,14 +477,14 @@
     </div>
     
 
-    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/jquery/jquery.min.js"></script>
+    <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
     <!-- Bootstrapapp JS -->
     <script src="../../../dist/js/app.js"></script>
     <!-- Docs Example JS -->
     <script src="../../assets/js/highcharts/highcharts.js"></script>
     <script src="../../assets/js/highcharts/column.js"></script>
-    <script src="../../assets/js/highcharts/donut-half.js"></script>
+    <script src="../../assets/js/highcharts/donut-half-inverse.js"></script>
     <script src="../../assets/js/highcharts/theme-inverse.js"></script>
     
   </body>

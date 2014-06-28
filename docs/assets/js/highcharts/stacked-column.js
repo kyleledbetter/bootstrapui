@@ -40,8 +40,7 @@ $(function () {
     $('.chart-column').highcharts({
         chart: {
             type: 'column',
-            marginLeft: 55,
-            marginRight: 20,
+            marginLeft: 80,
             backgroundColor: 'transparent'
         },
         title: {
@@ -51,8 +50,6 @@ $(function () {
             text: ''
         },
         xAxis: {
-            tickColor: 'rgba(0, 0, 0, 0.3)',
-            lineColor: 'rgba(0, 0, 0, 0.3)',
             categories: [
                 'Sun',
                 'Mon',
@@ -65,23 +62,10 @@ $(function () {
         },
         yAxis: {
             min: 0,
-            tickColor: 'rgba(0, 0, 0, 0.3)',
             title: {
-                text: ''
+                text: 'Steps'
             },
-            gridLineColor: 'rgba(0, 0, 0, 0.3)',
-            plotLines: [{ // Goal
-                    value: 5500,
-                    color: 'rgba(0, 0, 0, 0.4)',
-                    dashStyle : 'shortdash',
-                    width : 2,
-                    label: {
-                        text: 'Goal',
-                        style: {
-                            color: '#0BD318'
-                        }
-                    }
-                }]
+            gridLineColor: 'rgba(0, 0, 0, 0.05)'
         },
         legend: {
             enabled: false
@@ -96,26 +80,34 @@ $(function () {
         },
         plotOptions: {
             column: {
+                stacking: 'normal',
                 pointPadding: 0.2,
                 borderWidth: 0
             },
             series: {
-                borderRadius: 5,
-                colorByPoint: true   
+                borderRadius: 5         
             }
         },
-        colors: [
-            '#FF484E',
-            '#6fe2e1'
-        ],
         series: [{
             name: 'Steps',
-            data: [4823, 7723, 3892, 6293, 2423, 8238, 1000],
+            data: [4823, "", 3892, 6293, 8238, 1351, 0],
             color: {
                 linearGradient: { x1: 0, x2: 0, y1: 0, y1: 1 },
                 stops:[
                    [0, '#FB2B69'],
                    [1, '#FF5B37']
+                ]
+            }
+
+        },
+        {
+            name: 'Goal',
+            data: [1000, 7723, "", 0, 1000, 1000, 0],
+            color: {
+                linearGradient: { x1: 0, x2: 0, y1: 0, y1: 1 },
+                stops:[
+                   [0, '#5AD427'],
+                   [1, '#A4E786']
                 ]
             }
 

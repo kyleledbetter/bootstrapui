@@ -5,9 +5,6 @@
 .bubble-right {
   position:relative;
   padding:10px 20px;
-  color:white; 
-  background: @brand-info;
-  #gradient > .vertical(@brand-info, #4FC3AB, 0%, 80%);
   border-radius:25px;
   float: right;
   margin-right: 10px;
@@ -19,7 +16,6 @@
     bottom:-2px;
     right:-7px;
     height:20px;
-    border-right:20px solid #4FC3AB;
     border-bottom-left-radius: 16px 14px;
     -webkit-transform:translate(0, -2px);
   }
@@ -40,10 +36,7 @@
 .bubble-left {
   position:relative;
   padding:10px 20px;
-  background:#E5E5EA;
-  #gradient > .vertical(#D7D7D7, #E5E5EA, 0%, 80%);
   border-radius:25px;
-  color: black;
   float: left;
   margin-left: 10px;
     
@@ -54,7 +47,6 @@
     bottom:-2px;
     left:-7px;
     height:20px;
-    border-left:20px solid #E5E5EA;
     border-bottom-right-radius: 16px 14px;
     -webkit-transform:translate(0, -2px);
   }
@@ -72,16 +64,83 @@
     -webkit-transform:translate(-30px, -2px);
   }
 }
+// Themes
+.bubble-default {
+  &.bubble-right {
+    color: @gray-dark;
+    background: @gray-lighter;
+    #gradient > .vertical(@gray-lighter, #E5E5EA, 0%, 80%);
+    &:before {
+      border-left:20px solid #E5E5EA;
+    }
+  }
+  &.bubble-left {
+    color: @gray-dark;
+    background: @gray-lighter;
+    #gradient > .vertical(@gray-lighter, #E5E5EA, 0%, 80%);
+    &:before {
+      border-left:20px solid #E5E5EA;
+    }
+  }
+}
+.bubble-info {
+  &.bubble-right {
+    color: white;
+    background: @brand-info;
+    #gradient > .vertical(@brand-info, #4FC3AB, 0%, 80%);
+    &:before {
+      border-left:20px solid #4FC3AB;
+    }
+  }
+  &.bubble-left {
+    color: white;
+    background: @brand-info;
+    #gradient > .vertical(@brand-info, #4FC3AB, 0%, 80%);
+    &:before {
+      border-left:20px solid #4FC3AB;
+    }
+  }
+}
+.bubble-inverse {
+  &.bubble-right {
+    color:white;
+    background:darken(@brand-inverse, 4%);
+    #gradient > .vertical(darken(@brand-inverse, 4%), darken(@brand-inverse, 1%), 0%, 80%);
+    &:before {
+      border-left:20px solid darken(@brand-inverse, 1%);
+    }
+  }
+  &.bubble-left {
+    color: #fafafa;
+    background:darken(@brand-inverse, 4%);
+    #gradient > .vertical(darken(@brand-inverse, 4%), darken(@brand-inverse, 1%), 0%, 80%);
+    &:before {
+      border-left:20px solid darken(@brand-inverse, 1%);
+    }
+  }
+}
 
-.content-inverse {
+.main-default {
   .bubble-right {
     &:after {
-      background: darken(@brand-inverse, 5%);
+      background: @main-bg;
     }
   }
   .bubble-left {
     &:after {
-      background: darken(@brand-inverse, 5%);
+      background: @main-bg;
+    }
+  }
+}
+.main-inverse {
+  .bubble-right {
+    &:after {
+      background: @main-inverse-bg;
+    }
+  }
+  .bubble-left {
+    &:after {
+      background: @main-inverse-bg;
     }
   }
 }
