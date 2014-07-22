@@ -27,10 +27,11 @@ body,
 
 .sidebar {
   .flex (none);
-  width: 200px;
   .flex-order (1);
   overflow-x: hidden;
   overflow-y: auto;
+  .transition (all 1s ease);
+  z-index: 3;
 
   & > .content {
     padding: @sidebar-body-padding;
@@ -57,9 +58,10 @@ body,
 .aside {
   .flex (none);
   .flex-order (3);
-  width: 220px;
   overflow-x: hidden;
   overflow-y: auto;
+  .transition (1s);
+  z-index: 2;
 
   & > .content {
     padding: @aside-body-padding;
@@ -138,13 +140,60 @@ body,
 //##
 
 @media (max-width: @screen-xs-max) {
+  .sidebar,
+  .aside {
+    position: fixed;
+    width: 90%;
+    top: 0;
+    bottom: 0;
+  }
   .sidebar {
-    display: none;
+    left: -90%;
+    &.toggle {
+      left: 0;
+    }
+  }
+  .aside {
+    right: -90%;
+    &.toggle {
+      right: 0;
+    }
   }
 }
 
 @media all and (min-width: @screen-sm-min) {
-  //.aside { flex: 1 auto; }
+  .sidebar {
+    width: @width-sidebar;
+    
+    [data-toggle="sidebar"] {
+      display: none;
+    }
+  }
+  .aside {
+    width: @width-aside;
+  }
+  .sidebar,
+  .aside {
+    position: relative;
+  }
+  .sidebar {
+    left: 0;
+    width: @width-sidebar;
+    
+    &.toggle {
+      left: -@width-sidebar;
+      width: 0;
+    }
+  }
+  .aside {
+    right: -@width-aside;
+    width: 0;
+
+    &.toggle {
+      right: 0;
+      width: @width-aside;
+    }
+  }
 
 }
 

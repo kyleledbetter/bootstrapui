@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Realtime Data App UI for Bootstrap</title>
+
+    <!-- Bootstrapapp CSS -->
+    <link href="../../../dist/css/app.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="../../assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+
+    <!-- Google Fonts (optional) -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body class="body-default with-transitions">
+    
+    <div class="wrapper flex-columns">
+      
+      <article class="main main-default flex-rows">
+        <header class="header">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+              <a class="btn btn-none navbar-btn pull-left push-right" data-toggle="sidebar"><span aria-hidden="true" class="fa fa-bars"></span></a>
+              <a class="btn btn-none navbar-btn pull-right" data-toggle="aside"><span aria-hidden="true" class="fa fa-align-right"></span></a>
+              <a href=".modal-settings" class="btn btn-none navbar-btn pull-right" data-toggle="modal"><span aria-hidden="true" class="fa fa-cog"></span></a>
+              <span class="dropdown pull-right">
+                <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
+                  <span class="badge badge-danger-light">2</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Nils George has an open order</a></li>
+                  <li><a href="#">Lorenzo Silva's order was declined</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">View all</a></li>
+                </ul>
+              </span>
+              <span class="dropdown pull-right">
+                <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
+                  <img src="http://lorempixel.com/18/18/people/" class="img-circle push-right-xs"> username <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li class="divider"></li>
+                  <li><a href="index.html">Sign Out</a></li>
+                </ul>
+              </span>
+              <form class="navbar-form navbar-left" role="search" style="margin-top:9px">
+                <div class="input-group input-group-sm input-group-round">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+                  </span>
+                </div>
+              </form>
+              <a href="#" class="btn btn-warning btn-circle-sm" style="margin:9px 0 0 10px"><span class="fa fa-plus"></span></a>
+            </div>
+          </nav>
+        </header>
+        <section class="content content-default vibrancy-light bg-muted-light">
+          <div class="pad-sm">
+            <div class="row">
+              <div class="col-sm-6 col-md-3">
+                <div class="panel panel-default radius-none text-center overflow-hidden block">
+                    <div class="chart-donut-1" style="height: 200px"></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="panel panel-default radius-none text-center overflow-hidden">
+                  <div class="chart-donut-2" style="height: 200px"></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="panel panel-default radius-none text-center overflow-hidden">
+                  <div class="chart-donut-3" style="height: 200px"></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="panel panel-default radius-none text-center overflow-hidden">
+                  <div class="chart-donut-4" style="height: 200px"></div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default radius-none overflow-hidden">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="pad-top pull-bottom-xxl">
+                      <div class="chart-column" style="height: 240px"></div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="pad-top pull-bottom-xxl">
+                    <div class="chart-donut-5" style="height: 300px"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Embed start -->
+            
+            <div class="row">
+              <div class="col-md-7">
+                <div class="panel panel-default radius-none">
+                  <div class="panel-body pad-bottom-none">
+                    <h3 class="push-top-none">Data Source Activity</h3>
+                  </div>
+                  <div class="list-group list-group-striped">
+                    <div class="list-group-item">
+                      <div class="chart-metric-1"><svg style="height: 85px;"></svg></div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          Name
+                        </div>
+                        <div class="col-xs-6 text-right">
+                          Last 24 Hours
+                        </div>
+                      </div>
+                    </div>
+                    <a href="metric.html" class="list-group-item list-group-item-tall">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <span class="text-truncate">Website</span>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                          8,253
+                          <span class="text-warning text-sm push-left-xs">
+                            (+3.2%) <span aria-hidden="true" class="icon-arrow-up-5"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="metric.html" class="list-group-item list-group-item-tall">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <span class="text-truncate">iPhone App</span>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                          7,253
+                          <span class="text-warning text-sm push-left-xs">
+                            (-3.1%) <span aria-hidden="true" class="icon-arrow-bottom"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="metric.html" class="list-group-item list-group-item-tall">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <span class="text-truncate">Android App</span>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                          3,250
+                          <span class="text-warning text-sm push-left-xs">
+                            (-2.8%) <span aria-hidden="true" class="icon-arrow-bottom"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="metric.html" class="list-group-item list-group-item-tall">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <span class="text-truncate">iPad App</span>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                          9,151
+                          <span class="text-info text-sm push-left-xs">
+                            (+2.6%) <span aria-hidden="true" class="icon-arrow-up-5"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="metric.html" class="list-group-item list-group-item-tall">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <span class="text-truncate">In-Store</span>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                          925
+                          <span class="text-info text-sm push-left-xs">
+                            (-2.5%) <span aria-hidden="true" class="icon-arrow-bottom"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <a href="#" class="btn btn-primary btn-block text-center">View All</a>
+                </div>
+                <!-- End panel -->
+              </div>
+              <div class="col-md-5">
+                <!-- Begin panel -->
+                <div class="panel panel-default radius-none">
+                  <div class="panel-body pad-bottom-none">
+                    <h3 class="push-top-none">Listener Types</h3>
+                  </div>
+                  <div class="list-group list-group-striped">
+                    <div class="list-group-item">
+                      <div class="chart-source-1"><svg style="height: 85px;"></svg></div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="text-medium">click</div>
+                      <div class="progress progress-warning push-bottom-none">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                          <span class="pull-right">8,253</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="text-medium">hit</div>
+                      <div class="progress progress-warning push-bottom-none">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                          <span class="pull-right">8,135</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="text-medium">addtocart</div>
+                      <div class="progress progress-warning push-bottom-none">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                          <span class="pull-right">7,926</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="text-medium">checkout</div>
+                      <div class="progress progress-info push-bottom-none">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                          <span class="pull-right">6,897</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="text-medium">refresh</div>
+                      <div class="progress progress-info push-bottom-none">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                          <span class="pull-right">5,478</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-primary btn-block text-center">View All</a>
+                </div>
+                <!-- End panel -->
+              </div>
+            </div>
+            <!-- Embed end -->
+          </div>
+        </section>
+        <footer class="footer" style="display:none">
+          <nav class="navbar navbar-default navbar-inline text-center" role="navigation">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer> 
+      </article>
+      <aside class="sidebar vibrancy-dark flex-rows">
+        <header class="header">
+          <nav class="navbar navbar-warning navbar-inline text-center" role="navigation">
+            <a class="btn btn-none navbar-btn pull-right" data-toggle="sidebar"><span aria-hidden="true" class="fa fa-bars"></span></a>
+            <a class="navbar-brand" href="#"><span class="fa fa-database 2x"></span> Streaming App</a>
+          </nav>
+        </header>
+        <section class="content content-inverse">
+          <ul class="nav nav-stacked nav-inverse">
+            <li class="active"><a href="dashboard.html"><span aria-hidden="true" class="fa fa-tachometer text-warning"></span> Dashboard</a></li>
+            <li><a href="log.html"><span aria-hidden="true" class="fa fa-file-text-o"></span> Log</a></li>
+            <li><a href="steops.html"><span aria-hidden="true" class="fa fa-child"></span> Steps</a></li>
+            <li><a href="calories.html"><span aria-hidden="true" class="fa fa-cutlery"></span> Calories</a></li>
+            <li><a href="distance.html"><span aria-hidden="true" class="fa fa-map-marker"></span> Distance</a></li>
+            <li><a href="time.html"><span aria-hidden="true" class="fa fa-clock-o"></span> Time</a></li>
+            <li><a href="friends.html"><span aria-hidden="true" class="fa fa-users"></span> Friends</a></li>
+            <li><a href="reports.html"><span aria-hidden="true" class="fa fa-bar-chart-o"></span> Reports</a></li>
+          </ul>
+        </section>
+        <footer class="footer">
+          <nav class="navbar navbar-inverse vibrancy-dark navbar-inline text-right" role="navigation">
+            <div class="container-fluid dropdown dropup">
+              <a href="#" class="btn btn-inverse navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="fa fa-plus"></span></a>
+              <ul class="dropdown-menu dropdown-menu-right text-left">
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Package</a></li>
+                <li><a href="#">Group</a></li>
+                <li><a href="#">Smart Group</a></li>
+                <li><a href="#">Member</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+      </aside>
+      <aside class="aside aside-inverse flex-rows">
+        <header class="header">
+          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
+              <a class="btn btn-none navbar-btn pull-left" data-toggle="aside"><span aria-hidden="true" class="fa fa-align-right"></span></a>
+            <a class="navbar-brand push-left-xs" href="#">Activity</a>
+          </nav>
+        </header>
+        <section class="content content-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+          <hr class="hr-inverse">
+          <div class="media">
+            <p class="text-sm">
+              <a href="#">First Lastname</a> listened to
+            </p>
+            <a class="pull-left" href="#">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading text-lg">Media heading</h4>
+              <p class="text-md">Art party fap cred</p>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
+            <div class="container-fluid dropdown dropup">
+              <a href="#" class="btn btn-inverse navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="ion-ios7-gear-outline"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+      </aside>
+    </div>
+    
+
+    <script src="../../assets/js/jquery/jquery.min.js"></script>
+    <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+    <!-- Bootstrapapp JS -->
+    <script src="../../../dist/js/app.js"></script>
+    <!-- Docs Example JS -->
+    <script src="../../assets/js/highcharts/highcharts.js"></script>
+    <script src="../../assets/js/highcharts/column-realtime.js"></script>
+    <script src="../../assets/js/highcharts/donut-half-realtime.js"></script>
+
+
+  </body>
+</html>
