@@ -48,7 +48,7 @@ body,
     & > li {
       & > a {
         padding: 15px;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 100;
       }
     }
@@ -161,49 +161,50 @@ body,
   }
 }
 
-@media all and (min-width: @screen-sm-min) {
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+  .sidebar,
+  .aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
   .sidebar {
     width: @width-sidebar;
-    
-    [data-toggle="sidebar"] {
-      display: none;
+    left: -@width-sidebar;
+    &.toggle {
+      left: 0;
     }
   }
   .aside {
     width: @width-aside;
-  }
-  .sidebar,
-  .aside {
-    position: relative;
-  }
-  .sidebar {
-    left: 0;
-    width: @width-sidebar;
-    
-    &.toggle {
-      left: -@width-sidebar;
-      width: 0;
-    }
-  }
-  .aside {
     right: -@width-aside;
-    width: 0;
-
     &.toggle {
       right: 0;
-      width: @width-aside;
     }
   }
 
 }
 
-@media all and (min-width: @screen-md-min) {
-  /*
-  .main    { flex: 2 0px; }
-  .aside-1 { order: 1; } 
-  .main    { order: 2; }
-  .aside-2 { order: 3; }
-  .footer  { order: 4; }
-  */
+@media (min-width: @screen-lg-min) {
+  .sidebar {
+    width: @width-sidebar;
+    &.toggle {
+      position: relative;
+      left: -100%;
+      width: 0;
+    }
+  }
+  .aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
+  .aside {
+    width: @width-aside;
+    right: -@width-aside;
+    &.toggle {
+      right: 0;
+    }
+  }
 }
 

@@ -18,34 +18,25 @@
     <link href="../../assets/css/bootstrap-social/bootstrap-social.css" rel="stylesheet">
 
     <!-- Google Fonts (optional) -->
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
   </head>
 
   <body class="">
     
     <div class="wrapper flex-columns">
       
-      <article class="main main-default flex-rows">
-        <header class="header">
+      <article class="main bg-inverse-light flex-rows">
+        <header class="header body-inverse">
           <nav class="navbar navbar-inverse" role="navigation">
+            <a href="#" class="btn btn-warning btn-circle-lg block pull-right pull-bottom-xxl paper-shadow paper-shadow__z1 hidden-xs" style="position:absolute; top:140px; right:3%;"><span class="fa fa-plus"></span></a>
             <div class="container-fluid">
+
               <a class="btn btn-none navbar-btn pull-left push-right" data-toggle="sidebar"><span aria-hidden="true" class="fa fa-bars"></span></a>
               <a class="btn btn-none navbar-btn pull-right" data-toggle="aside"><span aria-hidden="true" class="fa fa-align-right"></span></a>
               <a href=".modal-settings" class="btn btn-none navbar-btn pull-right" data-toggle="modal"><span aria-hidden="true" class="fa fa-cog"></span></a>
               <span class="dropdown pull-right">
                 <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
-                  <span class="badge badge-danger-light">2</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Nils George has an open order</a></li>
-                  <li><a href="#">Lorenzo Silva's order was declined</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">View all</a></li>
-                </ul>
-              </span>
-              <span class="dropdown pull-right">
-                <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
-                  <img src="http://lorempixel.com/18/18/people/" class="img-circle push-right-xs"> username <span class="caret"></span>
+                  username <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Profile</a></li>
@@ -54,63 +45,128 @@
                   <li><a href="index.html">Sign Out</a></li>
                 </ul>
               </span>
-              <form class="navbar-form navbar-left" role="search" style="margin-top:9px">
-                <div class="input-group input-group-sm input-group-round">
-                  <input type="text" class="form-control" placeholder="Search">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
-                  </span>
-                </div>
-              </form>
-              <a href="#" class="btn btn-warning btn-circle-sm" style="margin:9px 0 0 10px"><span class="fa fa-plus"></span></a>
             </div>
           </nav>
+          <div class="body-inverse bg-inverse">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="hidden-xs push-top-xxl"></div>
+                <div class="visible-xs push-top-sm"></div>
+                <div class="col-sm-3 pad-right-none">
+                  <div class="btn-toolbar push-left search">
+                    <div class="btn-group dropdown pull-right hidden-sm">
+                      <a class="btn btn-none pad-bottom" data-toggle="dropdown" href="#"><span class="fa fa-ellipsis-v"></span></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li><a href="#">test</a></li>
+                      </ul>
+                    </div>
+                    <div class="btn-group pull-right hidden-sm">
+                      <a href="#" class="btn btn-none pad-bottom" data-toggle="search">
+                        <span class="fa fa-search"></span>
+                      </a>
+                    </div>
+                    <div class="btn-group dropdown">
+                      <a class="btn btn-none pad-bottom" data-toggle="dropdown" href="#"><span class="text-xxl push-right">All Sources</span> <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li><a href="#">test</a></li>
+                      </ul>
+                    </div>
+                    <form class="pad-bottom" role="search" style="display:none">
+                      <a href="#" class="btn btn-none pull-left push-right-sm" data-toggle="search">
+                        <span class="fa fa-search"></span>
+                      </a>
+                      <input type="search" class="form-control input-search" style="width:80%">
+                    </form>
+                  </div>
+                </div>
+                <div class="col-sm-9">
+
+                </div>
+              </div>
+            </div>
+          </div>
         </header>
-        <section class="content content-inverse bg-inverse-light">
-          <div class="container">
+        <div style="height:112px;" class="visible-xs"></div>
+        <section class="content" style="margin-top:-112px">
+          <div class="container-fluid">
             <div class="row">
-              <div class="col-sm-4">
-                <ul class="nav nav-stacked nav-inverse">
-                  <li class="active"><a href="dashboard.html"><span aria-hidden="true" class="fa fa-tachometer text-warning"></span> Dashboard</a></li>
-                  <li><a href="log.html"><span aria-hidden="true" class="fa fa-file-text-o"></span> Log</a></li>
-                  <li><a href="steops.html"><span aria-hidden="true" class="fa fa-child"></span> Steps</a></li>
-                  <li><a href="calories.html"><span aria-hidden="true" class="fa fa-cutlery"></span> Calories</a></li>
-                  <li><a href="distance.html"><span aria-hidden="true" class="fa fa-map-marker"></span> Distance</a></li>
-                  <li><a href="time.html"><span aria-hidden="true" class="fa fa-clock-o"></span> Time</a></li>
-                  <li><a href="friends.html"><span aria-hidden="true" class="fa fa-users"></span> Friends</a></li>
-                  <li><a href="reports.html"><span aria-hidden="true" class="fa fa-bar-chart-o"></span> Reports</a></li>
+              <div class="col-sm-3 hidden-xs">
+                <ul class="nav nav-stacked nav-inverse" style="margin-top:112px; width:26%; margin-left: -24px;" data-spy="affix">
+                  <li class="active"><a href="index.html" class="pull-left-lg"><span aria-hidden="true" class="fa fa-circle text-warning push-right-sm push-left-lg"></span> Website</a></li>
+                  <li><a href="index.html" class="pull-left-lg"><span aria-hidden="true" class="fa fa-circle text-warning-light push-right-sm push-left-lg"></span> iPhone App</a></li>
+                  <li><a href="index.html" class="pull-left-lg"><span aria-hidden="true" class="fa fa-circle text-info-dark push-right-sm push-left-lg"></span> Android App</a></li>
+                  <li><a href="index.html" class="pull-left-lg"><span aria-hidden="true" class="fa fa-circle text-info push-right-sm push-left-lg"></span> iPad App</a></li>
+                  <li><a href="index.html" class="pull-left-lg"><span aria-hidden="true" class="fa fa-circle text-info-light push-right-sm push-left-lg"></span> Ops Server</a></li>
+                  <li><a href="index.html" class="pull-left-lg"><span aria-hidden="true" class="fa fa-circle text-success-dark push-right-sm push-left-lg"></span> Hadoop Cluster</a></li>
+                  <li><a href="index.html" class="pull-left-lg"><span aria-hidden="true" class="fa fa-circle text-success push-right-sm push-left-lg"></span> Exchange Server</a></li>
+                  <li><a href="index.html" class="pull-left-lg"><span aria-hidden="true" class="fa fa-circle text-success-light push-right-sm push-left-lg"></span> TD Server</a></li>
                 </ul>
               </div>
               <div class="col-sm-8">
-                <div class="pad-top push-bottom bg-warning">
+                <div class="panel panel-warning paper-shadow paper-shadow__z1">
+                  <div class="panel-body">
+                    <div class="btn-toolbar">
+                      <div class="btn-group pull-right">
+                        <a href="#" class="btn btn-lg btn-none text-warning-light">
+                          <span class="fa fa-share"></span>
+                        </a>
+                      </div>
+                      <div class="btn-group pull-right">
+                        <a href="#" class="btn btn-lg btn-none text-warning-light">
+                          <span class="fa fa-edit"></span>
+                        </a>
+                      </div>
+                      <div class="btn-group hidden-xs">
+                        <a href="#" class="btn btn-lg btn-none text-warning-light">
+                          <span class="fa fa-arrow-left"></span>
+                        </a>
+                      </div>
+                      <div class="btn-group visible-xs dropdown">
+                        <a href="#" class="btn btn-lg btn-none text-warning-light dropdown-toggle" data-toggle="dropdown">
+                          <span class="fa fa-ellipsis-v"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li class="active"><a href="index.html"><span aria-hidden="true" class="fa fa-circle text-warning push-right-sm"></span> Website</a></li>
+                          <li><a href="index.html"><span aria-hidden="true" class="fa fa-circle text-warning-light push-right-sm"></span> iPhone App</a></li>
+                          <li><a href="index.html"><span aria-hidden="true" class="fa fa-circle text-info-dark push-right-sm"></span> Android App</a></li>
+                          <li><a href="index.html"><span aria-hidden="true" class="fa fa-circle text-info push-right-sm"></span> iPad App</a></li>
+                          <li><a href="index.html"><span aria-hidden="true" class="fa fa-circle text-info-light push-right-sm"></span> Ops Server</a></li>
+                          <li><a href="index.html"><span aria-hidden="true" class="fa fa-circle text-success-dark push-right-sm"></span> Hadoop Cluster</a></li>
+                          <li><a href="index.html"><span aria-hidden="true" class="fa fa-circle text-success push-right-sm"></span> Exchange Server</a></li>
+                          <li><a href="index.html"><span aria-hidden="true" class="fa fa-circle text-success-light push-right-sm"></span> TD Server</a></li>
+                        </ul>
+                      </div>
+                    </div>
                     <div class="chart-column" style="height: 240px"></div>
+                  </div>
+                  <div class="panel-body bg-warning-light pad-left-md">
+                    <h1 class="h3 push-top-sm">Website</h1>
+                    <h2 class="h5">Realtime data streaming from our corp website, mainwebsite.com</h2>
+                  </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-4">
-                    <div class="panel panel-default radius-none text-center overflow-hidden block">
-                        <div class="chart-donut-1" style="height: 200px"></div>
+                  <div class="col-sm-4">
+                    <div class="panel panel-default text-center overflow-hidden paper-shadow paper-shadow__z1">
+                        <div class="chart-donut-1" style="height: 160px; width: 180px; margin: auto;"></div>
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <div class="panel panel-default radius-none text-center overflow-hidden">
-                      <div class="chart-donut-2" style="height: 200px"></div>
+                  <div class="col-sm-4">
+                    <div class="panel panel-default text-center overflow-hidden paper-shadow paper-shadow__z1">
+                      <div class="chart-donut-2" style="height: 160px; width: 180px; margin: auto;"></div>
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <div class="panel panel-default radius-none text-center overflow-hidden">
-                      <div class="chart-donut-3" style="height: 200px"></div>
+                  <div class="col-sm-4">
+                    <div class="panel panel-default text-center overflow-hidden paper-shadow paper-shadow__z1">
+                      <div class="chart-donut-3" style="height: 160px; width: 180px; margin: auto;"></div>
                     </div>
                   </div>
                 </div>
                 <!-- Begin panel -->
-                <div class="panel panel-default radius-none">
+                <div class="panel panel-default paper-shadow paper-shadow__z1">
                   <div class="panel-body pad-bottom-none">
-                    <h3 class="push-top-none">Listener Types</h3>
+                    <h3 class="push-top-none">Listener Events</h3>
                   </div>
                   <div class="list-group list-group-striped">
-                    <div class="list-group-item">
-                      <div class="chart-source-1"><svg style="height: 85px;"></svg></div>
-                    </div>
                     <div class="list-group-item">
                       <div class="text-medium">click</div>
                       <div class="progress progress-warning push-bottom-none">
@@ -151,19 +207,17 @@
                         </div>
                       </div>
                     </div>
+                    <a href="#" class="list-group-item text-center">View More</a>
                   </div>
-                  <a href="#" class="btn btn-primary btn-block text-center">View All</a>
+                  
                 </div>
                 <!-- End panel -->
                 <!-- Beging panel -->
-                <div class="panel panel-default radius-none">
+                <div class="panel panel-default paper-shadow paper-shadow__z1">
                   <div class="panel-body pad-bottom-none">
-                    <h3 class="push-top-none">Data Source Activity</h3>
+                    <h3 class="push-top-none">Other Sources</h3>
                   </div>
                   <div class="list-group list-group-striped">
-                    <div class="list-group-item">
-                      <div class="chart-metric-1"><svg style="height: 85px;"></svg></div>
-                    </div>
                     <div class="list-group-item">
                       <div class="row">
                         <div class="col-xs-6">
@@ -239,48 +293,44 @@
                         </div>
                       </div>
                     </a>
+                    <a href="#" class="list-group-item text-center">View All</a>
                   </div>
-                  <a href="#" class="btn btn-primary btn-block text-center">View All</a>
                 </div>
                 <!-- End panel -->
               </div>
             </div>
           </div>
         </section>
-        <footer class="footer">
+        <footer class="footer visible-xs">
           <nav class="navbar navbar-inverse navbar-inline text-center" role="navigation">
             <div class="container-fluid">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+              <ul class="nav navbar-nav text-xxl">
+                <li><a href="#" class="pad-left-xl pad-right-xl"><span class="fa fa-arrow-left"></span></a></li>
+                <li><a href="#" class="pad-left-xl pad-right-xl"><span class="fa fa-edit"></span></a></li>
+                <li><a href="#" class="pad-left-xl pad-right-xl"><span class="fa fa-share"></span></a></li>
               </ul>
             </div>
           </nav>
         </footer> 
       </article>
-      <aside class="sidebar vibrancy-dark flex-rows toggle">
+      <aside class="sidebar sidebar-inverse flex-rows">
         <header class="header">
           <nav class="navbar navbar-warning navbar-inline text-center" role="navigation">
-            <a class="btn btn-none navbar-btn pull-right" data-toggle="sidebar"><span aria-hidden="true" class="fa fa-bars"></span></a>
+            <a class="btn btn-none navbar-btn pull-right" data-toggle="sidebar"><span aria-hidden="true" class="fa fa-arrow-left"></span></a>
             <a class="navbar-brand" href="#"><span class="fa fa-database 2x"></span> Streaming App</a>
           </nav>
         </header>
         <section class="content content-inverse">
           <ul class="nav nav-stacked nav-inverse">
-            <li class="active"><a href="dashboard.html"><span aria-hidden="true" class="fa fa-tachometer text-warning"></span> Dashboard</a></li>
-            <li><a href="log.html"><span aria-hidden="true" class="fa fa-file-text-o"></span> Log</a></li>
-            <li><a href="steops.html"><span aria-hidden="true" class="fa fa-child"></span> Steps</a></li>
-            <li><a href="calories.html"><span aria-hidden="true" class="fa fa-cutlery"></span> Calories</a></li>
-            <li><a href="distance.html"><span aria-hidden="true" class="fa fa-map-marker"></span> Distance</a></li>
-            <li><a href="time.html"><span aria-hidden="true" class="fa fa-clock-o"></span> Time</a></li>
-            <li><a href="friends.html"><span aria-hidden="true" class="fa fa-users"></span> Friends</a></li>
+            <li class=""><a href="dashboard.html"><span aria-hidden="true" class="fa fa-tachometer"></span> Dashboard</a></li>
+            <li class="active"><a href="index.html"><span aria-hidden="true" class="fa fa-cube text-warning"></span> Sources</a></li>
+            <li><a href="steops.html"><span aria-hidden="true" class="fa fa-child"></span> Metrics</a></li>
+            <li><a href="friends.html"><span aria-hidden="true" class="fa fa-users"></span> Users</a></li>
             <li><a href="reports.html"><span aria-hidden="true" class="fa fa-bar-chart-o"></span> Reports</a></li>
           </ul>
         </section>
         <footer class="footer">
-          <nav class="navbar navbar-inverse vibrancy-dark navbar-inline text-right" role="navigation">
+          <nav class="navbar navbar-inverse navbar-inline text-right" role="navigation">
             <div class="container-fluid dropdown dropup">
               <a href="#" class="btn btn-inverse navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="fa fa-plus"></span></a>
               <ul class="dropdown-menu dropdown-menu-right text-left">
@@ -396,8 +446,8 @@
     <!-- Bootstrapapp JS -->
     <script src="../../../dist/js/app.js"></script>
     <!-- Docs Example JS -->
-    <script src="../../assets/js/highcharts/highcharts.js"></script>
-    <script src="../../assets/js/highcharts/column-realtime.js"></script>
+    <script src="../../assets/js/highcharts/highstock.js"></script>
+    <script src="../../assets/js/highcharts/column-histogram.js"></script>
     <script src="../../assets/js/highcharts/donut-half-realtime.js"></script>
 
 

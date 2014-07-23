@@ -17,12 +17,12 @@ $(function () {
             plotBorderWidth: 0,
             plotShadow: false,
             margin: [-190, 10, -40, 10],
-            spacingTop: -160,
+            spacingTop: -130,
             spacingBottom: 0,
             backgroundColor: 'transparent'
         },
         title: {
-            text: '<div class="text-center"><div class="h3 push-bottom-none">Load</div><div class="fa fa-tachometer text-30 text-info push-top-xs"></div></div><div class="text-md text-center text-info-light">32%</div>',
+            text: '<div class="text-center"><div class="h4 push-bottom-none">Load</div><div class="fa fa-tachometer text-30 text-info push-top-xs"></div></div><div class="text-md text-center text-info-light">32%</div>',
             useHTML: true,
             align: 'center',
             zIndex: -1,
@@ -94,12 +94,12 @@ $(function () {
             plotBorderWidth: 0,
             plotShadow: false,
             margin: [-190, 10, -40, 10],
-            spacingTop: -160,
+            spacingTop: -130,
             spacingBottom: 0,
             backgroundColor: 'transparent'
         },
         title: {
-            text: '<div class="text-center"><div class="h3 push-bottom-none">Skew</div><div class="fa fa-cutlery text-30 text-warning push-top-xs"></div></div><div class="text-md text-center text-warning-dark">78%</div>',
+            text: '<div class="text-center"><div class="h4 push-bottom-none">Skew</div><div class="fa fa-sort-amount-asc text-30 text-warning push-top-xs"></div></div><div class="text-md text-center text-warning-dark">78%</div>',
             useHTML: true,
             align: 'center',
             zIndex: -1,
@@ -168,12 +168,12 @@ $(function () {
             plotBorderWidth: 0,
             plotShadow: false,
             margin: [-190, 10, -40, 10],
-            spacingTop: -160,
+            spacingTop: -130,
             spacingBottom: 0,
             backgroundColor: 'transparent'
         },
         title: {
-            text: '<div class="text-center"><div class="h3 push-bottom-none">Burn</div><div class="fa fa-fire text-30 text-info push-top-xs"></div></div><div class="text-md text-center text-info">18%</div>',
+            text: '<div class="text-center"><div class="h4 push-bottom-none">Burn</div><div class="fa fa-fire text-30 text-info push-top-xs"></div></div><div class="text-md text-center text-info">18%</div>',
             useHTML: true,
             align: 'center',
             zIndex: -1,

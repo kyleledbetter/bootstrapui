@@ -4,8 +4,8 @@
 
 //== Overrides
 @body-bg:               #3F353B;
-@font-family-sans-serif:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@headings-font-family:    "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@headings-font-family:    "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @headings-font-weight:    300;
 @brand-primary:            @gray;
 @brand-info:              #4295C2;
@@ -25,6 +25,7 @@
 @navbar-inverse-color:                      lighten(@brand-inverse, 50%);
 @navbar-inverse-bg:                         darken(@brand-inverse, 2%);
 @navbar-inverse-border:                     @navbar-inverse-bg;
+@panel-border-radius:         2px;
 @panel-primary-text:          #fff;
 @panel-primary-border:        @brand-primary;
 @panel-primary-heading-bg:    @brand-primary;
@@ -35,10 +36,10 @@
 @panel-info-border:           #4F98AF;
 @panel-info-heading-bg:       @brand-info;
 @panel-warning-text:          #fff;
-@panel-warning-border:        darken(@brand-warning, 20%);
+@panel-warning-border:        @brand-warning;
 @panel-warning-heading-bg:    @brand-warning;
 @panel-danger-text:           #fff;
-@panel-danger-border:         darken(@brand-danger, 20%);
+@panel-danger-border:         @brand-danger;
 @panel-danger-heading-bg:     @brand-danger;
 @pagination-active-bg:                 @brand-inverse-light;
 @hr-border:                   rgba(0, 0, 0, 0.14);
@@ -48,6 +49,7 @@
 @modal-backdrop-bg:           #fff;
 @modal-backdrop-opacity:      .9;
 @grid-float-breakpoint:       0;
+@screen-lg:                  1350px;
 
 //== Sidebar & Aside Widths
 //
