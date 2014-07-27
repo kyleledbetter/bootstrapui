@@ -190,7 +190,10 @@ body,
     width: @width-sidebar;
     &.toggle {
       position: relative;
-      left: -100%;
+      -webkit-transform: translate(-@width-sidebar - 50, 0) scale(3, 1);
+      -moz-transform: translate(-@width-sidebar - 50, 0) scale(3, 1);
+      -ms-transform: translate(-@width-sidebar - 50, 0) scale(3, 1);
+      transform: translate(-@width-sidebar - 50, 0) scale(3, 1);
       width: 0;
     }
   }

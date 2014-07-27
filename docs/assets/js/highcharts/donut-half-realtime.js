@@ -50,7 +50,11 @@ $(function () {
                 endAngle: 120,
                 center: ['50%', '75%'],
                 borderWidth: 4,
-                borderColor: 'rgba(255, 255, 255, 0.1)'
+                borderColor: 'rgba(255, 255, 255, 0.1)',
+                animation: {
+                    duration: 1500,
+                    easing: 'linear'
+                }
             },
             attr: {
                 'rx': 10
@@ -127,7 +131,11 @@ $(function () {
                 endAngle: 120,
                 center: ['50%', '75%'],
                 borderWidth: 4,
-                borderColor: 'rgba(255, 255, 255, 0.1)'
+                borderColor: 'rgba(255, 255, 255, 0.1)',
+                animation: {
+                    duration: 2000,
+                    easing: 'linear'
+                }
             }
         },
         series: [{
@@ -201,7 +209,11 @@ $(function () {
                 endAngle: 120,
                 center: ['50%', '75%'],
                 borderWidth: 4,
-                borderColor: 'rgba(255, 255, 255, 0.1)'
+                borderColor: 'rgba(255, 255, 255, 0.1)',
+                animation: {
+                    duration: 2500,
+                    easing: 'linear'
+                }
             }
         },
         series: [{

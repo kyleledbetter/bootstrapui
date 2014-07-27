@@ -31,7 +31,12 @@ $(function() {
             ],
             xAxis: {
                 tickColor: 'rgba(0, 0, 0, 0.1)',
-                lineColor: 'rgba(0, 0, 0, 0.1)'
+                lineColor: 'rgba(0, 0, 0, 0.1)',
+                labels: {
+                    style: {
+                        color: 'rgba(0, 0, 0, 0.25)',
+                    }
+                }
             },
             yAxis: {
                 min: 0,
@@ -39,7 +44,20 @@ $(function() {
                 title: {
                     text: ''
                 },
-                gridLineColor: 'rgba(0, 0, 0, 0.1)'
+                gridLineColor: 'rgba(0, 0, 0, 0.1)',
+                labels: {
+                    style: {
+                        color: 'rgba(0, 0, 0, 0.25)',
+                    }
+                }
+            },
+            plotOptions: {
+                column: {
+                    animation: {
+                        duration: 1500,
+                        easing: 'linear'
+                    }
+                }
             },
             series: [{
                 type: 'column',
@@ -59,12 +77,11 @@ $(function() {
             rangeSelector: {
                 buttonTheme: { // styles for the buttons
                     fill: 'none',
-                    stroke: 'none',
-                    'stroke-width': 0,
-                    r: 8,
+
+                    r: 0,
                     style: {
-                        color: 'white',
-                        fontWeight: 'bold'
+                        fontWeight: 'bold',
+                        color: 'rgba(255, 255, 255, 0.5)',
                     },
                     states: {
                         hover: {
@@ -73,22 +90,22 @@ $(function() {
                         select: {
                             fill: 'none',
                             style: {
-                                color: 'white',
-                                textDecoration: 'underline'
+                                color: 'rgba(255, 255, 255, 0.9)',
                             }
                         }
                     }
                 },
+                buttonSpacing: 20,
                 inputEnabled: $('.content').width() > 900,
                 inputBoxBorderColor: 'rgba(0, 0, 0, 0.2)',
                 inputBoxWidth: 120,
                 inputBoxHeight: 18,
                 inputStyle: {
-                    color: '#555',
-                    fontWeight: 'bold'
+                    color: 'rgba(0, 0, 0, 0.3)',
+                    
                 },
                 labelStyle: {
-                    color: 'silver',
+                    color: 'rgba(255, 255, 255, 0.5)',
                     fontWeight: 'bold'
                 },
                 selected: 1

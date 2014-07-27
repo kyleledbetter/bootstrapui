@@ -20,7 +20,35 @@
     <!-- Google Fonts (optional) -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
   </head>
-
+  <style>
+    @media (max-width: 400px) {
+      .row-donuts .panel {
+        height: 100px;
+      }
+      .row-donuts svg,
+      .row-donuts .highcharts-container > span {
+        transform: scale(0.50, 0.50) translate(-80px, -70px);
+      }
+    }
+    @media (min-width: 401px) and (max-width: 700px) {
+      .row-donuts .panel {
+        height: 110px;
+      }
+      .row-donuts svg,
+      .row-donuts .highcharts-container > span {
+        transform: scale(0.65, 0.65) translate(-40px, -40px);
+      }
+    }
+    @media (min-width: 768px) and (max-width: 870px) {
+      .row-donuts .panel {
+        height: 120px;
+      }
+      .row-donuts svg,
+      .row-donuts .highcharts-container > span {
+        transform: scale(0.75, 0.75) translate(-30px, -30px);
+      }
+    }
+  </style>
   <body class="">
     
     <div class="wrapper flex-columns">
@@ -36,7 +64,7 @@
               <a href=".modal-settings" class="btn btn-none navbar-btn pull-right" data-toggle="modal"><span aria-hidden="true" class="fa fa-cog"></span></a>
               <span class="dropdown pull-right">
                 <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
-                  username <span class="caret"></span>
+                  kledbetter <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Profile</a></li>
@@ -68,7 +96,10 @@
                     <div class="btn-group dropdown">
                       <a class="btn btn-none pad-bottom" data-toggle="dropdown" href="#"><span class="text-xxl push-right">All Sources</span> <span class="caret"></span></a>
                       <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                        <li><a href="#">test</a></li>
+                        <li><a href="#">Starred</a></li>
+                        <li><a href="#">Recent</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">All</a></li>
                       </ul>
                     </div>
                     <form class="pad-bottom" role="search" style="display:none">
@@ -99,7 +130,7 @@
                   <li><a href="index.html" class="pull-left-lg"><span aria-hidden="true" class="fa fa-circle text-info-light push-right-sm push-left-lg"></span> Ops Server</a></li>
                   <li><a href="index.html" class="pull-left-lg"><span aria-hidden="true" class="fa fa-circle text-success-dark push-right-sm push-left-lg"></span> Hadoop Cluster</a></li>
                   <li><a href="index.html" class="pull-left-lg"><span aria-hidden="true" class="fa fa-circle text-success push-right-sm push-left-lg"></span> Exchange Server</a></li>
-                  <li><a href="index.html" class="pull-left-lg"><span aria-hidden="true" class="fa fa-circle text-success-light push-right-sm push-left-lg"></span> TD Server</a></li>
+                  <li><a href="index.html" class="pull-left-lg"><span aria-hidden="true" class="fa fa-circle text-success-light push-right-sm push-left-lg"></span> Big Data Server</a></li>
                 </ul>
               </div>
               <div class="col-sm-8">
@@ -144,23 +175,25 @@
                     </div>
                     <div class="chart-column" style="height: 240px"></div>
                   </div>
-                  <div class="panel-body bg-warning-light pad-left-md">
+                  <div class="panel-body pad-left-md bg-warning-vibrant">
+                    <div style="-webkit-filter: none;">
                     <h1 class="h3 push-top-sm">Website</h1>
                     <h2 class="h5">Realtime data streaming from our corp website, mainwebsite.com</h2>
+                    </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-sm-4">
+                <div class="row row-donuts">
+                  <div class="col-xs-4">
                     <div class="panel panel-default text-center overflow-hidden paper-shadow paper-shadow__z1">
                         <div class="chart-donut-1" style="height: 160px; width: 180px; margin: auto;"></div>
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-xs-4">
                     <div class="panel panel-default text-center overflow-hidden paper-shadow paper-shadow__z1">
                       <div class="chart-donut-2" style="height: 160px; width: 180px; margin: auto;"></div>
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-xs-4">
                     <div class="panel panel-default text-center overflow-hidden paper-shadow paper-shadow__z1">
                       <div class="chart-donut-3" style="height: 160px; width: 180px; margin: auto;"></div>
                     </div>
@@ -173,15 +206,59 @@
                   </div>
                   <div class="list-group list-group-striped">
                     <div class="list-group-item">
-                      <div class="text-medium">click</div>
+                      <div class="text-medium">click <a href=".collapse-click" data-toggle="collapse" class="text-sm" title="View Nested Events">(nested events)</a></div>
+                      <a href="#" data-toggle="aside" class="pull-right push-left-sm" title="View log"><span class="fa fa-file-text-o"></span></a>
                       <div class="progress progress-warning push-bottom-none">
                         <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                          
                           <span class="pull-right">8,253</span>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-click text-sm">
+                        <div class="panel panel-default push-top-sm push-bottom-none">
+                          <div class="list-group list-group-striped">
+                            <div class="list-group-item">
+                              <div class="text-medium">click-one</div>
+                              <div class="progress progress-warning push-bottom-none" style="height:5px">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="list-group-item">
+                              <div class="text-medium">click-two</div>
+                              <div class="progress progress-warning push-bottom-none" style="height:5px">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="list-group-item">
+                              <div class="text-medium">click-three</div>
+                              <div class="progress progress-warning push-bottom-none" style="height:5px">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="list-group-item">
+                              <div class="text-medium">click-four</div>
+                              <div class="progress progress-warning push-bottom-none" style="height:5px">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="list-group-item">
+                              <div class="text-medium">click-five</div>
+                              <div class="progress progress-warning push-bottom-none" style="height:5px">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="list-group-item">
                       <div class="text-medium">hit</div>
+                      <a href="#" data-toggle="aside" class="pull-right push-left-sm" title="View log"><span class="fa fa-file-text-o"></span></a>
                       <div class="progress progress-warning push-bottom-none">
                         <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
                           <span class="pull-right">8,135</span>
@@ -190,6 +267,7 @@
                     </div>
                     <div class="list-group-item">
                       <div class="text-medium">addtocart</div>
+                      <a href="#" data-toggle="aside" class="pull-right push-left-sm" title="View log"><span class="fa fa-file-text-o"></span></a>
                       <div class="progress progress-warning push-bottom-none">
                         <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                           <span class="pull-right">7,926</span>
@@ -198,6 +276,7 @@
                     </div>
                     <div class="list-group-item">
                       <div class="text-medium">checkout</div>
+                      <a href="#" data-toggle="aside" class="pull-right push-left-sm" title="View log"><span class="fa fa-file-text-o"></span></a>
                       <div class="progress progress-info push-bottom-none">
                         <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                           <span class="pull-right">6,897</span>
@@ -206,6 +285,7 @@
                     </div>
                     <div class="list-group-item">
                       <div class="text-medium">refresh</div>
+                      <a href="#" data-toggle="aside" class="pull-right push-left-sm" title="View log"><span class="fa fa-file-text-o"></span></a>
                       <div class="progress progress-info push-bottom-none">
                         <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                           <span class="pull-right">5,478</span>
@@ -233,72 +313,71 @@
                         </div>
                       </div>
                     </div>
-                    <a href="metric.html" class="list-group-item list-group-item-tall">
+                    <a href="source-2.html" class="list-group-item list-group-item-tall">
                       <div class="row">
-                        <div class="col-xs-6">
-                          <span class="text-truncate">Website</span>
+                        <div class="col-xs-3">
+                          <span class="h3 text-truncate">iPhone</span>
                         </div>
-                        <div class="col-xs-6 text-right">
+                        <div class="col-xs-6">
+                          <div class="sparkline-realtime-warning" style="height: 80px"></div>
+                        </div>
+                        <div class="col-xs-3 h3 text-right">
                           8,253
-                          <span class="text-warning text-sm push-left-xs">
+                          <span class="text-warning text-xs push-left-xs">
                             (+3.2%) <span aria-hidden="true" class="icon-arrow-up-5"></span>
                           </span>
                         </div>
                       </div>
                     </a>
-                    <a href="metric.html" class="list-group-item list-group-item-tall">
+                    <a href="source-3.html" class="list-group-item list-group-item-tall">
                       <div class="row">
-                        <div class="col-xs-6">
-                          <span class="text-truncate">iPhone App</span>
+                        <div class="col-xs-3">
+                          <span class="h3 text-truncate">Android App</span>
                         </div>
-                        <div class="col-xs-6 text-right">
+                        <div class="col-xs-6">
+                          <div class="sparkline-realtime-warning" style="height: 80px"></div>
+                        </div>
+                        <div class="col-xs-3 h3 text-right">
                           7,253
-                          <span class="text-warning text-sm push-left-xs">
+                          <span class="text-warning text-xs push-left-xs">
                             (-3.1%) <span aria-hidden="true" class="icon-arrow-bottom"></span>
                           </span>
                         </div>
                       </div>
                     </a>
-                    <a href="metric.html" class="list-group-item list-group-item-tall">
+                    <a href="source-4.html" class="list-group-item list-group-item-tall">
                       <div class="row">
-                        <div class="col-xs-6">
-                          <span class="text-truncate">Android App</span>
+                        <div class="col-xs-3">
+                          <span class="h3 text-truncate">iPad App</span>
                         </div>
-                        <div class="col-xs-6 text-right">
+                        <div class="col-xs-6">
+                          <div class="sparkline-realtime-warning" style="height: 80px"></div>
+                        </div>
+                        <div class="col-xs-3 h3 text-right">
                           3,250
-                          <span class="text-warning text-sm push-left-xs">
+                          <span class="text-warning text-xs push-left-xs">
                             (-2.8%) <span aria-hidden="true" class="icon-arrow-bottom"></span>
                           </span>
                         </div>
                       </div>
                     </a>
-                    <a href="metric.html" class="list-group-item list-group-item-tall">
+                    <a href="source-5.html" class="list-group-item list-group-item-tall">
                       <div class="row">
+                        <div class="col-xs-3">
+                          <span class="h3 text-truncate">Ops Server</span>
+                        </div>
                         <div class="col-xs-6">
-                          <span class="text-truncate">iPad App</span>
+                          <div class="sparkline-realtime-info" style="height: 80px"></div>
                         </div>
-                        <div class="col-xs-6 text-right">
-                          9,151
-                          <span class="text-info text-sm push-left-xs">
-                            (+2.6%) <span aria-hidden="true" class="icon-arrow-up-5"></span>
-                          </span>
-                        </div>
-                      </div>
-                    </a>
-                    <a href="metric.html" class="list-group-item list-group-item-tall">
-                      <div class="row">
-                        <div class="col-xs-6">
-                          <span class="text-truncate">In-Store</span>
-                        </div>
-                        <div class="col-xs-6 text-right">
+                        <div class="col-xs-3 h3 text-right">
                           925
-                          <span class="text-info text-sm push-left-xs">
+                          <span class="text-info text-xs push-left-xs">
                             (-2.5%) <span aria-hidden="true" class="icon-arrow-bottom"></span>
                           </span>
                         </div>
                       </div>
                     </a>
-                    <a href="#" class="list-group-item text-center">View All</a>
+                    <a href="#" class="list-group-item text-center">View More</a>
                   </div>
                 </div>
                 <!-- End panel -->
@@ -322,16 +401,23 @@
         <header class="header">
           <nav class="navbar navbar-warning navbar-inline text-center" role="navigation">
             <a class="btn btn-none navbar-btn pull-right" data-toggle="sidebar"><span aria-hidden="true" class="fa fa-arrow-left"></span></a>
-            <a class="navbar-brand" href="#"><span class="fa fa-database 2x"></span> Streaming App</a>
+            <a class="navbar-brand" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 299.6 97.1" xml:space="preserve" style="enable-background:new 0 0 299.6 97.1;height:30;left:20;position:absolute;width:100">
+                <style type="text/css">
+                  .st0{fill:#FFFFFF;}
+                </style>
+                <path class="st0" d="M172.7 15.1h-15.7v41.6c0 3.1 1.7 4.7 5.3 4.7h10.4l1.7 0c12.5-0.5 18.3-6 18.3-19v-7.8C192.8 21.6 186.2 15.1 172.7 15.1zM184.4 42.4c0 9.4-3.1 14-11.4 14h-7.5V20.3h7.3c8.5 0 11.6 5 11.6 14.4V42.4z"/><path class="st0" d="M278.2 14.5c-2 0-3.8 0.7-4.2 1.7l-17 45.2h3.1c3.4 0 4.9-0.3 6-3.1l3.8-10.6h10.2l-1.5-5.1h-7.1l6.3-17.9 11.4 33.5c1 2.8 2.6 3.1 6.3 3.1h4l-17.2-45.2C282 15.2 280.1 14.5 278.2 14.5z"/><path class="st0" d="M23.4 64.3c0 3.1 1.9 4.7 5.4 4.7h3.1V5.8H51L52.8 0h-51L0 5.8h23.4V64.3z"/><path class="st0" d="M70.2 20.3l1.6-5.1H41.6v32c0 10.8 2.5 14.2 17.2 14.2L86 61.3v-41h6c6.5 0 9.8 2.3 9.8 6.7v4c0 4.5-4.1 5.9-9.1 5.9h-3.8l12.7 21.8c1.4 2.5 2.1 2.7 5.5 2.7h7.4c3.4 0 4.9-0.3 6-3.1l3.8-10.6h10.2l-1.5-5.1h-7.1l6.3-17.9 11.4 33.5c1 2.8 2.6 3.1 6.3 3.1h4l-17.3-45.2c-0.4-1-2.3-1.7-4.2-1.7 -2.1 0-3.8 0.7-4.2 1.7L112 59.7 99.8 41.2c6.4-1.1 10.1-4.5 10.1-10.3v-4.1c0-8.3-7.7-11.8-18-11.8H77.6v41.2H59c-7.3 0-9-1.6-9-9.2V39h13.8l1.5-5.1H50.1V20.3H70.2z"/><path class="st0" d="M247.7 61.5h3.1V20.3h14.2l1.5-5.1h-38.4l-1.6 5.1h15.8v36.5C242.3 59.9 244.2 61.5 247.7 61.5z"/><path class="st0" d="M213.9 14.5c-2.1 0-3.8 0.7-4.2 1.7l-17 45.2h3.2c3.4 0 4.9-0.3 6-3.1l3.8-10.6h10.2l-1.5-5.1h-7.1l6.3-17.9L225 58.3c1 2.8 2.6 3.1 6.3 3.1h4L218 16.2C217.6 15.2 215.8 14.5 213.9 14.5z"/>
+              </svg>
+            </a>
           </nav>
         </header>
         <section class="content content-inverse">
           <ul class="nav nav-stacked nav-inverse">
             <li class=""><a href="dashboard.html"><span aria-hidden="true" class="fa fa-tachometer"></span> Dashboard</a></li>
-            <li class="active"><a href="index.html"><span aria-hidden="true" class="fa fa-cube text-warning"></span> Sources</a></li>
-            <li><a href="steops.html"><span aria-hidden="true" class="fa fa-child"></span> Metrics</a></li>
+            <li class="active"><a href="index.html"><span aria-hidden="true" class="fa fa-cubes text-warning"></span> Sources</a></li>
+            <li><a href="steops.html"><span aria-hidden="true" class="fa fa-bar-chart-o"></span> Metrics</a></li>
             <li><a href="friends.html"><span aria-hidden="true" class="fa fa-users"></span> Users</a></li>
-            <li><a href="reports.html"><span aria-hidden="true" class="fa fa-bar-chart-o"></span> Reports</a></li>
+            <li><a href="reports.html"><span aria-hidden="true" class="fa fa-file-text-o"></span> Logs</a></li>
           </ul>
         </section>
         <footer class="footer">
@@ -454,7 +540,7 @@
     <script src="../../assets/js/highcharts/highstock.js"></script>
     <script src="../../assets/js/highcharts/column-histogram.js"></script>
     <script src="../../assets/js/highcharts/donut-half-realtime.js"></script>
-
+    <script src="../../assets/js/highcharts/line-realtime.js"></script>
 
   </body>
 </html>
