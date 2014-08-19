@@ -15,7 +15,7 @@
     border-color: darken(@brand-primary, 5%);
   }
   a {
-    color: darken(@brand-primary, 35%);
+    color: lighten(@brand-primary, 35%);
   }
 }
 .navbar-success {
@@ -155,5 +155,17 @@
   }
   a {
     color: darken(@brand-danger-dark, 35%);
+  }
+}
+.navbar-vmware {
+  background-color: @brand-vmware;
+  
+  input,
+  .form-control,
+  .btn-success {
+    border-color: darken(@brand-vmware, 12%);
+  }
+  a {
+    color: lighten(@brand-vmware, 25%);
   }
 }

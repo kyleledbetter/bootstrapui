@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Members</title>
+
+    <!-- Bootstrapapp CSS -->
+    <link href="../../../dist/css/app.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="../../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+
+    <!-- Google Fonts (optional) -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body class="body-default with-transitions">
+    
+    <div class="wrapper flex-columns">
+      
+      <article class="main main-default flex-rows">
+        <header class="header">
+          <nav class="navbar navbar-primary" role="navigation">
+            <div class="container-fluid">
+              <a class="btn btn-none navbar-btn pull-left push-right" data-toggle="sidebar"><span aria-hidden="true" class="fa fa-bars"></span></a>
+              <span class="dropdown pull-right">
+                <a href="#" class="btn btn-none navbar-btn dropdown-toggle" data-toggle="dropdown">
+                  <img src="http://lorempixel.com/18/18/people/" class="img-circle push-right-xs"> email@email.com <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Sign Out</a></li>
+                </ul>
+              </span>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="input-group input-group-sm input-group-round">
+                  <input type="text" class="form-control" placeholder="Search" name="q" id="srch-term" value="{{.Fields.Search}}">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button"><span class="fa fa-search"></span></button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </nav>
+        </header>
+        <section class="content content-default bg-muted-light">
+          <div class="">
+            <!-- Embed start -->
+            
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="panel panel-default radius-none">
+                  <div class="panel-body">
+                    <h3 class="page-header push-top-none">
+                    {{with .Person}}
+                        <i title="{{.FirstName}} {{.LastName}}" class="fa fa-user fa-lg"></i>
+                        {{.FirstName}} {{.LastName}}
+                        <span class="pull-right"><button type="button" class="btn btn-sm btn-default">Edit</button></span>
+                      {{else}}
+                      Person Not Found
+                      {{end}}
+                    </h3>
+                    <dl class="dl-horizontal">
+                      <dt>Comite Latino</dt>
+                      <dd>
+                      {{if eq .ComiteLatino 1}}
+                        <i title="Yes" class="fa fa-check fa-lg"></i>
+                      {{else}}
+                        <i title="No" class="fa fa-times fa-lg"></i>
+                      {{end}}
+                      </dd>
+                      <dt>Constant Contact</dt>
+                      <dd>
+                      {{if eq .ConstantContact 1}}
+                        <i title="Yes" class="fa fa-check fa-lg"></i>
+                      {{else}}
+                        <i title="No" class="fa fa-times fa-lg"></i>
+                      {{end}}
+                      </dd>
+                      <dt>Mailing List</dt>
+                      <dd>
+                      {{if eq .MailingList 1}}
+                        <i title="Yes" class="fa fa-check fa-lg"></i>
+                      {{else}}
+                        <i title="No" class="fa fa-times fa-lg"></i>
+                      {{end}}
+                      </dd>
+                      <dt>Has Down Syndrome</dt>
+                      <dd>
+                      {{if eq .HasDownSyndrome 1}}
+                        <i title="Yes" class="fa fa-check fa-lg"></i>
+                        {{.DateOfBirth}}
+                      {{else}}
+                        <i title="No" class="fa fa-times fa-lg"></i>
+                      {{end}}
+                      </dd>
+                      <dt>Referral</dt>
+                      <dd>
+                        {{.Referral}}
+                      </dd>
+                      <dt>Source</dt>
+                      <dd>
+                        {{.Source}}
+                      </dd>
+                    </dl>
+                    <address>
+                      <strong>{{.Address1}}{{if .Address2}} {{.Address2}}{{end}}</strong><br>
+                      {{if .City}}{{.City}},{{end}} {{.State}} {{.Zipcode}} {{.Country}}<br>
+                    {{if .County}}
+                      {{.County}} County<br>
+                    {{end}}
+                    {{if .CongressionalDistrict}}
+                    {{if eq .CongressionalDistrict "AL"}}
+                    <a href="https://www.govtrack.us/congress/members/{{.State}}">
+                      Congressional Information</a>
+                    {{else}}
+                    <a href="https://www.govtrack.us/congress/members/{{.State}}/{{.CongressionalDistrict}}">
+                      {{.State}} Congressional District {{.CongressionalDistrict}}</a>
+                    {{end}}
+                    {{end}}
+                    </address>
+                    <iframe width="100%" height="150" frameborder="0" style="border: 0"
+                      src="https://www.google.com/maps/embed/v1/place?q={{.Address1}}+{{.Address2}}+{{.City}}%2C{{.State}}+{{.Zipcode}}+{{.Country}}&key=AIzaSyAd3QvATv9rvCB_WSsAZV8bOke9-JheE_8">
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <!-- Begin panel -->
+                <div class="panel panel-default radius-none">
+                  <div class="panel-body">
+                    <h3 class="page-header push-top-none">Contact</h3>
+                    <dl>
+                    {{if .Email}}
+                                <dt><i title="Email" class="fa fa-envelope"></i> Email</dt>
+                                <dd><a href="mailto:{{.Email}}">{{.Email}}</a></dd>
+                    {{end}}
+                    {{if .Phone1}}
+                                <dt><i title="Phone" class="fa fa-phone fa-lg"></i> Phone</dt>
+                                <dd><a href="tel:{{.Phone1}}">{{.Phone1}}</a></dd>
+                    {{end}}
+                    {{if .Phone2}}
+                                <dt><i title="Alternative Phone" class="fa fa-mobile-phone fa-lg"></i> Alternative Phone</dt>
+                                <dd><a href="tel:{{.Phone2}}">{{.Phone2}}</a></dd>
+                    {{end}}
+                              </dl>
+
+                              <h3>Work</h3>
+                              <dl>
+                    {{if .Company}}
+                                <dt><i title="Company" class="fa fa-briefcase fa-lg"></i> Company</dt>
+                                <dd>
+                                  <a href="https://www.linkedin.com/vsearch/c?type=companies&keywords={{.Company}}">
+                                    {{.Company}}</a>
+                                </dd>
+                    {{end}}
+                    {{if .JobTitle}}
+                                <dt><i title="Job Title" class="fa fa-briefcase fa-lg"></i> Job Title</dt>
+                                <dd>{{.JobTitle}}</dd>
+                    {{end}}
+                    </dl>
+                  </div>
+                </div>
+                <!-- End panel -->
+              </div>
+            </div>
+            <!-- Embed end -->
+          </div>
+        </section>
+      </article>
+      <aside class="sidebar vibrancy-dark flex-rows">
+        <header class="header">
+          <nav class="navbar navbar-inverse navbar-inline" role="navigation">
+            <a href="#" data-toggle="sidebar" class="navbar-brand pull-right"><span class="fa fa-toggle-left"></span></a>
+            <a class="navbar-brand push-left" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" width="90px" viewBox="0 0 137 41" version="1.1"><style>.style0{fill: none;fill-rule: evenodd;}.style1{fill-opacity:  0.87;fill:  #8D86CB;}</style><!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch --><defs/><g sketch:type="MSPage" class="style0"><g sketch:type="MSLayerGroup" class="style1"><g sketch:type="MSShapeGroup"><path d="M22.2 25.2 C22.2 17.3 18.5 10.7 13.5 9.1 C13.6 9 13.7 9 13.7 8.9 C15 7.9 15.5 6.5 15.5 5 C15.4 4.4 15.3 3.7 15.1 3.2 C14.6 1.9 13.4 1.1 12.2 0.8 C12.1 0.8 12.1 0.8 12.1 0.8 C11.8 0.8 11.6 0.7 11.3 0.7 C11.3 0.7 11.3 0.7 11.2 0.7 L11.2 0.7 C11.2 0.7 11.2 0.7 11.2 0.7 C11.1 0.7 11.1 0.7 11.1 0.7 L11.1 0.7 C11 0.7 11 0.7 11 0.7 C10.7 0.7 10.5 0.8 10.2 0.8 C10.2 0.8 10.2 0.8 10.2 0.8 C8.9 1.1 7.7 1.9 7.2 3.2 C7 3.7 6.9 4.4 6.8 5 C6.8 6.5 7.3 7.9 8.6 8.9 C8.6 9 8.7 9 8.8 9.1 C3.8 10.7 0.1 17.3 0.1 25.2 C0.1 31.7 2.6 37.3 6.2 40 C6.5 40.2 6.7 40.4 7 40.5 C7.4 40.7 7.8 40.8 8.1 40.8 C8.6 40.8 8.9 40.6 9 40.3 C9.2 39.7 8.7 38.9 7.7 38.4 C7.5 38.3 6.5 38.2 6.2 37.9 C5.1 36.1 4.4 33.7 4.4 31.1 C4.4 26.5 6.6 22.5 9.4 21.4 C9.3 21.3 9.1 21.2 9 21.1 C7.9 20.2 7.5 19.1 7.5 17.8 C7.5 17.3 7.6 16.8 7.8 16.3 C8.2 15.3 9.2 14.6 10.3 14.3 C10.3 14.3 10.3 14.3 10.3 14.3 C10.5 14.3 10.8 14.2 11 14.2 C11 14.2 11 14.2 11 14.2 L11.1 14.2 C11.1 14.2 11.1 14.2 11.1 14.2 C11.1 14.2 11.1 14.2 11.2 14.2 L11.2 14.2 C11.2 14.2 11.2 14.2 11.2 14.2 C11.5 14.2 11.7 14.3 11.9 14.3 C11.9 14.3 11.9 14.3 11.9 14.3 C13 14.6 14 15.3 14.4 16.3 C14.6 16.8 14.7 17.3 14.7 17.8 C14.8 19.1 14.3 20.2 13.3 21.1 C13.1 21.2 13 21.3 12.8 21.4 C15.7 22.5 17.9 26.4 17.9 31.1 C17.9 33.7 17.2 36.1 16.1 37.9 C15.9 38.2 14.8 38.3 14.6 38.4 C13.6 38.9 13.1 39.7 13.2 40.3 C13.4 40.6 13.7 40.8 14.2 40.8 C14.5 40.8 14.9 40.7 15.3 40.5 C15.6 40.4 15.8 40.2 16 40 C19.7 37.3 22.2 31.7 22.2 25.2 "/><path d="M12.5 40.8 C12.2 39.8 12.9 38.6 14.2 38 C14.4 38 14.5 37.9 14.8 37.8 C15 37.8 15.4 37.7 15.5 37.6 C15.7 37.3 15.9 37 16 36.8 C15.8 33.6 14.3 31 12.3 30.3 C12.3 30.3 12.3 30.3 12.3 30.3 C12.3 30.3 12.3 30.3 12.3 30.3 C12.3 30.3 12.3 30.3 12.3 30.3 C12.5 30.2 12.6 30.1 12.8 30 C13.5 29.4 13.8 28.5 13.8 27.6 C13.8 27.3 13.7 26.9 13.6 26.6 C13.3 25.8 12.6 25.3 11.8 25.1 C11.8 25.1 11.8 25.1 11.8 25.1 C11.6 25.1 11.5 25.1 11.3 25.1 C11.3 25.1 11.3 25.1 11.3 25.1 C11.3 25.1 11.2 25.1 11.2 25.1 C11.2 25.1 11.2 25.1 11.2 25.1 C11.2 25.1 11.1 25.1 11.1 25.1 C11 25.1 10.8 25.1 10.7 25.1 C10.6 25.1 10.6 25.1 10.6 25.1 C9.9 25.3 9.2 25.8 8.9 26.6 C8.7 26.9 8.7 27.3 8.6 27.6 C8.6 28.5 8.9 29.4 9.7 30 C9.8 30.1 9.9 30.1 10 30.2 C8 30.9 6.4 33.4 6.2 36.6 C6.3 36.9 6.5 37.3 6.7 37.6 C6.9 37.7 7.3 37.8 7.5 37.9 C7.7 37.9 7.9 38 8 38 L8 38 L8 38 C9.3 38.6 10.1 39.8 9.7 40.8 C9.7 40.9 9.6 41.1 9.5 41.2 C10 41.4 10.6 41.5 11.1 41.5 C11.7 41.5 12.2 41.4 12.7 41.2 C12.6 41.1 12.6 40.9 12.5 40.8 "/></g><path d="M35.8235209 35.2 L43.1435209 35.2 C51.7435209 35.2 55.4 30.1 55.4 21 C55.4235209 11.6 51.6 7.2 43.2 7.2 L35.8235209 7.2 L35.8235209 35.2 Z M39.0235209 10 L42.9035209 10 C48.8635209 10 52.1 13 52.1 21.3 C52.1435209 29.4 49.3 32.4 43.1 32.4 L39.0235209 32.4 L39.0235209 10 Z M68.1435209 32.8 C64.7835209 32.8 62.5 31.4 61 30.1 L59.1035209 32.7 C60.7035209 34.1 63.6 35.6 67.9 35.6 C73.8635209 35.6 77.2 32.1 77.2 27.9 C77.2235209 19.2 63.9 20.6 63.9 14.1 C63.8635209 11.6 65.8 9.7 69.1 9.7 C71.4635209 9.7 73.2 10.5 74.6 11.6 L76.5435209 9.2 C74.9435209 7.8 72.5 6.8 69.3 6.8 C64.2635209 6.8 60.6 10.1 60.6 14.3 C60.6235209 23.2 74 21.7 74 28.1 C73.9835209 30.7 71.9 32.8 68.1 32.8 Z M99.1835209 35.2 L102.543521 35.2 L93.4635209 7.2 L88.5035209 7.2 L79.4235209 35.2 L82.7035209 35.2 L85.3035209 27.1 L96.5835209 27.1 L99.1835209 35.2 Z M86.2235209 24.2 L89.2635209 14.7 C89.4635209 14 90.8 9.9 90.9 9.4 L91.0235209 9.4 C91.1435209 9.9 92.5 14 92.7 14.8 L95.6635209 24.2 L86.2235209 24.2 Z M104.943521 24.7 C104.943521 32.5 108.4 35.6 113.7 35.6 C117.463521 35.6 119.3 34.3 120.2 33.3 L118.263521 31.1 C117.383521 32.1 116 32.8 114 32.8 C110.383521 32.8 108.1 30.5 108.1 24.3 C108.143521 18.2 110.5 15.9 114 15.9 C116.143521 15.9 117.4 16.8 118.3 17.7 L120.383521 15.4 C119.583521 14.5 117.7 13.1 114.2 13.1 C108.863521 13.1 104.9 16.7 104.9 24.7 L104.943521 24.7 Z M131.223521 35.4 C133.823521 35.4 135.3 34.9 136.1 34.4 L135.223521 32 C134.663521 32.3 133.7 32.7 131.9 32.7 C129.983521 32.7 128.7 31.7 128.7 29.3 L128.743521 16 L134.743521 16 L134.743521 13.5 L128.743521 13.5 L128.743521 7.8 L126.623521 7.8 L125.663521 13.4 L122.423521 14 L122.423521 16 L125.663521 16 L125.663521 29.4 C125.663521 33.6 127.6 35.4 131.2 35.4 L131.223521 35.4 Z" sketch:type="MSShapeGroup"/></g></g></svg></a>
+          </nav>
+        </header>
+        <section class="content content-inverse">
+          <ul class="nav nav-stacked nav-inverse">
+            <li><a href="index.html"><span aria-hidden="true" class="fa fa-tachometer"></span> Landing</a></li>
+            <li><a href="groups.html"><span aria-hidden="true" class="fa fa-users"></span> People</a></li>
+            <li class="active"><a href="members.html"><span aria-hidden="true" class="fa fa-user"></span> Person</a></li>
+          </ul>
+        </section>
+        <footer class="footer">
+          <nav class="navbar navbar-inverse vibrancy-dark navbar-inline text-right" role="navigation">
+            <div class="container-fluid dropdown dropup">
+              <a href="#" class="btn btn-inverse navbar-btn dropdown-toggle" data-toggle="dropdown"><span aria-hidden="true" class="fa fa-plus"></span></a>
+              <ul class="dropdown-menu dropdown-menu-right text-left">
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Package</a></li>
+                <li><a href="#">Group</a></li>
+                <li><a href="#">Smart Group</a></li>
+                <li><a href="#">Member</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+      </aside>
+    </div>
+    
+
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrapapp JS -->
+    <script src="../../../dist/js/app.js"></script>
+    <!-- Docs Example JS -->
+    <script src="../../assets/js/d3/d3.v3.js"></script>
+    <script src="../../assets/js/nvd3/nv.d3.min.js"></script>
+    <script src="../../assets/js/nvd3/line-bar.js"></script>
+    <script src="../../assets/js/nvd3/line.js"></script>
+  </body>
+</html>

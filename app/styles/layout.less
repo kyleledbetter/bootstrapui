@@ -30,7 +30,7 @@ body,
   .flex-order (1);
   overflow-x: hidden;
   overflow-y: auto;
-  .transition (all 1s ease);
+  .transition (all 0.5s ease);
   z-index: 3;
 
   & > .content {
@@ -51,6 +51,13 @@ body,
         font-size: 16px;
         font-weight: 100;
       }
+      &.active {
+        & > a {
+          *[class*="fa-"] {
+            color: @brand-primary-light;
+          }
+        }
+      }
     }
   }
 }
@@ -60,7 +67,7 @@ body,
   .flex-order (3);
   overflow-x: hidden;
   overflow-y: auto;
-  .transition (1s);
+  .transition (0.5s);
   z-index: 2;
 
   & > .content {
@@ -74,12 +81,29 @@ body,
   .navbar {
     margin-bottom: 0;
     border-radius: 0;
-
-    .navbar-form {
-      max-width: 300px;
+  }
+}
+@media (max-width: @screen-xs-max) {
+  .header,
+  .footer {
+    .navbar {
+      .navbar-form {
+        margin-top: -5px;
+      }
     }
   }
 }
+@media (min-width: @screen-sm-min) {
+  .header,
+  .footer {
+    .navbar {
+      .navbar-form {
+        max-width: 350px;
+      }
+    }
+  }
+}
+
 .content {
   .flex (1);
   overflow: auto;
@@ -161,7 +185,7 @@ body,
   }
 }
 
-@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-min) {
   .sidebar,
   .aside {
     position: fixed;
@@ -185,7 +209,7 @@ body,
 
 }
 
-@media (min-width: @screen-lg-min) {
+@media (min-width: @screen-md-min) {
   .sidebar {
     width: @width-sidebar;
     &.toggle {
